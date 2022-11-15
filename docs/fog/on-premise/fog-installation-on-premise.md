@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Edge gateway installation cloud
-nav_order: 321
-description: "Edge gateway installation cloud"
-parent: Edge gateway installation
-grand_parent: Edge gateway
+title: Fog installation on-premise
+nav_order: 422
+description: "Fog installation cloud"
+parent: Fog installation
+grand_parent: Fog
 ---
 
-TBD Edge gateway::Installation::Cloud
+TBD Fog::Installation::Cloud

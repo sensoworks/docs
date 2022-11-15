@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Edge gateway installation
-nav_order: 32
-description: "Edge gateway installation"
-parent: Edge gateway
+title: Fog installation
+nav_order: 42
+description: "Fog installation"
+parent: Fog
 has_children: true
 ---
 
-TBD Platform::Installation
+TBD Fog gateway::Installation

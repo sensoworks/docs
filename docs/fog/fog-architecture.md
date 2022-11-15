@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Edge architecture
-nav_order: 31
-description: "Edge architecture"
-parent: Edge
+title: Fog architecture
+nav_order: 41
+description: "Fog architecture"
+parent: Fog
 has_children: true
 ---
 
-TBD Edge gateway::Installation::Cloud
+TBD Fog gateway::Installation::Cloud
