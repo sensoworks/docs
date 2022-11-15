@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Edge gateway architecture
+title: Edge architecture
 nav_order: 31
-description: "Edge gateway architecture"
+description: "Edge architecture"
 parent: Edge gateway
 ---
 
