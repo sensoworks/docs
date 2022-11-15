@@ -3,6 +3,7 @@ layout: default
 title: Home
 nav_order: 1
 description: "Sensoworks documentation homepage"
+permalink: /docs
 has_children: true
 ---
 
