@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Installation
+title: Platform installation
 nav_order: 22
-description: "Installation"
+description: "Platform installation"
 parent: Platform
 ---
 

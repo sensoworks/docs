@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Architecture
-nav_order: 1
-description: "Architecture"
+title: Platform architecture
+nav_order: 21
+description: "Platform architecture"
 parent: Platform
 ---
 
