@@ -6,4 +6,4 @@ description: "Edge gateway architecture"
 parent: Edge gateway
 ---
 
-TBD Platform::Architecture
+TBD Edge gateway::Installation::Cloud
