@@ -3,7 +3,7 @@ layout: default
 title: Fog installation
 nav_order: 42
 description: "Fog installation"
-parent: Fog
+parent: Fog gateway
 has_children: true
 ---
 
