@@ -2,7 +2,7 @@
 layout: default
 title: Fog installation cloud
 nav_order: 421
-description: "Fog installation cloud"
+description: "cloud"
 parent: Fog installation
 grand_parent: Fog
 ---
