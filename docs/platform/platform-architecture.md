@@ -1,10 +1,9 @@
 ---
 layout: default
 title: Platform architecture
-nav_order: 1
+nav_order: 3
 description: "Platform architecture"
 parent: Platform
-permalink: docs/platform
 ---
 
 TBD 2
