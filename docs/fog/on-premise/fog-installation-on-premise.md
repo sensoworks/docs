@@ -4,7 +4,7 @@ title: Fog installation on-premise
 nav_order: 422
 description: "Fog installation cloud"
 parent: Fog installation
-grand_parent: Fog
+grand_parent: Fog gateway
 ---
 
 TBD Fog::Installation::Cloud

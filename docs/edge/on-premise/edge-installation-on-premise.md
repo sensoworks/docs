@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Edge installation cloud
-nav_order: 321
-description: "Edge installation cloud"
+title: Edge installation on-premise
+nav_order: 322
+description: "Edge installation on-premise"
 parent: Edge installation
 grand_parent: Edge gateway
 ---
 
-TBD Edge::Installation::Cloud
+TBD Edge::Installation::OnPrem
