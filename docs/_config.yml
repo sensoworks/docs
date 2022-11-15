@@ -2,3 +2,6 @@
 remote_theme: just-the-docs/just-the-docs
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
+
+# Set a path/url to a logo that will be displayed instead of the title
+logo: "/docs/assets/images/sensoworks-logo.png"
