@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Platform architecture
+title: Architecture
 nav_order: 1
-description: "Platform architecture"
+description: "Architecture"
 parent: Platform
 ---
 
-TBD 2
+TBD Platform::Architecture
