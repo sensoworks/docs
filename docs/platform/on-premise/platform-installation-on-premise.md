@@ -7,4 +7,4 @@ parent: Platform installation
 grand_parent: Platform
 ---
 
-TBD Platform::Installation::On-Prem
+TBD Platform::Installation::On-Premise

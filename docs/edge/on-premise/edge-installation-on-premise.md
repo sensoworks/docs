@@ -7,4 +7,4 @@ parent: Edge installation
 grand_parent: Edge gateway
 ---
 
-TBD Edge::Installation::OnPrem
+TBD Edge::Installation::On-Premise

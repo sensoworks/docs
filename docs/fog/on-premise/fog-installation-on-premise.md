@@ -7,4 +7,4 @@ parent: Fog installation
 grand_parent: Fog gateway
 ---
 
-TBD Fog::Installation::Cloud
+TBD Fog::Installation::On-Premise
