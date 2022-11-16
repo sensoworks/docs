@@ -36,12 +36,26 @@
 
 .main {
     @include mq(md) {
-        position: relative;
-        // max-width: $content-width;
-        margin-left: $nav-width-md;
+      position: relative;
+      // max-width: $content-width;
+      margin-left: $nav-width-md;
     }
-
+  
     @include mq(lg) {
-        // margin-left: calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width});
+      // margin-left: calc(
+      //  (100% - #{$nav-width + $content-width}) / 2 + #{$nav-width}
+      // );
     }
-}
+  }
+  
+  .main-content-wrap {
+    @include container;
+  
+    padding-top: $gutter-spacing-sm;
+    padding-bottom: $gutter-spacing-sm;
+  
+    @include mq(md) {
+      padding-top: $gutter-spacing;
+      padding-bottom: $gutter-spacing;
+    }
+  }
