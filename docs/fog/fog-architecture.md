@@ -7,4 +7,4 @@ parent: Fog gateway
 ---
 The Fog gateway is ...
 
-![](https://sensoworks.github.io/docs/assets/images/sensoworks-fog-architecture.jpeg)
+![](/docs/assets/images/sensoworks-fog-architecture.jpeg)
