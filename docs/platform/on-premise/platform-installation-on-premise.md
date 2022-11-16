@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Platform installation on-prem
+title: on-premise
 nav_order: 222
-description: "Platform installation on-prem"
+description: "Platform installation on-premise"
 parent: Platform installation
 grand_parent: Platform
 ---

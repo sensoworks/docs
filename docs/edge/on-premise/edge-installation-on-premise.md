@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Edge installation on-premise
+title: on-premise
 nav_order: 322
 description: "Edge installation on-premise"
 parent: Edge installation

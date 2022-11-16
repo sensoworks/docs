@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Platform installation cloud
+title: cloud
 nav_order: 221
 description: "Platform installation cloud"
 parent: Platform installation

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Edge installation cloud
+title: cloud
 nav_order: 321
 description: "Edge installation cloud"
 parent: Edge installation

@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Fog installation cloud
+title: cloud
 nav_order: 421
-description: "cloud"
+description: "Fog installation cloud"
 parent: Fog installation
 grand_parent: Fog gateway
 ---
