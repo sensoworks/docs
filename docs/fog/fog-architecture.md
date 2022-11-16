@@ -5,5 +5,6 @@ nav_order: 41
 description: "Fog architecture"
 parent: Fog gateway
 ---
+The Fog gateway is ...
 
-TBD Fog gateway::Installation::Cloud
+![](https://sensoworks.github.io/docs/assets/images/sensoworks-fog-architecture.jpeg)
