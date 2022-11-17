@@ -28,21 +28,9 @@
     }
   
     @include mq(lg) {
-      margin-left: 50
+      margin-left: 300
       // margin-left: calc(
       //  (100% - #{$nav-width + $content-width}) / 2 + #{$nav-width}
       // );
-    }
-  }
-  
-  .main-content-wrap {
-    @include container;
-  
-    padding-top: $gutter-spacing-sm;
-    padding-bottom: $gutter-spacing-sm;
-  
-    @include mq(md) {
-      padding-top: $gutter-spacing;
-      padding-bottom: $gutter-spacing;
     }
   }
