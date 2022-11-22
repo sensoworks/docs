@@ -25,10 +25,11 @@
     position: relative;
     max-width: 100%;
     // max-width: $content-width;
-    margin-left: $nav-width-md;
+    margin-left: 264px;
   }
 
   @include mq(lg) {
+    margin-left: 264px;
     // margin-left: calc(
     //   (100% - #{$nav-width + $content-width}) / 2 + #{$nav-width}
     // );
