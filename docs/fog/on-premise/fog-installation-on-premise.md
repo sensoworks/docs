@@ -7,4 +7,9 @@ parent: Fog installation
 grand_parent: Fog gateway
 ---
 
-TBD Fog::Installation::On-Premise
+The fog gateway can be installed
+
+- Pure python
+- Dockerized standalone
+- Dockerized with edgex
+

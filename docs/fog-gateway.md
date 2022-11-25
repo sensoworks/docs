@@ -6,4 +6,3 @@ description: "Fog gateway"
 has_children: true
 ---
 
-TBD Fog gateway
