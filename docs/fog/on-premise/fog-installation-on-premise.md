@@ -89,8 +89,6 @@ docker-compose -d up
 # https://localhost:TBD/console
 ```
 
-
-
 # Dockerized with EdgeX
 
 # Dockerized with the Industrial Appliance
