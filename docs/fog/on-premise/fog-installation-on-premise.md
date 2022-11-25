@@ -7,18 +7,22 @@ parent: Fog installation
 grand_parent: Fog gateway
 ---
 
-The fog gateway can be installed
+Depending on your needs, the Fog gateway (micro) can be installed in different ways:
 
-- Pure python
-- Dockerized standalone
-- Dockerized with edgex
+![](/docs/assets/images/sensoworks-fog-micro-installation.jpeg)
 
 # Pure python
 
 Pre-requisites
 
-- Python has to be installed into your system. If not, follow the instuctions from the main Python website: [python](https://www.python.org/)
-- Install pip (the package installer for Python) following the instructions from https://pip.pypa.io/en/stable/
+- Python has to be installed into your system. If not, follow the instuctions from the main Python website: [python.org](https://www.python.org/)
+- Install pip (the package installer for Python) following the instructions from [pip.pypa.io](https://pip.pypa.io/en/stable/)
+- Install git following the instructions from [git-scm.com](https://git-scm.com/)
+  - NOTE: If you don't want to install git, you can also install the pre-packaded release. See here: [Fog gateway releases](https://github.com/sensoworks/sensoworks-fog-gateway/releases)
+
+Optional:
+
+- Install an MQTT provider like [mosquitto.org](https://mosquitto.org/) if not already installed and available somewhere else
 
 Once Python is installed, follow these instructions:
 
@@ -27,10 +31,12 @@ Once Python is installed, follow these instructions:
 # cd ...
 
 # Download the fog gateway
-git clone https://github.com/sensoworks/sensoworks-fog-gateway.git
+$ git clone https://github.com/sensoworks/sensoworks-fog-gateway.git
+
+# Note: Alternatively you can manually download the release from here: https://github.com/sensoworks/sensoworks-fog-gateway/releases and after that, unzip it
 
 # Move into the fog gateway home
-cd sensoworks-fog-gateway
+$ cd sensoworks-fog-gateway
 
 # Install the requirements
 $ pip install -r requirements.txt
@@ -40,7 +46,52 @@ DONE :-)
 
 Now you are ready to run the Senworks Fog
 
-The Sensoworks 
+The Sensoworks comes pre-packaged with a simple demo service, that simulates a temperature sensor that needs to be monitored. Follow this **getting started guide**
+
+```
+ddd
+ddd
+```
+
+# Dockerized standalone
+
+Pre-requisites
+
+- Docker has to be installed on your system. If not, follow the instuctions from the main Docker website [docker.com](https://www.docker.com/)
+- Install Docker compose. If not already installed, follow the instuctions from the main Docker compose website [docker compose](https://docs.docker.com/compose/)
+
+Once Docker anche Docker compose are installed, follow these instructions:
+
+Without mqtt:
+
+```
+$ docker run --name sensoworks-fog-gateway sensoworks-fog-gateway:latest
+```
+
+With mqtt embedded:
+
+```
+# Download the fog gateway
+$ git clone https://github.com/sensoworks/sensoworks-fog-gateway.git
+
+# Note: Alternatively you can manually download the release from here: https://github.com/sensoworks/sensoworks-fog-gateway/releases and after that, unzip it
+
+# Move into the fog gateway home
+$ cd sensoworks-fog-gateway
+
+# Move into the docker compose directory
+$ cd docker
+
+# Run the Docker container
+docker-compose -d up
+
+# Access the console by opening an internet browser on this address
+# https://localhost:TBD/console
+```
 
 
+
+# Dockerized with EdgeX
+
+# Dockerized with the Industrial Appliance
 
