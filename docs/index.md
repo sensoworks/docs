@@ -3,51 +3,7 @@ layout: default
 title: Home
 nav_order: 1
 description: "Sensoworks documentation homepage"
+has_children: false
 ---
-Sensoworks is a scalable IoT platform built mainly in Java (for the cloud platform) and Python (for the Edge components) and can be installed, depending on the customer's needs, on-premise, in the cloud or deployed in a hybrid environment. It was designed from the outset to be flexible and adaptive in collecting data from heterogeneous sources, so that it can be used on different scenarios and in different fields of application.
 
-[Link button](http://example.com/){: .btn }
-
-[Link button](http://example.com/){: .btn .btn-purple }
-[Link button](http://example.com/){: .btn .btn-blue }
-[Link button](http://example.com/){: .btn .btn-green }
-
-[Link button](http://example.com/){: .btn .btn-outline }
-
-[Button with space](http://example.com/){: .btn .btn-purple .mr-2 }
-[Button](http://example.com/){: .btn .btn-blue }
-
-[Button with more space](http://example.com/){: .btn .btn-green .mr-4 }
-[Button](http://example.com/){: .btn .btn-blue }
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-- [ ] hello, this is a todo item
-- [ ] hello, this is another todo item
-- [x] goodbye, this item is done
-
-{: .highlight }
-A paragraph
-
-{: .note }
-A paragraph
-
-In Markdown, use the `{: }` wrapper to apply custom classes:
-
-Font size 1
-{: .fs-1 }
-Font size 2
-{: .fs-2 }
-Font size 3
-{: .fs-3 }
-Font size 4
-{: .fs-4 }
-Font size 5
-{: .fs-5 }
-Font size 6
-
+Sensoworks is a extremely scalable IoT platform built mainly in Java (for the cloud platform) and Python (for the Edge components) and can be installed, depending on the customer's needs, on-premise, in the cloud or deployed in a hybrid environment. It was designed from the start to be flexible and adaptive in collecting data from heterogeneous sources, so that it can be used on different scenarios and in different fields of application.

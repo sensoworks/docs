@@ -6,9 +6,4 @@ description: "Platform"
 has_children: true
 ---
 
-TBD Platform
-
-**ddd**
-
-* ddd
-
+TBF: Platform
