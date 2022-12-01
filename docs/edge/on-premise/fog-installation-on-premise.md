@@ -1,10 +1,10 @@
 ---
 layout: default
-title: on-premise
-nav_order: 422
+title: Fog on-premise
+nav_order: 3222
 description: "Fog installation on-premise"
-parent: Fog installation
-grand_parent: Fog gateway
+parent: Edge installation
+grand_parent: Edge gateway
 ---
 
 Depending on your needs, the Fog gateway (micro) can be installed in different ways:
@@ -22,7 +22,7 @@ Pre-requisites
 
 Optional:
 
-- Install an MQTT provider like [mosquitto.org](https://mosquitto.org/) if not already installed and available somewhere else
+- Install an MQTT provider like [mosquitto.org](https://mosquitto.org/) if not already available somewhere else
 
 Once Python is installed, follow these instructions:
 

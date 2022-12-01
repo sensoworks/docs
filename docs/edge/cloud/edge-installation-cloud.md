@@ -1,7 +1,7 @@
 ---
 layout: default
-title: cloud
-nav_order: 321
+title: Edge cloud
+nav_order: 3211
 description: "Edge installation cloud"
 parent: Edge installation
 grand_parent: Edge gateway

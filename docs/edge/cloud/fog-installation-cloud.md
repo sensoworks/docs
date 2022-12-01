@@ -1,10 +1,10 @@
 ---
 layout: default
-title: cloud
-nav_order: 421
+title: Fog cloud
+nav_order: 3212
 description: "Fog installation cloud"
-parent: Fog installation
-grand_parent: Fog gateway
+parent: Edge installation
+grand_parent: Edge gateway
 ---
 
 TBD Fog::Installation::Cloud

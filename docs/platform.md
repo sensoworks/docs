@@ -6,4 +6,4 @@ description: "Platform"
 has_children: true
 ---
 
-TBF: Platform
+![](/docs/assets/images/sensoworks-fog-micro-installation.jpeg)
