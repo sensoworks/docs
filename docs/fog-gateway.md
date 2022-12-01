@@ -1,9 +1,0 @@
----
-layout: default
-title: Fog gateway
-nav_order: 4
-description: "Fog gateway"
-has_children: true
----
-
-TBD: Fog gateway

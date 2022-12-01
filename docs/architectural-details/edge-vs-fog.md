@@ -9,6 +9,8 @@ has_children: false
 
 In the IoT world, two terms have been coined to describe what can happen near or on the "Things" that you want to interact with. These two terms are Edge and Fog computing.
 
+![](/docs/assets/images/sensoworks-edge-fog-architecture.jpeg)
+
 Lets start with some definitions of Edge and Fog computing:
 
 > **Wikipedia**: **[Edge computing](https://en.wikipedia.org/wiki/Edge_computing)** is a Distributed computing paradigm that brings Computation and Data storage closer to the sources of data. This is expected to improve response times and save bandwidth (computing). Edge computing is an architecture rather than a specific technology, and a Logical topology - and location-sensitive form of distributed computing. The origins of edge computing lie in content delivery network that were created in the late 1990s to serve web and video content from edge server (computing) that were deployed close to users. In the early 2000s, these networks evolved to host applications and application components on edge servers, resulting in the first commercial edge computing services that hosted applications such as dealer locators, shopping carts, real-time data aggregators, and ad insertion engines.
@@ -21,18 +23,7 @@ The better understand the differences between **Edge** and **Fog computing**, co
 
 > [**Siemens**](https://www.siemens.com): Fog computing blends both edge and cloud computing. By doing so, it stretches the cloud to the edge of the network so that it's easier to connect IoT devices in real-time. By incorporating the benefits of both edge and cloud technology, it achieves a high-level network environment. It can connect two disparate ecosystems without losing local storage benefits. Fog computing reduces latency between devices while simultaneously reducing bandwidth requirements. It opens up exciting possibilities for several industries. Autonomous self-driving cars, smart cities, and real-time analytics are all at their best with fog computing. Its capacity to transfer data right at the edge of remote areas makes it suitable for roaming use cases as well. Fog computing is, effectively, edge computing with wheels.
 
-Sensoworks Edge and Fog high level architecture:
-
-![](/docs/assets/images/sensoworks-edge-fog-architecture.jpeg)
-
-From a very high level point of view both the Sensoworks Edge and Fog gateways share more or less the same architecture, with some differences you can find here:
-
-| Modules of the fog | Notes |
-|:---|:---|
-| Machine/federated learning | Sensoworks support federated learning in which the neural network of a single installation gives information back to the central node (the platform on the cloud) to optimise a centralized model from the learning that has been done on all the remote installations. Then the optimized model can be re-distributed to all the remode fog installations |
-| Configurability | A |
-
-Depending on the scenario of your project, the type of "things" you need to connect, the type of analisys you need to conduct and many additional factors, different versions of the Edge/Fog gateway
+Depending on the scenario of your project, the type of "things" you need to connect, the type of analisys you need to conduct and many additional factors, different versions of the Sensoworks Edge/Fog gateways solutions can be used.
 
 | Destination | Notes |
 |:---|:---|
@@ -57,5 +48,5 @@ Many factors can influence the choice of the Sensoworks component to use:
 |  Digital twin capabilities | Do you also need to interact visually with your system? |
 |  ... | Contact Sensoworks for additional info and to start a new "voyage" together |
 
-Sensoworks has different
+Sensoworks 
 
