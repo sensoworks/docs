@@ -26,7 +26,7 @@ Optional:
 
 Once Python is installed, follow these instructions:
 
-```
+```shell
 # Move to the directory you want to install the fog gateway
 # cd ...
 
