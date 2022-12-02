@@ -28,6 +28,7 @@ Sensoworks is a scalable IoT platform built mainly in Java (for the cloud platfo
 
 and much more ...
 
+TODO: Mettere il disegno di architettura alto livello, quello con la "S" al centro
 ![](/docs/assets/images/sensoworks-logo.png)
 
 Even if the platform can be installed on-premise and packaged as standard Java SpringBoot microservices (manual installation), the recommended runtime environment for Sensoworks is based on Kubernetes and MongoDB.
@@ -55,15 +56,44 @@ To better understand what Kubernetes is and what offers, refer to the official o
 
 Each component implements a specific function and works together with the other services, to offer the IoT backbone to the client’s needs.
 
-# **HW/SW architecture of the platform**
+# **Multitenancy**
 
 Definitions:
 
-- Gartner: “Multitenancy is a reference to the mode of operation of software where multiple independent instances of one or multiple applications operate in a shared environment. The instances (tenants) are logically isolated, but physically integrated.”
-- IBM: “Multitenancy is a software architecture where a single software instance can serve multiple, distinct user groups. Software-as-a-service (SaaS) offerings are an example of multitenant architecture.”
-- Wikipedia: “Software multitenancy is a software architecture in which a single instance of software runs on a server and serves multiple tenants. Systems designed in such manner are "shared" (rather than "dedicated" or "isolated"). A tenant is a group of users who share a common access with specific privileges to the software instance. With a multitenant architecture, a software application is designed to provide every tenant a dedicated share of the instance - including its data, configuration, user management, tenant individual functionality and non-functional properties. Multitenancy contrasts with multi-instance architectures, where separate software instances operate on behalf of different tenants. Some commentators regard multitenancy as an important feature of cloud computing.
+- **Gartner**: “Multitenancy is a reference to the mode of operation of software where multiple independent instances of one or multiple applications operate in a shared environment. The instances (tenants) are logically isolated, but physically integrated.”
+- **IBM**: “Multitenancy is a software architecture where a single software instance can serve multiple, distinct user groups. Software-as-a-service (SaaS) offerings are an example of multitenant architecture.”
+- **Wikipedia**: “Software multitenancy is a software architecture in which a single instance of software runs on a server and serves multiple tenants. Systems designed in such manner are "shared" (rather than "dedicated" or "isolated"). A tenant is a group of users who share a common access with specific privileges to the software instance. With a multitenant architecture, a software application is designed to provide every tenant a dedicated share of the instance - including its data, configuration, user management, tenant individual functionality and non-functional properties. Multitenancy contrasts with multi-instance architectures, where separate software instances operate on behalf of different tenants. Some commentators regard multitenancy as an important feature of cloud computing.
 
 Sensoworks manage Multitenancy using different techniques:
 
 - Based on load, different clients configured on the platform (Pramac and others) can be deployed (using namespaces) on groups of machines with dedicated CPU and memory. The default configuration will use the default ns-core namespace with all clients sharing the same resources, which still can be scaled to adapt to load
 
+TODO: Immagine per la multitenancy
+![](/docs/assets/images/sensoworks-logo.png)
+
+- About the MongoDB Atlas account, data can live in a shared account with other clients or can have their dedicated instance
+
+TODO: Immagine per la data segregation
+![](/docs/assets/images/sensoworks-logo.png)
+
+# **Scalability, HA/FT**
+
+Most of the requirements related to HA/FT are guaranteed directly by Kubernetes and the managed services we use in Sensoworks, such as MongoDB Atlas.
+
+Every single aspect and component of Sensoworks can resist the failure of part of the underlying infrastructure, up to 2 entire Availability Zones, and up to three nodes remaining in the last Availability Zones survived. The default clustered infrastructure is deployed on 3> different availability zones (data centers) of an AWS region.
+Note: This picture, taken from the internet, shows the infrastructure for a two Availability Zones cluster. Sensoworks has 3 Availability Zones by default.
+
+Note: This picture, taken from the internet, shows the infrastructure for a two Availability Zones cluster. Sensoworks has 3 Availability Zones by default.
+
+TODO: Immagine per il FO: Availability Zones
+![](/docs/assets/images/sensoworks-logo.png)
+
+In general, all Sensoworks microservices (DataGate, DataPump, etc.) can be scaled individually from 3 (number used to cover 3 availability zones) to any value needed to manage the incoming telemetry and can be specialized (sharding) using namespaces with dedicated node pools.
+
+TODO: LB e FO
+![](/docs/assets/images/sensoworks-logo.png)
+
+If necessary nodes can be upgraded (or added) choosing from a single CPU machine to machines with 128 cores and 2 TB of memory each, giving the entire architecture practically unlimited scalability.
+
+TODO: Scalability in AWS: 1000 CPU e TB di RAM
+![](/docs/assets/images/sensoworks-logo.png)
