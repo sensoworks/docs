@@ -29,6 +29,7 @@ Sensoworks is a scalable IoT platform built mainly in Java (for the cloud platfo
 and much more ...
 
 TODO: Mettere il disegno di architettura alto livello, quello con la "S" al centro
+
 ![](/docs/assets/images/sensoworks-logo.png)
 
 Even if the platform can be installed on-premise and packaged as standard Java SpringBoot microservices (manual installation), the recommended runtime environment for Sensoworks is based on Kubernetes and MongoDB.
@@ -52,7 +53,9 @@ To better understand what Kubernetes is and what offers, refer to the official o
 
 # **HW/SW architecture of the platform**
 
-![](/docs/assets/images/sensoworks-microservices.jpg)
+TODO: Mettere l'immagine con l'architettura HW/SW
+
+![](/docs/assets/images/sensoworks-logo.png)
 
 Each component implements a specific function and works together with the other services, to offer the IoT backbone to the client’s needs.
 
@@ -69,11 +72,13 @@ Sensoworks manage Multitenancy using different techniques:
 - Based on load, different clients configured on the platform (Pramac and others) can be deployed (using namespaces) on groups of machines with dedicated CPU and memory. The default configuration will use the default ns-core namespace with all clients sharing the same resources, which still can be scaled to adapt to load
 
 TODO: Immagine per la multitenancy
+
 ![](/docs/assets/images/sensoworks-logo.png)
 
 - About the MongoDB Atlas account, data can live in a shared account with other clients or can have their dedicated instance
 
 TODO: Immagine per la data segregation
+
 ![](/docs/assets/images/sensoworks-logo.png)
 
 # **Scalability, HA/FT**
@@ -86,14 +91,17 @@ Note: This picture, taken from the internet, shows the infrastructure for a two 
 Note: This picture, taken from the internet, shows the infrastructure for a two Availability Zones cluster. Sensoworks has 3 Availability Zones by default.
 
 TODO: Immagine per il FO: Availability Zones
+
 ![](/docs/assets/images/sensoworks-logo.png)
 
 In general, all Sensoworks microservices (DataGate, DataPump, etc.) can be scaled individually from 3 (number used to cover 3 availability zones) to any value needed to manage the incoming telemetry and can be specialized (sharding) using namespaces with dedicated node pools.
 
 TODO: LB e FO
+
 ![](/docs/assets/images/sensoworks-logo.png)
 
 If necessary nodes can be upgraded (or added) choosing from a single CPU machine to machines with 128 cores and 2 TB of memory each, giving the entire architecture practically unlimited scalability.
 
 TODO: Scalability in AWS: 1000 CPU e TB di RAM
+
 ![](/docs/assets/images/sensoworks-logo.png)
