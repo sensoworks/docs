@@ -20,6 +20,10 @@
   }
 }
 
+.thead th {
+  background-color: orange;
+}
+
 .main {
   @include mq(md) {
     position: relative;
