@@ -15,8 +15,7 @@ Shortly:
   - A smart wearable device that monitor health parameters, that can communicate to the cloud using the bluethoot connection to a mobile phone
   - An Arduino based solution developed in C software, with a power back an internet connectivity, monitoring temperature, air quality, noise
   - A Python program running in an industrial PC, receiving information from sensors nearby, single or multiple sensors, connected via Bluethoot or else
-
-Fog is still a component running on the Edge, but usually interacts or need a kind of communication with the cloud to work properly. This interaction can be limited to configuring the Fog gateway
+  - Fog is still a component running on the Edge, but usually interacts or need additional communication with the cloud to work properly. This interaction can be limited to configuring the Fog gateway
 
 ![](/docs/assets/images/sensoworks-edge-fog-architecture.jpeg)
 
