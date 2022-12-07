@@ -10,4 +10,4 @@ Sensoworks is an extremely scalable IoT platform built mainly in Java (for the c
 
 A ready-to-use platform that can be integrated with any sensor and integrated with algorithms that enable predictive maintenance. Sensoworks specializes in infrastructure monitoring (bridges, dams, construction sites and more complex constructions), as well as Circular City services (Waste Management, Smart Mobility & Parking, Smart Building).
 
-![](/docs/assets/images/sensoworks-home-image.jpeg)
+<p align="center"><img src="/docs/assets/images/sensoworks-home-image.jpeg" width="100%" height="100%"></p>

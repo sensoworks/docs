@@ -6,4 +6,4 @@ description: "Platform"
 has_children: true
 ---
 
-![](/docs/assets/images/sensoworks-fog-micro-installation.jpeg)
+<p align="center"><img src="/docs/assets/images/sensoworks-fog-micro-installation.jpeg" width="100%" height="100%"></p>

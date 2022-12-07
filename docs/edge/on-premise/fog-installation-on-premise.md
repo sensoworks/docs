@@ -9,7 +9,7 @@ grand_parent: Edge gateway
 
 Depending on your needs, the Fog gateway (micro) can be installed in different ways:
 
-![](/docs/assets/images/sensoworks-fog-micro-installation.jpeg)
+<p align="center"><img src="/docs/assets/images/sensoworks-fog-micro-installation.jpeg" width="100%" height="100%"></p>
 
 # Pure python
 
@@ -26,7 +26,7 @@ Optional:
 
 Once Python is installed, follow these instructions:
 
-```shell
+```console
 # cd into the directory you want to install the fog gateway
 # cd <the parent directory where you want to install the Fog Gateway>
 
@@ -48,7 +48,7 @@ Now you are ready to run the Senworks Fog
 
 The Sensoworks comes pre-packaged with a simple demo service, that monitors a simulated temperature sensor. Follow this **getting started guide**:
 
-```
+```console
 ddd
 ddd
 ```
@@ -64,13 +64,13 @@ Once **Docker** anche **Docker Compose** are installed, follow these instruction
 
 Without mqtt embedded:
 
-```
+```console
 $ docker run --name sensoworks-fog-gateway sensoworks-fog-gateway:latest
 ```
 
 With mqtt embedded:
 
-```
+```console
 # cd into the directory you want to install the fog gateway
 # cd <the parent directory where you want to install the Fog Gateway>
 
@@ -97,4 +97,3 @@ docker-compose -d up
 # Dockerized with EdgeX
 
 # Dockerized with the Industrial Appliance
-
