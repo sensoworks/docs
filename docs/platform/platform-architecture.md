@@ -28,9 +28,7 @@ The features of the platform are:
 
 and much more ...
 
-TODO: Mettere il disegno di architettura alto livello, quello con la "S" al centro
-
-<img src="/docs/assets/images/sensoworks-logo.png" width="10%" height="10%" class="center">
+<img src="/docs/assets/images/sensoworks-hla.jpg" width="100%" height="100%" class="center">
 
 Even if the platform can be installed on-premise and packaged as standard Java SpringBoot microservices (manual installation), the recommended runtime environment for Sensoworks is based on Kubernetes and MongoDB.
 
