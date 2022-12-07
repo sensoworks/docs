@@ -86,13 +86,11 @@ Note: This picture, taken from the internet, shows the infrastructure for a two 
 
 Note: This picture, taken from the internet, shows the infrastructure for a two Availability Zones cluster. Sensoworks has 3 Availability Zones by default.
 
-<img src="/docs/assets/images/sensoworks-kubernetes-availability-zones.png" width="75%" height="75%" class="center">
+<img src="/docs/assets/images/sensoworks-kubernetes-availability-zones.png" width="100%" height="100%" class="center">
 
 In general, all Sensoworks microservices (DataGate, DataPump, Inspectors, Aggregatora, etc.) can be scaled individually from 3 (number used to cover 3 availability zones) to any value needed to manage the incoming telemetry traffic and can be specialized (sharding) using namespaces with dedicated node pools.
 
-TODO: LB e FO
-
-<img src="/docs/assets/images/sensoworks-logo.png" width="10%" height="10%" class="center">
+<img src="/docs/assets/images/sensoworks-ha-lb-api-gateway.jpg" width="100%" height="100%" class="center">
 
 If necessary nodes can be upgraded (or added) choosing, for example, from a single CPU machine to machines with 128 cores and 2 TB of memory each. And, since clusters can be formed by thousands of nodes, the entire architecture can have practically an unlimited scalability.
 
