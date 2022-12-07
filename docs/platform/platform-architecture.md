@@ -34,7 +34,7 @@ Even if the platform can be installed on-premise and packaged as standard Java S
 
 The SaaS Sensoworks solution, is deployed inside a dedicated AWS account and uses Kubernetes (EKS in AWS) as the runtime environment.
 
-Telemetry data are instead stored in an “external” (also dedicated) MongoDB Atlas BigData DB, deployed inside the same AWS region where the Sensoworks platform resides.
+Telemetry data are instead stored in an “external” MongoDB Atlas BigData DB, deployed inside the same AWS region where the Sensoworks platform resides.
 
 AWS, EKS, and MongoDB Atlas guarantee many of the reliability, security and scalability requirements a modern application has to have.
 
@@ -95,3 +95,11 @@ If necessary nodes can be upgraded (or added) choosing, for example, from a sing
 TODO: Scalability in AWS: 1000 CPU e TB di RAM
 
 <img src="/docs/assets/images/sensoworks-logo.png" width="10%" height="10%" class="center">
+
+A Kubernetes cluster is a set of nodes (physical or virtual machines) running Kubernetes agents, managed by the control plane. Kubernetes v1.25 supports clusters with up to 5000 nodes. More specifically, Kubernetes is designed to accommodate configurations that meet all of the following criteria:
+
+No more than 110 pods per node
+No more than 5000 nodes
+No more than 150000 total pods
+No more than 300000 total containers
+
