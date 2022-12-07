@@ -7,7 +7,7 @@ parent: Platform
 has_children: false
 ---
 
-Sensoworks is a scalable IoT platform built mainly in Java (for the cloud platform) and Python (for the Edge components) and can be deployed, depending on the client’s needs, on-premise, in the cloud, or deployed in a hybrid environment. It has been designed since the beginning to be very flexible and adaptive in collecting data from heterogeneous sources, and so be able to be used for different scenarios and in different fields of application.
+Sensoworks is a scalable IoT platform built mainly in Java (for the cloud platform) and Python (for the Edge components) that can be deployed, depending on the client’s needs, on-premise, in the cloud, or deployed in a hybrid environment. It has been designed since the beginning to be very flexible and adaptive in collecting data from heterogeneous sources, and so be able to be used for different scenarios and in different fields of application.
 
 The features of the platform are:
 
@@ -34,21 +34,21 @@ TODO: Mettere il disegno di architettura alto livello, quello con la "S" al cent
 
 Even if the platform can be installed on-premise and packaged as standard Java SpringBoot microservices (manual installation), the recommended runtime environment for Sensoworks is based on Kubernetes and MongoDB.
 
-The SaaS Asset Management Sensoworks solution for OCTO, is deployed Inside a dedicated AWS account and uses Kubernetes (EKS in AWS) as the runtime environment.
+The SaaS Sensoworks solution, is deployed inside a dedicated AWS account and uses Kubernetes (EKS in AWS) as the runtime environment.
 
 Telemetry data are instead stored in an “external” (also dedicated) MongoDB Atlas BigData DB, deployed inside the same AWS region where the Sensoworks platform resides.
 
-AWS, EKS, and MongoDB Atlas guarantee many of the reliability and scalability requirements.
+AWS, EKS, and MongoDB Atlas guarantee many of the reliability, security and scalability requirements a modern application has to have.
 
 # **Logical view and high-level view of the platform**
 
 ![](/docs/assets/images/sensoworks-overview-modules.jpeg)
 
-The microservices of the Sensoworks platform, excluding the Asset module that will be described later, are shown here:
+The microservices of the Sensoworks platform are shown here:
 
 ![](/docs/assets/images/sensoworks-microservices.jpg)
 
-Many of the external services, such as Stripe, Firebase, Mapbox, Slack, etc. are in this picture only as an example, to show that the platform can integrate with these services, if necessary.
+Many of the external services, such as Firebase, Mapbox, Slack, etc. are in this picture only as an example, to show that the platform can integrate with these services, if necessary.
 To better understand what Kubernetes is and what offers, refer to the official online documentation: https://kubernetes.io/.
 
 # **HW/SW architecture of the platform**
@@ -57,7 +57,7 @@ TODO: Mettere l'immagine con l'architettura HW/SW
 
 ![](/docs/assets/images/sensoworks-logo.png)
 
-Each component implements a specific function and works together with the other services, to offer the IoT backbone to the client’s needs.
+Each component implements a specific function and works together with the other services, to offer all the IoT functionalities of the platform.
 
 # **Multitenancy**
 
@@ -69,38 +69,32 @@ Definitions:
 
 Sensoworks manage Multitenancy using different techniques:
 
-- Based on load, different clients configured on the platform (Pramac and others) can be deployed (using namespaces) on groups of machines with dedicated CPU and memory. The default configuration will use the default ns-core namespace with all clients sharing the same resources, which still can be scaled to adapt to load
+- Based on load, different clients configured on the platform can be deployed (using namespaces) on groups of machines with dedicated CPU and memory. The default configuration will use the default ns-core namespace with all clients sharing the same resources, which still can be scaled to adapt to load.
 
-TODO: Immagine per la multitenancy
+![](/docs/assets/images/sensoworks-kubernetes.jpg)
 
-![](/docs/assets/images/sensoworks-logo.png)
+- About the MongoDB Atlas account, data can live in a shared account with other clients or can have per client dedicated instances
 
-- About the MongoDB Atlas account, data can live in a shared account with other clients or can have their dedicated instance
-
-TODO: Immagine per la data segregation
-
-![](/docs/assets/images/sensoworks-logo.png)
+![](/docs/assets/images/sensoworks-mongodb-data-isolation.jpg)
 
 # **Scalability, HA/FT**
 
 Most of the requirements related to HA/FT are guaranteed directly by Kubernetes and the managed services we use in Sensoworks, such as MongoDB Atlas.
 
-Every single aspect and component of Sensoworks can resist the failure of part of the underlying infrastructure, up to 2 entire Availability Zones, and up to three nodes remaining in the last Availability Zones survived. The default clustered infrastructure is deployed on 3> different availability zones (data centers) of an AWS region.
+Every single aspect and component of Sensoworks can resist the failure of part of the underlying infrastructure, up to 2 entire Availability Zones (2 out of 3>), and up to three nodes remaining in the last Availability Zone survived. The default clustered infrastructure is deployed on 3> different Availability Zones (data centers) of an AWS region.
 Note: This picture, taken from the internet, shows the infrastructure for a two Availability Zones cluster. Sensoworks has 3 Availability Zones by default.
 
 Note: This picture, taken from the internet, shows the infrastructure for a two Availability Zones cluster. Sensoworks has 3 Availability Zones by default.
 
-TODO: Immagine per il FO: Availability Zones
+![](/docs/assets/images/sensoworks-kubernetes-availability-zones.png)
 
-![](/docs/assets/images/sensoworks-logo.png)
-
-In general, all Sensoworks microservices (DataGate, DataPump, etc.) can be scaled individually from 3 (number used to cover 3 availability zones) to any value needed to manage the incoming telemetry and can be specialized (sharding) using namespaces with dedicated node pools.
+In general, all Sensoworks microservices (DataGate, DataPump, Inspectors, Aggregatora, etc.) can be scaled individually from 3 (number used to cover 3 availability zones) to any value needed to manage the incoming telemetry traffic and can be specialized (sharding) using namespaces with dedicated node pools.
 
 TODO: LB e FO
 
 ![](/docs/assets/images/sensoworks-logo.png)
 
-If necessary nodes can be upgraded (or added) choosing from a single CPU machine to machines with 128 cores and 2 TB of memory each, giving the entire architecture practically unlimited scalability.
+If necessary nodes can be upgraded (or added) choosing, for example, from a single CPU machine to machines with 128 cores and 2 TB of memory each. And, since clusters can be formed by thousands of nodes, the entire architecture can have practically an unlimited scalability.
 
 TODO: Scalability in AWS: 1000 CPU e TB di RAM
 
