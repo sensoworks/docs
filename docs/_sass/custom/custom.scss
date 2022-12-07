@@ -24,6 +24,13 @@ th {
   background-color: #53c0e5;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .main {
   @include mq(md) {
     position: relative;
