@@ -77,6 +77,8 @@ Sensoworks manage Multitenancy using different techniques:
 
 ![](/docs/assets/images/sensoworks-mongodb-data-isolation.jpg)
 
+<img src="/docs/assets/images/sensoworks-mongodb-data-isolation.jpg" width="50%" height="50%">
+
 # **Scalability, HA/FT**
 
 Most of the requirements related to HA/FT are guaranteed directly by Kubernetes and the managed services we use in Sensoworks, such as MongoDB Atlas.
