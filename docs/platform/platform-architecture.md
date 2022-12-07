@@ -92,7 +92,7 @@ If necessary nodes can be upgraded (or added) choosing, for example, from a sing
 
 TODO: Scalability in AWS: 1000 CPU e TB di RAM
 
-<p align="center"><img src="/docs/assets/images/sensoworks-logo.png" width="10%" height="10%"></p>
+<p align="center"><img src="/docs/assets/images/sensoworks-k8s-5000-nodes" width="75%" height="75%"></p>
 
 A Kubernetes cluster is a set of nodes (physical or virtual machines) running Kubernetes agents, managed by the control plane. Kubernetes v1.25 supports clusters with up to 5000 nodes. More specifically, Kubernetes is designed to accommodate configurations that meet all of the following criteria:
 
