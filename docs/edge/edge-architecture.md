@@ -15,9 +15,9 @@ Shortly:
   - A smart wearable device that monitor health parameters, that can communicate to the cloud using the bluethoot connection to a mobile phone
   - An Arduino based solution developed in C software, with a power back an internet connectivity, monitoring temperature, air quality, noise
   - A Python program running in an industrial PC, receiving information from sensors nearby, single or multiple sensors, connected via Bluethoot or else
-  - Fog is still a component running on the Edge, but usually interacts or need additional communication with the cloud to work properly. This interaction can be limited to configuring the Fog gateway
+- Fog is still a component running on the Edge, but usually interacts or need additional communication with the cloud to work properly. This interaction can be limited to configuring the Fog gateway
 
-![](/docs/assets/images/sensoworks-edge-fog-architecture.jpeg)
+<p align="center"><img src="/docs/assets/images/sensoworks-edge-fog-architecture.jpeg" width="100%" height="100%"></p>
 
 Lets start with some definitions of Edge and Fog computing:
 
@@ -42,7 +42,7 @@ Depending on the scenario of your project, the type of "things" you need to conn
 |  Standard computers | Same as for Industrial computers, there are many |
 |  Industrial applicances | When it come about industry 4.0, protocols such as OPC-UA, Modbus, Bacnet are usually necessary. For such scopes the Sensoworks solution can come embedded into industry 4.0 appliances, as for example the [InGateway902](https://www.inhandnetworks.com/products/edge-computing-gateway.html) |
 
-Many factors can influence the choice of the Sensoworks component to use:
+Many factors can influence the choice of the Sensoworks component to use.
 
 | Destination | Notes |
 |:---|:---|
@@ -55,3 +55,7 @@ Many factors can influence the choice of the Sensoworks component to use:
 |  Complex math functions | What kind of elavoration is necessary at the Edge. Dynamic system analisys? Is the FFT involved? |
 |  Digital twin capabilities | Do you also need to interact visually with your system? |
 |  ... | Contact Sensoworks for additional info and to start a new "voyage" together |
+
+Overview of the various possibilities:
+
+<p align="center"><img src="/docs/assets/images/sensoworks-edge-scenarious.jpeg" width="75%" height="75%"></p>
