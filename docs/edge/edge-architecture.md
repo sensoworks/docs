@@ -58,4 +58,4 @@ Many factors can influence the choice of the Sensoworks component to use.
 
 Overview of the various possibilities:
 
-<p align="center"><img src="/docs/assets/images/sensoworks-edge-scenarious.jpeg" width="75%" height="75%"></p>
+<p align="center"><img src="/docs/assets/images/sensoworks-edge-scenarious.jpg" width="75%" height="75%"></p>
