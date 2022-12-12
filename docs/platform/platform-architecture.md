@@ -9,8 +9,6 @@ has_children: false
 
 Sensoworks is a scalable IoT platform built mainly in Java (for the cloud platform) and Python (for the Edge components) that can be deployed, depending on the client’s needs, on-premise, in the cloud, or deployed in a hybrid environment. It has been designed since the beginning to be very flexible and adaptive in collecting data from heterogeneous sources, and so be able to be used for different scenarios and in different fields of application.
 
-<p align="center"><img src="/docs/assets/images/sensoworks-hla.jpg" width="100%" height="100%"></p>
-
 <p align="center"><img src="/docs/assets/images/sensoworks-mla.jpg" width="100%" height="100%"></p>
 
 The main features of the platform are:
@@ -44,13 +42,13 @@ AWS, EKS, and MongoDB Atlas guarantee many of the reliability, security and scal
 
 The microservices of the Sensoworks platform are shown here:
 
-<p align="center"><img src="/docs/assets/images/sensoworks-microservices.jpg" width="75%" height="75%"></p>
+<p align="center"><img src="/docs/assets/images/sensoworks-microservices.jpg" width="100%" height="100%"></p>
 
 Each component implements a specific function and works together with the other services, to offer all the IoT functionalities of the platform.
 
 # **HW/SW architecture of the platform**
 
-<p align="center"><img src="/docs/assets/images/sensoworks-hw-sw.jpg" width="75%" height="75%"></p>
+<p align="center"><img src="/docs/assets/images/sensoworks-hw-sw.jpg" width="100%" height="100%"></p>
 
 Many of the external services, such as Firebase, Mapbox, Slack, etc. are in this picture only as an example, to show that the platform can integrate with these services, if necessary.
 To better understand what Kubernetes is and what offers, refer to the official online documentation: https://kubernetes.io/.
