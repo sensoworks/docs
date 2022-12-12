@@ -11,6 +11,8 @@ Sensoworks is a scalable IoT platform built mainly in Java (for the cloud platfo
 
 <p align="center"><img src="/docs/assets/images/sensoworks-hla.jpg" width="100%" height="100%"></p>
 
+<p align="center"><img src="/docs/assets/images/sensoworks-mla.jpg" width="100%" height="100%"></p>
+
 The main features of the platform are:
 
 | **Modules** | **Description** |
