@@ -9,7 +9,7 @@ grand_parent: Edge gateway
 
 Depending on your needs, the Fog gateway (micro) can be installed in different ways:
 
-<p align="center"><img src="/docs/assets/images/sensoworks-fog-micro-installation.jpeg" width="100%" height="100%"></p>
+<p align="center"><img src="/docs/assets/images/sensoworks-fog-micro-installation.jpg" width="100%" height="100%"></p>
 
 # Pure python
 

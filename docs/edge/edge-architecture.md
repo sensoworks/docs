@@ -17,7 +17,7 @@ Shortly:
   - A Python program running in an industrial PC, receiving information from sensors nearby, single or multiple sensors, connected via Bluethoot or else
 - Fog is still a component running on the Edge, but usually interacts or need additional communication with the cloud to work properly. This interaction can be limited to configuring the Fog gateway
 
-<p align="center"><img src="/docs/assets/images/sensoworks-edge-fog-architecture.jpeg" width="100%" height="100%"></p>
+<p align="center"><img src="/docs/assets/images/sensoworks-edge-fog-architecture.jpg" width="100%" height="100%"></p>
 
 Lets start with some definitions of Edge and Fog computing:
 

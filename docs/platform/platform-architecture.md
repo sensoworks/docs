@@ -38,7 +38,7 @@ AWS, EKS, and MongoDB Atlas guarantee many of the reliability, security and scal
 
 # **Logical view and high-level view of the platform**
 
-<p align="center"><img src="/docs/assets/images/sensoworks-overview-modules.jpeg" width="75%" height="75%"></p>
+<p align="center"><img src="/docs/assets/images/sensoworks-overview-modules.jpg" width="75%" height="75%"></p>
 
 The microservices of the Sensoworks platform are shown here:
 
