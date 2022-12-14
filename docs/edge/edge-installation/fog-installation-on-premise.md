@@ -27,6 +27,8 @@ Optional:
 Once Python is installed, follow these instructions:
 
 ```console
+#!/bin/bash
+
 # cd into the directory you want to install the fog gateway
 # cd <the parent directory where you want to install the Fog Gateway>
 
@@ -49,6 +51,8 @@ Now you are ready to run the Senworks Fog
 The Sensoworks comes pre-packaged with a simple demo service, that monitors a simulated temperature sensor. Follow this **getting started guide**:
 
 ```console
+#!/bin/bash
+
 ddd
 ddd
 ```
@@ -65,12 +69,16 @@ Once **Docker** anche **Docker Compose** are installed, follow these instruction
 Without mqtt embedded:
 
 ```console
+#!/bin/bash
+
 $ docker run --name sensoworks-fog-gateway sensoworks-fog-gateway:latest
 ```
 
 With mqtt embedded:
 
 ```console
+#!/bin/bash
+
 # cd into the directory you want to install the fog gateway
 # cd <the parent directory where you want to install the Fog Gateway>
 
