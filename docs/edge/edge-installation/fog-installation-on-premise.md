@@ -7,9 +7,15 @@ parent: Edge installation
 grand_parent: Edge gateway
 ---
 
-Depending on your needs, the Fog gateway (micro) can be installed in different ways:
+Among of various possibilities to use a Sensoworks edge component:
 
-<p align="center"><img src="/docs/assets/images/sensoworks-fog-micro-installation.jpg" width="100%" height="100%"></p>
+<p align="center"><img src="/docs/assets/images/sensoworks-edge-fog-versions.jpg" width="75%" height="75%"></p>
+
+When it comes on flexibility, the Fog gateway, is certainly a good choice. Of course it requires a computer capable of running Python, but since it is meant for other uses respect to the other versions of the Edge gateways (C and C++) this is in general not a problem. For example also small computers such as Raspberry can be configured to run the Fog component.  
+
+Depending on your needs, the Fog gateway ("micro" or "squirrel") can be installed in different ways:
+
+<p align="center"><img src="/docs/assets/images/sensoworks-fog-micro-installation.jpg" width="50%" height="50%"></p>
 
 # Pure python
 
@@ -22,40 +28,31 @@ Pre-requisites
 
 Optional:
 
-- Install an MQTT provider like [mosquitto.org](https://mosquitto.org/) if not already available somewhere else
+- Install an MQTT provider like [mosquitto.org](https://mosquitto.org/) if not already available somewhere else. Alternatively, for testing purposes, you can use the testing environment of mosquitto online: https://test.mosquitto.org/
 
 Once Python is installed, follow these instructions:
 
 ```console
-#!/bin/bash
-
-# cd into the directory you want to install the fog gateway
-# cd <the parent directory where you want to install the Fog Gateway>
+# Move into the parent directory where you want to install the Fog gateway
+cd <parent directory where you want to install the Fog gateway>
 
 # Download the fog gateway
-$ git clone https://github.com/sensoworks/sensoworks-fog-gateway.git
+git clone https://github.com/sensoworks/sensoworks-fog-gateway.git
 
 # Note: Alternatively you can manually download the release from here: https://github.com/sensoworks/sensoworks-fog-gateway/releases and after that, unzip it
 
-# cd into the fog gateway home
-$ cd sensoworks-fog-gateway
+# Move into the fog gateway home
+cd sensoworks-fog-gateway
 
 # Install the requirements
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 DONE :-)
 
-Now you are ready to run the Senworks Fog
+Now you are ready to run the Senworks Fog gateway.
 
-The Sensoworks comes pre-packaged with a simple demo service, that monitors a simulated temperature sensor. Follow this **getting started guide**:
-
-```console
-#!/bin/bash
-
-ddd
-ddd
-```
+The Sensoworks comes pre-packaged with a simple demo service, that monitors a simulated sensor. Follow this [ **getting started guide**](#getting-started-guide):
 
 # Dockerized standalone
 
@@ -71,7 +68,7 @@ Without mqtt embedded:
 ```console
 #!/bin/bash
 
-$ docker run --name sensoworks-fog-gateway sensoworks-fog-gateway:latest
+docker run --name sensoworks-fog-gateway sensoworks-fog-gateway:latest
 ```
 
 With mqtt embedded:
@@ -79,29 +76,39 @@ With mqtt embedded:
 ```console
 #!/bin/bash
 
-# cd into the directory you want to install the fog gateway
-# cd <the parent directory where you want to install the Fog Gateway>
+# Move into the directory you want to install the fog gateway
+# cd <the parent directory where you want to install the Fog gateway>
 
 # Download the fog gateway
-$ git clone https://github.com/sensoworks/sensoworks-fog-gateway.git
+git clone https://github.com/sensoworks/sensoworks-fog-gateway.git
 
 # Note: Alternatively you can manually download the release from here: https://github.com/sensoworks/sensoworks-fog-gateway/releases and after that, unzip it
 
 # Move into the fog gateway home
-$ cd sensoworks-fog-gateway
+cd sensoworks-fog-gateway
 
 # Move into the docker compose directory
-$ cd docker
-
-edge
+cd docker
 
 # Run the Docker container
 docker-compose -d up
-
-# Access the console by opening an internet browser on this address
-# https://localhost:TBD/fog-console
 ```
+
+DONE :-)
+
+Now you are ready to run the Senworks Fog gateway.
+
+The Sensoworks comes pre-packaged with a simple demo service, that monitors a simulated sensor. Follow this [ **getting started guide**](#getting-started-guide):
 
 # Dockerized with EdgeX
 
 # Dockerized with the Industrial Appliance
+
+# Getting started guide
+
+```console
+cd getting_started_guide
+
+# Edit if necessary the config file
+
+```

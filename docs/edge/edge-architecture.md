@@ -59,3 +59,7 @@ Many factors can influence the choice of the Sensoworks component to use.
 Overview of the various possibilities:
 
 <p align="center"><img src="/docs/assets/images/sensoworks-edge-scenarious.jpg" width="75%" height="75%"></p>
+
+Edges and Fog gateways can be combined together to better answer business and technical needs:
+
+<p align="center"><img src="/docs/assets/images/sensoworks-edge-fog-composition.jpg" width="75%" height="75%"></p>
