@@ -3,7 +3,7 @@ layout: default
 title: Markdown playground
 nav_order: 999999
 description: "Markdown playground"
-parent: Edge gateway
+parent: Add-ons
 ---
 
 [Link button](http://example.com/){: .btn }
