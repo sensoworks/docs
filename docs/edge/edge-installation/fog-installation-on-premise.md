@@ -7,7 +7,7 @@ parent: Edge installation
 grand_parent: Edge gateway
 ---
 
-Among of various possibilities to use a Sensoworks edge component:
+Among the various possibilities to use a Sensoworks edge component:
 
 <p align="center"><img src="../../assets/images/sensoworks-edge-fog-versions.jpg" width="75%" height="75%"></p>
 

@@ -36,6 +36,11 @@ Overview of the various possibilities:
 
 <p align="center"><img src="../assets/images/sensoworks-edge-scenarious.jpg" width="75%" height="75%"></p>
 
-Edges and Fog gateways can be combined together to better answer business and technical needs:
+In an IoT system, edges and fog gateways are two different types of components that can be used to collect, process, and transmit data. Edges refer to devices that are located at the very edge of the network, closest to the sensors and devices that are generating data. These devices are typically low-power and may be used to perform basic processing and analysis of data, as well as to transmit data to the cloud or other central locations.
+
+Fog gateways, on the other hand, are devices that are located further up the network hierarchy, closer to the cloud or other central systems. These devices are typically more powerful than edges and are capable of performing more complex processing and analysis tasks. They may also be used to store data locally and serve as a backup in case of network issues or outages.
+
+In many cases, edges and fog gateways can be combined to better meet the business and technical needs of an IoT system. For example, edges might be used to collect data from sensors and transmit it to fog gateways, which can then perform more advanced processing and analysis tasks before transmitting the data to the cloud or other central systems. By using both edges and fog gateways, businesses can take advantage of the strengths of each component to create a more efficient and effective IoT system.
 
 <p align="center"><img src="../assets/images/sensoworks-edge-fog-composition.jpg" width="75%" height="75%"></p>
+
