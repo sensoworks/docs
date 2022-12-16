@@ -15,4 +15,3 @@ With its comprehensive capabilities and easy integration with other systems, Sen
 One of the key features of Sensoworks is its ability to collect data from a wide range of sources, including sensors, devices, and other systems. This data is then processed and analyzed using advanced algorithms and machine learning techniques, allowing businesses to gain valuable insights and make informed decisions. The platform also offers a range of tools for visualizing and reporting on data, making it easy for users to understand and interpret the information. Additionally, Sensoworks is highly flexible and can be customized to meet the specific needs and requirements of each individual customer. With its scalability, adaptability, and powerful analytics capabilities, Sensoworks is a powerful tool for managing and maximizing the value of IoT data.
 
 <p align="center"><img src="./assets/images/sensoworks-hla.jpg" width="100%" height="100%"></p>
-
