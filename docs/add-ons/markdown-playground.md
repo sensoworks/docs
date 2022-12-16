@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Temp page
-nav_order: 999
-description: "Temp page"
-has_children: false
+title: Markdown playground
+nav_order: 999999
+description: "Markdown playground"
+parent: Edge gateway
 ---
 
 [Link button](http://example.com/){: .btn }
