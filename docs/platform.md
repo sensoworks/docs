@@ -6,4 +6,4 @@ description: "Platform"
 has_children: true
 ---
 
-TBD Platform
+This section will describe the architecture of the Platform and how to install it.

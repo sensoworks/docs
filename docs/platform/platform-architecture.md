@@ -9,7 +9,7 @@ has_children: false
 
 Sensoworks is a scalable IoT platform built mainly in Java (for the cloud platform) and Python (for the Edge components) that can be deployed, depending on the client’s needs, on-premise, in the cloud, or deployed in a hybrid environment. It has been designed since the beginning to be very flexible and adaptive in collecting data from heterogeneous sources, and so be able to be used for different scenarios and in different fields of application.
 
-<p align="center"><img src="/docs/assets/images/sensoworks-mla.jpg" width="100%" height="100%"></p>
+<p align="center"><img src="../assets/images/sensoworks-mla.jpg" width="100%" height="100%"></p>
 
 The main features of the platform are:
 
@@ -38,17 +38,17 @@ AWS, EKS, and MongoDB Atlas guarantee many of the reliability, security and scal
 
 # **Logical view and high-level view of the platform**
 
-<p align="center"><img src="/docs/assets/images/sensoworks-overview-modules.jpg" width="75%" height="75%"></p>
+<p align="center"><img src="../assets/images/sensoworks-overview-modules.jpg" width="75%" height="75%"></p>
 
 The microservices of the Sensoworks platform are shown here:
 
-<p align="center"><img src="/docs/assets/images/sensoworks-microservices.jpg" width="100%" height="100%"></p>
+<p align="center"><img src="../assets/images/sensoworks-microservices.jpg" width="100%" height="100%"></p>
 
 Each component implements a specific function and works together with the other services, to offer all the IoT functionalities of the platform.
 
 # **HW/SW architecture of the platform**
 
-<p align="center"><img src="/docs/assets/images/sensoworks-hw-sw.jpg" width="100%" height="100%"></p>
+<p align="center"><img src="../assets/images/sensoworks-hw-sw.jpg" width="100%" height="100%"></p>
 
 Many of the external services, such as Firebase, Mapbox, Slack, etc. are in this picture only as an example, to show that the platform can integrate with these services, if necessary.
 To better understand what Kubernetes is and what offers, refer to the official online documentation: https://kubernetes.io/.
@@ -65,11 +65,11 @@ Sensoworks manage Multitenancy using different techniques:
 
 - Based on load, different clients configured on the platform can be deployed (using namespaces) on groups of machines with dedicated CPU and memory. The default configuration will use the default ns-core namespace with all clients sharing the same resources, which still can be scaled to adapt to load.
 
-<p align="center"><img src="/docs/assets/images/sensoworks-kubernetes.jpg" width="75%" height="75%"></p>
+<p align="center"><img src="../assets/images/sensoworks-kubernetes.jpg" width="75%" height="75%"></p>
 
 - About the MongoDB Atlas account, data can live in a shared account with other clients or can have per client dedicated instances
 
-<p align="center"><img src="/docs/assets/images/sensoworks-mongodb-data-isolation.jpg" width="30%" height="30%"></p>
+<p align="center"><img src="../assets/images/sensoworks-mongodb-data-isolation.jpg" width="30%" height="30%"></p>
 
 # **Scalability, HA/FT**
 
@@ -80,15 +80,15 @@ Note: This picture, taken from the internet, shows the infrastructure for a two 
 
 Note: This picture, taken from the internet, shows the infrastructure for a two Availability Zones cluster. Sensoworks has 3 Availability Zones by default.
 
-<p align="center"><img src="/docs/assets/images/sensoworks-kubernetes-availability-zones.png" width="75%" height="75%"></p>
+<p align="center"><img src="../assets/images/sensoworks-kubernetes-availability-zones.png" width="75%" height="75%"></p>
 
 In general, all Sensoworks microservices (DataGate, DataPump, Inspectors, Aggregatora, etc.) can be scaled individually from 3 (number used to cover 3 availability zones) to any value needed to manage the incoming telemetry traffic and can be specialized (sharding) using namespaces with dedicated node pools.
 
-<p align="center"><img src="/docs/assets/images/sensoworks-ha-lb-api-gateway.jpg" width="75%" height="75%"></p>
+<p align="center"><img src="../assets/images/sensoworks-ha-lb-api-gateway.jpg" width="75%" height="75%"></p>
 
 If necessary nodes can be upgraded (or added) choosing, for example, from a single CPU machine to machines with 128 cores and 2 TB of memory each. And, since clusters can be formed by thousands of nodes, the entire architecture can have practically an unlimited scalability.
 
-<p align="center"><img src="/docs/assets/images/sensoworks-k8s-5000-nodes.jpg" width="75%" height="75%"></p>
+<p align="center"><img src="../assets/images/sensoworks-k8s-5000-nodes.jpg" width="75%" height="75%"></p>
 
 A Kubernetes cluster is a set of nodes (physical or virtual machines) running Kubernetes agents, managed by the control plane. Kubernetes v1.25 supports clusters with up to 5000 nodes. More specifically, Kubernetes is designed to accommodate configurations that meet all of the following criteria:
 
@@ -96,3 +96,4 @@ A Kubernetes cluster is a set of nodes (physical or virtual machines) running Ku
 - No more than 5000 nodes
 - No more than 150000 total pods
 - No more than 300000 total containers
+
