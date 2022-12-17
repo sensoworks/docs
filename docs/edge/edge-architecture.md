@@ -6,6 +6,8 @@ description: "Edge architecture"
 parent: Edge gateway
 ---
 
+# Edge architecture
+
 In the IoT world, two terms have been coined to describe what can happen near or on the "Things" that you want to interact with. These two terms are Edge and Fog computing.
 
 Shortly:
@@ -16,7 +18,7 @@ Shortly:
   - A smart wearable device that monitor health parameters, that can communicate to the cloud using the bluethoot connection to a mobile phone
   - An Arduino based solution developed in C software, with a power back an internet connectivity, monitoring temperature, air quality, noise
   - A Python program running in an industrial PC, receiving information from sensors nearby, single or multiple sensors, connected via Bluethoot or else
-- Fog is still a component running on the Edge, but usually interacts or need additional communication with the cloud to work properly. This interaction can be limited to configuring the Fog gateway
+- Fog is still a component running on the Edge, but usually interacts or need additional communication with the cloud to work properly. This interaction can be limited to configuring The Sensoworks Fog gateway
 
 <p align="center"><img src="../assets/images/sensoworks-edge-fog-architecture.jpg" width="100%" height="100%"></p>
 
@@ -32,11 +34,11 @@ The better understand the differences between **Edge** and **Fog computing**, co
 
 > [**Siemens**](https://www.siemens.com): Fog computing blends both edge and cloud computing. By doing so, it stretches the cloud to the edge of the network so that it's easier to connect IoT devices in real-time. By incorporating the benefits of both edge and cloud technology, it achieves a high-level network environment. It can connect two disparate ecosystems without losing local storage benefits. Fog computing reduces latency between devices while simultaneously reducing bandwidth requirements. It opens up exciting possibilities for several industries. Autonomous self-driving cars, smart cities, and real-time analytics are all at their best with fog computing. Its capacity to transfer data right at the edge of remote areas makes it suitable for roaming use cases as well. Fog computing is, effectively, edge computing with wheels.
 
-There are many different ways in which businesses can use a Sensoworks edge component. Some common examples include:
+There are many different ways in which businesses can use a Sensoworks Edge/Fog component. Some common examples include:
 
-- Collecting and transmitting data from sensors and devices: Sensoworks Edge components can be used to collect telemetry data from sensors and devices and transmit it to the cloud for analysis. This can include data from a wide range of sources, such as temperature sensors, pressure sensors, and more
+- Collecting and transmitting data from sensors and devices: Sensoworks Edge/Fog components can be used to collect telemetry data from sensors and devices and transmit it to the cloud for analysis. This can include data from a wide range of sources, such as temperature sensors, pressure sensors, and more
 - Processing data at the edge: In some cases, it may be necessary to process data at the edge in order to reduce latency or reduce the amount of data transmitted to the cloud. Edge components can be used to perform this processing, allowing businesses to gain insights from data in real-time
-- Local storage and backup: Sensoworks Edge components can also be used to store data locally, providing a backup in case of network issues or outages. This can be especially useful in situations where data loss could have serious consequences, such as in critical infrastructure monitoring
-- Running algorithms and machine learning models: Sensoworks Edge components can also be used to run algorithms and machine learning models, allowing businesses to gain insights and make predictions at the source based on data collected from sensors and devices
+- Local storage and backup: Sensoworks Edge/Fog components can also be used to store data locally, providing a backup in case of network issues or outages. This can be especially useful in situations where data loss could have serious consequences, such as in critical infrastructure monitoring
+- Running algorithms and machine learning models: Sensoworks Edge/Fog components can also be used to run algorithms and machine learning models, allowing businesses to gain insights and make predictions at the source based on data collected from sensors and devices
 
-Overall, Sensoworks edge components are a powerful tool for collecting, processing, and analyzing data at the edge, enabling businesses to make better use of their IoT data and drive better outcomes.
+Overall, Sensoworks Edge/Fog components are a powerful tool for collecting, processing, and analyzing data at the edge, enabling businesses to make better use of their IoT data and drive better outcomes.

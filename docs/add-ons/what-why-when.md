@@ -127,7 +127,7 @@ The Sensoworks platform has been designed to solve many IoT needs. These are a l
   - Alarm definition and management through CEP processing
   - Scheduled and recurring data analysis and eport generation
   - Certifications of the sensed data using private of public Blockchain
-  - Data analysis using machine learning OpenSource frameworks
+  - Data analysis using machine learning Open source frameworks
 
 ##### Why did we develop the Sensoworks platform?
 

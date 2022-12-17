@@ -192,7 +192,7 @@ The Sensoworks platform has been designed to solve many IoT needs. These are a l
 
     * Certifications of the sensed data using private of public Blockchain
 
-    * Data analysis using machine learning OpenSource frameworks
+    * Data analysis using machine learning Open source frameworks
 
 * GV ESB for system integration with other systems
 
@@ -476,7 +476,7 @@ At this stage we have many decision to take. I placed notes and some answer (for
 
             * Note: about the temperature sensors, for example, they are usually coupled with other sensors. This is generally done to remove the effect of temperature (day and night cycles) from all stretching measurements (lambda)
 
-**Output of the Edge Gateway:**
+**Output of fhe Sensoworks Edge gateway:**
 
 After all formatting (binary to ascii) and computations (formulas in the time and frequency domain), we have:
 
@@ -514,7 +514,7 @@ After all formatting (binary to ascii) and computations (formulas in the time an
 
 **Additional notes for other scenarios**:
 
-* The Edge Gateway is a very particular component of any IoT platform and is very specific and tight to the "Thing" that has to be connected. If the Thing can send messages directly to the Gateway, the Edge Gateway may not be necessary. In the reference scenario of tunnel monitoring with the BraggMETER, we needed to handle the device lifecycle and apply different checks and computations (derived formulas) at a very high frequency on the Edge (where the Thing is located = edge computing), so the Edge Gateway was strictly necessary. For the other scenario of “Fleet management and monitoring” each car is able to communicate directly with the Gateway sending json/http messages, so there is no Edge Gateway to interpose between the Thing and the Gateway.
+* The Sensoworks Edge gateway is a very particular component of any IoT platform and is very specific and tight to the "Thing" that has to be connected. If the Thing can send messages directly to the Gateway, The Sensoworks Edge gateway may not be necessary. In the reference scenario of tunnel monitoring with the BraggMETER, we needed to handle the device lifecycle and apply different checks and computations (derived formulas) at a very high frequency on the Edge (where the Thing is located = edge computing), so The Sensoworks Edge gateway was strictly necessary. For the other scenario of “Fleet management and monitoring” each car is able to communicate directly with the Gateway sending json/http messages, so there is no Edge Gateway to interpose between the Thing and the Gateway.
 
 * Depending on the frequency and volume of data to send, other network and communication protocols may be more suitable. See the next paragraph for additional detail about suitable protocols
 
@@ -564,9 +564,9 @@ There are the things that, in general, need to be answered and some precautions 
 
     * Are they close to the electricity grid? Or they have to use solar panels?
 
-**Output of the Edge Gateway:**
+**Output of fhe Sensoworks Edge gateway:**
 
-* We are now knocking at the door of the Gateway with the same data that had left the Edge Gateway
+* We are now knocking at the door of the Gateway with the same data that had left The Sensoworks Edge gateway
 
     * "<header><ch0:s1>,**1572.26**,...,<ch0:sn>,...,<ch3:s1>,<ch3:s2>,...,<ch3:sn><ch0:thermometer-s1,**45.502**,<...><ch0:purified_microstrain-s1>,**0.003**,<...>"
 
@@ -856,13 +856,13 @@ In the next picture there are samples of interactions divided by communication t
 
 * Run a configuration command for the Gateway
 
-* Run a configuration command for the Edge Gateway
+* Run a configuration command for The Sensoworks Edge gateway
 
 * Run a configuration command for the Thing / Devices
 
 * Run an administration command for the Gateway
 
-* Run an administration command for the Edge Gateway
+* Run an administration command for The Sensoworks Edge gateway
 
 * Run an administration command for the Thing / Devices
 
@@ -918,13 +918,13 @@ In the next picture there are samples of interactions divided by communication t
 
 * FreeRTOS?
 
-* Code distribution OTA to the Edge Gateways
+* Code distribution OTA to The Sensoworks Edge gateways
 
 ## 12.1 Other ideas
 
 * FreeRTOS?
 
-* Code distribution OTA to the Edge Gateways
+* Code distribution OTA to The Sensoworks Edge gateways
 
 * AI & machine learning
 

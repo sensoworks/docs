@@ -7,6 +7,12 @@ parent: Edge gateway
 has_children: true
 ---
 
+# Edge installation
+
+According to the architecture document, there are different types of Sensoworks Edge components available, each with its own unique features and capabilities. In addition, there are various ways to package each of these components, depending on the specific needs and requirements of your system. By considering the various types and packaging options for the Sensoworks Edge/Fog components, you can choose the solution that best fits your needs and goals.
+
+<p align="center"><img src="../assets/images/sensoworks-edge-fog-versions.jpg" width="75%" height="75%"></p>
+
 Depending on the scenario of your project, the type of "things" you need to connect, the type of analisys you need to conduct and many additional factors, different versions of the Sensoworks Edge/Fog gateways solutions can be used.
 
 | Destination | Notes |
@@ -43,4 +49,3 @@ Fog gateways, on the other hand, are devices that are located further up the net
 In many cases, edges and fog gateways can be combined to better meet the business and technical needs of an IoT system. For example, edges might be used to collect data from sensors and transmit it to fog gateways, which can then perform more advanced processing and analysis tasks before transmitting the data to the cloud or other central systems. By using both edges and fog gateways, businesses can take advantage of the strengths of each component to create a more efficient and effective IoT system.
 
 <p align="center"><img src="../assets/images/sensoworks-edge-fog-composition.jpg" width="75%" height="75%"></p>
-

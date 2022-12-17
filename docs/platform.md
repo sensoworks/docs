@@ -6,7 +6,9 @@ description: "Platform"
 has_children: true
 ---
 
-In this section, you will learn about the design and structure of the Platform, as well as how to set it up and get it running on your system.
+# Platform
+
+Welcome to the section on the design and structure of the cloud platform. You will learn how to set up and run the platform on your system. We will also discuss the various components that make up the platform and how they work together to provide a seamless user experience.
 
 The architecture of a platform refers to the design and structure of the system. It includes the hardware and software components that make up the platform, as well as the relationships between those components and the way they interact with each other. Understanding the architecture of a platform can be important for developers and administrators who need to build applications or manage the platform.
 
