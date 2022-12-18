@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Edge on-premise
-nav_order: 3221
+nav_order: 322
 description: "Edge installation on-premise"
 parent: Edge installation
 grand_parent: Edge gateway

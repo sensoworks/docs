@@ -1,9 +1,10 @@
 ---
 layout: default
-title: Fog getting started guide
-nav_order: 33
-description: "Fog getting started guide"
-parent: Edge gateway
+title: Getting started guide
+nav_order: 3241
+description: "Getting started guide"
+parent: Fog on-premise
+grand_parent: Edge installation
 has_children: false
 ---
 
