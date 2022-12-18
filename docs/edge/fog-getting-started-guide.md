@@ -35,16 +35,15 @@ The Sensoworks Fog gateway will then perform these steps:
 ## Pre-requisites
 
 > **NOTE**: Depending on which version of the Sensoworks Fog component you installed, some requirement may already be met.
-> This guide has been tested with a local installation of the Pure Python version of the Fog gateway.
+> This guide has been prepared for a local installation of the **Pure Python** version of the Fog gateway.
 > If you installed other versions of the gateway, the procedure may be slightly different.
-> Python, pip and git should be already installed into your system.
 
 - Install an MQTT client browser, such as for example [MQTT X](https://mqttx.app/)
   - **NOTE**: This app is needed only if you want to directly monitor the MQTT server
 
 ## Start Mosquitto
 
-> **NOTE**: If you already have an MQTT server running somewhere, you can just skip this step.
+> **NOTE**: If you already have an MQTT server running somewhere else, you can just skip this step.
 
 ```sh
 # Verify if the MQTT server is running
@@ -55,13 +54,14 @@ mosquitto
 ```
 
 ## Run the MQTT client browser
+
 > **NOTE**: This step is necessary only if you want to directly monitor the MQTT server
 
-The application should be installed into your system, so use the application menù of your system to start it.
+The application should be installed into your system. Use the application menù of your OS to start it.
+
+<p align="center"><img src="../assets/images/sensoworks-mqttx-configuration-localhost.jpg" width="75%" height="75%"></p>
 
 ## Edit the config file of fhe simulator
-
-> **NOTE**: If you are using a localhost mosquitto on port 1883, you can just skip this step.
 
 ```sh
 # Move into the getting started directory
@@ -89,19 +89,23 @@ The expected output should be something like this:
 
 Now you are ready to start the sensoworks_fog_gateway.py
 
-Edit the config file of fhe fog gateway
+## Edit the config file of fhe Fog gateway
 
 ```sh
-cd ..
-cd config
-vi ...
+# Configure the Fog gateway
+vi sensoworks_fog_gateway_getting_started_guide.json
 
-Open a shell window to start the Sensoworks Fog gateway
+# Start the Sensoworks Fog gateway
+python sensoworks_fog_gateway.py --config sensoworks_fog_gateway_getting_started_guide.json
 
 Optional step: Open the MQTT X application to register to "sensoworks/#"
+
+<p align="center"><img src="../assets/images/sensoworks-mqttx-configuration-localhost.jpg" width="75%" height="75%"></p>
+
+sensoworks-mqttx-configuration-localhost.png
 ```
 
-JSON configuratin file
+JSON configuratin file for the signal simulator
 
 ```json
 {
