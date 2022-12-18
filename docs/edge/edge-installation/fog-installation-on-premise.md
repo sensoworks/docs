@@ -29,7 +29,7 @@ Optional:
 
 - Install an MQTT provider like [mosquitto.org](https://mosquitto.org/) if not already available somewhere else. Alternatively, for testing purposes, you can use the testing environment of mosquitto online: [test.mosquitto.org](https://test.mosquitto.org/)
 
-Once Python is installed, follow these instructions:
+Once the pre-requirements are met, follow these instructions:
 
 ```sh
 # Move into the parent directory where you want to install the Sensoworks Fog gateway

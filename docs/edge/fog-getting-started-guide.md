@@ -100,7 +100,7 @@ python sensoworks_fog_gateway.py --config sensoworks_fog_gateway_getting_started
 
 Optional step: Open the MQTT X application to register to "sensoworks/#"
 
-<p align="center"><img src="../assets/images/sensoworks-mqttx-configuration-localhost.jpg" width="75%" height="75%"></p>
+<p align="center"><img src="../../assets/images/sensoworks-mqttx-configuration-localhost.jpg" width="75%" height="75%"></p>
 
 sensoworks-mqttx-configuration-localhost.png
 ```
