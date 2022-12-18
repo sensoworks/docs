@@ -514,7 +514,7 @@ After all formatting (binary to ascii) and computations (formulas in the time an
 
 **Additional notes for other scenarios**:
 
-* The Sensoworks Edge gateway is a very particular component of any IoT platform and is very specific and tight to the "Thing" that has to be connected. If the Thing can send messages directly to the Gateway, The Sensoworks Edge gateway may not be necessary. In the reference scenario of tunnel monitoring with the BraggMETER, we needed to handle the device lifecycle and apply different checks and computations (derived formulas) at a very high frequency on the Edge (where the Thing is located = edge computing), so The Sensoworks Edge gateway was strictly necessary. For the other scenario of “Fleet management and monitoring” each car is able to communicate directly with the Gateway sending json/http messages, so there is no Edge Gateway to interpose between the Thing and the Gateway.
+* The Sensoworks Edge gateway is a very particular component of any IoT platform and is very specific and tight to the "Thing" that has to be connected. If the Thing can send messages directly to the Gateway, the Sensoworks Edge gateway may not be necessary. In the reference scenario of tunnel monitoring with the BraggMETER, we needed to handle the device lifecycle and apply different checks and computations (derived formulas) at a very high frequency on the Edge (where the Thing is located = edge computing), so the Sensoworks Edge gateway was strictly necessary. For the other scenario of “Fleet management and monitoring” each car is able to communicate directly with the Gateway sending json/http messages, so there is no Edge Gateway to interpose between the Thing and the Gateway.
 
 * Depending on the frequency and volume of data to send, other network and communication protocols may be more suitable. See the next paragraph for additional detail about suitable protocols
 
@@ -566,7 +566,7 @@ There are the things that, in general, need to be answered and some precautions 
 
 **Output of fhe Sensoworks Edge gateway:**
 
-* We are now knocking at the door of the Gateway with the same data that had left The Sensoworks Edge gateway
+* We are now knocking at the door of the Gateway with the same data that had left the Sensoworks Edge gateway
 
     * "<header><ch0:s1>,**1572.26**,...,<ch0:sn>,...,<ch3:s1>,<ch3:s2>,...,<ch3:sn><ch0:thermometer-s1,**45.502**,<...><ch0:purified_microstrain-s1>,**0.003**,<...>"
 
@@ -856,13 +856,13 @@ In the next picture there are samples of interactions divided by communication t
 
 * Run a configuration command for the Gateway
 
-* Run a configuration command for The Sensoworks Edge gateway
+* Run a configuration command for the Sensoworks Edge gateway
 
 * Run a configuration command for the Thing / Devices
 
 * Run an administration command for the Gateway
 
-* Run an administration command for The Sensoworks Edge gateway
+* Run an administration command for the Sensoworks Edge gateway
 
 * Run an administration command for the Thing / Devices
 
@@ -918,13 +918,13 @@ In the next picture there are samples of interactions divided by communication t
 
 * FreeRTOS?
 
-* Code distribution OTA to The Sensoworks Edge gateways
+* Code distribution OTA to the Sensoworks Edge gateways
 
 ## 12.1 Other ideas
 
 * FreeRTOS?
 
-* Code distribution OTA to The Sensoworks Edge gateways
+* Code distribution OTA to the Sensoworks Edge gateways
 
 * AI & machine learning
 

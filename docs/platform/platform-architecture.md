@@ -19,7 +19,7 @@ One of the key features of Sensoworks is its ability to collect data from a wide
 
 <p align="center"><img src="../assets/images/sensoworks-mla.jpg" width="100%" height="100%"></p>
 
-### 2. Features of the platform
+## Features of the platform
 
 | **Modules** | **Description** |
 |:---|:----|
