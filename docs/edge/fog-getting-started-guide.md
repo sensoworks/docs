@@ -59,7 +59,7 @@ mosquitto
 
 The application should be installed into your system. Use the application menù of your OS to start it.
 
-<p align="center"><img src="../assets/images/sensoworks-mqttx-configuration-localhost.jpg" width="75%" height="75%"></p>
+<p align="center"><img src="../assets/images/sensoworks-mqttx-configuration-localhost.png" width="75%" height="75%"></p>
 
 ## Edit the config file of fhe simulator
 
