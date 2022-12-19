@@ -44,7 +44,7 @@ Overall, the combination of Sensoworks with AWS, EKS, and MongoDB Atlas guarante
 
 ## Logical view and high-level view of the platform
 
-<p align="center"><img src="../assets/images/sensoworks-overview-modules.jpg" width="75%" height="75%"></p>
+<p align="center"><img src="../assets/images/sensoworks-overview-modules.jpg" width="100%" height="100%"></p>
 
 The microservices of the Sensoworks platform are shown here:
 

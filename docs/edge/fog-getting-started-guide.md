@@ -7,7 +7,7 @@ parent: Edge gateway
 has_children: false
 ---
 
-# Fog getting started guide
+# Fog: getting started guide - Intro
 
 This guide is intended to provide a simple example of the functionalities and configuration of the Sensoworks Fog gateway. The scenario presented in this guide is depicted below:
 
@@ -29,17 +29,17 @@ The Sensoworks Fog gateway will then perform these steps:
 - Save the aggregated data in a CSV and a JSON file
 - Call the Sensoworks platform via HTTP
 
-# Steps
+# Getting started guide - Steps
 
 {: .warning }
 > **WARNING**: If you have not installed the Fog gateway yet, please install it following the instructions here: [**Edge installation**](./edge-installation.md).
+> This guide has been prepared for a local installation of the **Pure Python** version of the Fog gateway.
+> If you installed other versions of the gateway, the procedure may be slightly different.
 
 ## Pre-requisites
 
 {: .note }
 > **NOTE**: Depending on which version of the Sensoworks Fog component you installed, some requirement may already be met.
-> This guide has been prepared for a local installation of the **Pure Python** version of the Fog gateway.
-> If you installed other versions of the gateway, the procedure may be slightly different.
 
 - Install an MQTT client browser, such as for example [MQTT X](https://mqttx.app/)
   - **NOTE**: This app is needed only if you want to directly monitor the MQTT server
@@ -118,7 +118,7 @@ JSON configuratin file for the signal simulator
 
     "_comment_0": "Parameters to generate a sinusoidal signal + a random.",
     "_comment_1": "f(t) = amplitute * sin((2 * pi / period_in_seconds)(t - phase_shift)) + vertical_shift",
-    "_comment_2": "Default: In 60 seconds, the signal will go from -3 to 7",
+    "_comment_2": "Default: In 60 seconds, the signal will oscillate from -3 to 7",
 
     "amplitude": 5,
     "phase_shift": 0,

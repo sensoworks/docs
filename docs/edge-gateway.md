@@ -8,7 +8,7 @@ has_children: true
 
 # Edge gateway
 
-In this section, we will delve into the structure and design of Edge components - specifically, Edge and Fog gateways. You will gain an understanding of the purpose and function of each component, as well as when and how to install them in your system. 
+In this section, we will delve into the structure and design of Edge components - specifically, Edge and Fog gateways. You will gain an understanding of the purpose and function of each component, as well as when and how to install one or the other in your system. 
 
 In the context of the Internet of Things (IoT), the "Edge" refers to the devices and systems that are located at the periphery of a network, closer to the devices or sensors that are collecting data. The "Fog" refers to a layer of computing resources that are located between the Edge and the cloud, and are used to process and analyze data before it is transmitted to the cloud.
 
