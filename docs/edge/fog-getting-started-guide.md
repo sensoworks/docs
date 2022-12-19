@@ -18,6 +18,7 @@ The simulator will send temperature data to a MQTT topic named:
 - sensoworks/fog/southbound/t-001
 
 {: .note }
+
 > **NOTE**: By default the simulator will send data every second, but this value can be changed, among other parameters, in the configuration file of the simulator.
 
 The Sensoworks Fog gateway will then perform these steps:
@@ -32,6 +33,7 @@ The Sensoworks Fog gateway will then perform these steps:
 # Getting started guide - Steps
 
 {: .warning }
+
 > **WARNING**: If you have not installed the Fog gateway yet, please install it following the instructions here: [**Edge installation**](./edge-installation.md).
 > This guide has been prepared for a local installation of the **Pure Python** version of the Fog gateway.
 > If you installed other versions of the gateway, the procedure may be slightly different.
@@ -39,6 +41,7 @@ The Sensoworks Fog gateway will then perform these steps:
 ## Pre-requisites
 
 {: .note }
+
 > **NOTE**: Depending on which version of the Sensoworks Fog component you installed, some requirement may already be met.
 
 - Install an MQTT client browser, such as for example [MQTT X](https://mqttx.app/)
@@ -47,6 +50,7 @@ The Sensoworks Fog gateway will then perform these steps:
 ## Start Mosquitto
 
 {: .note }
+
 > **NOTE**: If you already have an MQTT server running somewhere else, you can just skip this step.
 
 ```sh
@@ -60,6 +64,7 @@ mosquitto
 ## Run the MQTT client browser
 
 {: .note }
+
 > **NOTE**: This step is necessary only if you want to directly monitor the MQTT server
 
 The application should be installed into your system. Use the application menù of your OS to start it.
@@ -96,17 +101,56 @@ Now you are ready to start the sensoworks_fog_gateway.py
 
 ## Edit the config file of fhe Fog gateway
 
+The Getting Started guide includes a pre-configured file for the Fog Gateway, which processes temperature data from the MQTT topic, performs data aggregation and analysis, and finally outputs the results to files and sends them to the Sensoworks platform. This configuration file allows for seamless integration and streamlines the process of extracting valuable insights from temperature data.
+
 ```sh
 # Configure the Fog gateway
 vi sensoworks_fog_gateway_getting_started_guide.json
-
-# Start the Sensoworks Fog gateway
-python sensoworks_fog_gateway.py --config sensoworks_fog_gateway_getting_started_guide.json
-
-Optional step: Open the MQTT X application to register to "sensoworks/#"
 ```
 
-JSON configuratin file for the signal simulator
+## Start the Sensoworks Fog gateway
+
+```sh
+## Move into the home directory of the Fog gateway
+cd ..
+
+# Run the Fog gateway
+python sensoworks_fog_gateway.py --config ./getting_started_guide/sensoworks_fog_gateway_getting_started_guide.json
+```
+
+## MQTT topic subscription
+
+{: .note }
+
+> **NOTE**: This is optional step: Open the MQTT X application to register to "sensoworks/#" to see southbound messaged being processed.
+
+## Check the files produced by the Fog gateway
+
+By default the configuration for getting started guide produces:
+
+```sh
+# Move into the home directory of the Fog gateway
+cd logs
+
+# Check the raw data
+tail -f TBD
+
+# Check the output files (json and csv)
+tail -f TBD
+
+# Check the Fog logs
+tail -f TBD
+```
+
+## Open the Sensoworks Desk Console
+
+[https://demo.sensoworks.com/console](https://demo.sensoworks.com/console)
+
+
+
+---
+
+JSON configuration file for the signal simulator:
 
 ```json
 {
@@ -131,3 +175,4 @@ JSON configuratin file for the signal simulator
     "value_precision": 1
 }
 ```
+
