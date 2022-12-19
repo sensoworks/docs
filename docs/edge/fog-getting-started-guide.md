@@ -17,6 +17,7 @@ The simulator will send temperature data to a MQTT topic named:
 
 - sensoworks/fog/southbound/t-001
 
+{: .note }
 > **NOTE**: By default the simulator will send data every second, but this value can be changed, among other parameters, in the configuration file of the simulator.
 
 The Sensoworks Fog gateway will then perform these steps:
@@ -30,10 +31,12 @@ The Sensoworks Fog gateway will then perform these steps:
 
 # Steps
 
+{: .warning }
 > **WARNING**: If you have not installed the Fog gateway yet, please install it following the instructions here: [**Edge installation**](./edge-installation.md).
 
 ## Pre-requisites
 
+{: .note }
 > **NOTE**: Depending on which version of the Sensoworks Fog component you installed, some requirement may already be met.
 > This guide has been prepared for a local installation of the **Pure Python** version of the Fog gateway.
 > If you installed other versions of the gateway, the procedure may be slightly different.
@@ -43,6 +46,7 @@ The Sensoworks Fog gateway will then perform these steps:
 
 ## Start Mosquitto
 
+{: .note }
 > **NOTE**: If you already have an MQTT server running somewhere else, you can just skip this step.
 
 ```sh
@@ -55,6 +59,7 @@ mosquitto
 
 ## Run the MQTT client browser
 
+{: .note }
 > **NOTE**: This step is necessary only if you want to directly monitor the MQTT server
 
 The application should be installed into your system. Use the application menù of your OS to start it.
