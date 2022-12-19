@@ -47,7 +47,7 @@ cd sensoworks-fog-gateway
 pip install -r requirements.txt
 ```
 
-DONE :-)
+✅ DONE :-)
 
 Now you are ready to run the Sensoworks Fog gateway.
 
@@ -89,7 +89,7 @@ cd docker
 docker-compose -d up
 ```
 
-DONE :-)
+✅ DONE :-)
 
 Now you are ready to run the Sensoworks Fog gateway.
 

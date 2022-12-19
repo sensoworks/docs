@@ -21,8 +21,6 @@ compress_html:
 # this is used by GitHub
 remote_theme: "just-the-docs/just-the-docs"
 
-logo: "/docs/assets/images/sensoworks-logo.png"
-
 # Aux links for the upper right navigation
 aux_links:
   "Sensoworks":
