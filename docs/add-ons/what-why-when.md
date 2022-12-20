@@ -23,7 +23,7 @@ Very likely you already heard about the term IoT.
 
 In this document we will not give an explanation of what the IoT is in general, but we will only focus on what the Sensoworks IoT platform is, and doing so, we strongly believe that many aspects of the IoT in general will come out. Over the internet there are very good descriptions and introductions of the IoT, so we just linked here a general source of information from which you can move on:
 
-- https://en.wikipedia.org/wiki/Internet_of_things
+- [https://en.wikipedia.org/wiki/Internet_of_things](https://en.wikipedia.org/wiki/Internet_of_things)
 
 One thing we want to emphasize, it is that this revolution is so vast, that it is really crucial to adopt suitable products and, above all, a correct methodological approach if you want to succeed in living this revolution at best.
 
@@ -191,13 +191,13 @@ The architecture of the platform will be described in a specific chapter, but fo
 
 <p align="center"><img src="../assets/images/sensoworks-mla.jpg" width="100%" height="100%"></p>
 
-Overview of the trip from Things to Humans: sensed data and analytics.
+### Overview of the trip from Things to Humans: sensed data and analytics
 
-<p align="center"><img src="../assets/images/Sensoworks-trip-things-to-humans.jpg" width="100%" height="100%"></p>
+<p align="center"><img src="../assets/images/sensoworks-trip-things-to-humans.jpg" width="100%" height="100%"></p>
 
 We will describe all the steps that a single measure will do from Things to Humans:
 
-1. **Starting point** - the Things
+1. **Starting point**: the Things
    - We will describe how a sensor detects a measure (ex. the temperature of a room at a “T” time), how the measurement is read (raw value) on the sensor and pre-formatted into a digital value (ex. by the firmware and HW on the sensor)
 2. EdgeGateway: sends the data through the internet to the Gateway
    - We don’t want to spoil anything :-) Read the chapter that tells the whole story
@@ -208,3 +208,55 @@ We will describe all the steps that a single measure will do from Things to Huma
 7. BigData, DataLake & Streaming
 8. Analytics
 9. **End point**: the Humans
+
+### Overview of the trip from Humans to Things: configure, administer, act on actuators
+
+<p align="center"><img src="../assets/images/Sensoworks-trip-humans-to-things.jpg" width="100%" height="100%"></p>
+
+We will describe all the steps a single measure will do from Humans to Things:
+
+1. **Starting point**: the Humans
+   - We will describe what a person can do to act on a Thing: open a door, turn on the heat, turn off lights, etc.
+2. The console
+   - We don’t want to spoil anything :-) Read the chapter that tells the whole story
+3. The core
+4. Dispatch commands
+5. The Gateway receive the command
+6. Internet: The command crosses the internet
+7. The EdgeGateway receive the command
+8. **End point**: the Things
+
+## The scenarios
+
+### Reference scenario: Monitoring structural deformation of a tunnel
+
+<p align="center"><img src="../assets/images/sensoworks-tunnel.png" width="100%" height="100%"></p>
+
+The scenario consists in monitoring the health of a tunnel, in term of structural deformations that may damage the tunnel itself and put Humans in danger. Natural causes that affect the structure of a tunnel are:
+
+- Landslides
+- Earthquakes
+- Wind
+- Infiltrations
+- Temperature
+- Etc.
+
+Human causes that affect the structure of a tunnel:
+
+- Traffic
+- Heavy vehicles
+- Accidents
+- Etc.
+
+But how do you actually prepare a tunnel to be monitored for deformations.
+
+We can use a FS22 Industrial BraggMETER (picture 1) and wire the entire tunnel with the fibre cable (picture 2) and strain sensors (picture 3).
+
+Source: [NTSG Val di Sambro](https://www.ntsgen.com/en/progetti/tunnel-val-di-sambro/).
+
+> “*3 lines of sensors have been installed along the whole tunnel, while the thermal sensors have been installed at distances previously set. This to compensate the effects, on the readings, of thermal variations and to obtain a pure mechanical deformation. It is possible to control the longitudinal movements of the tunnel, and verify if the tunnel keeps the initial shape as designed.*”
+
+- **Location**: Apennine stretch between Sasso Marconi and Barberino del Mugello
+- **Client**: Spea Engineering – Atlantia Group
+- **Duration of the monitoring service**: 38 months
+- **Project start date**: 2017

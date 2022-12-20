@@ -65,9 +65,9 @@ mosquitto
 
 {: .note }
 
-> **NOTE**: This step is necessary only if you want to directly monitor the MQTT server
+> **NOTE**: This step is only necessary if you wish to directly monitor the MQTT server. If this is not a requirement for your use case, it can be safely omitted.
 
-The application should be installed into your system. Use the application menù of your OS to start it.
+The application should be installed into your system. Use the OS application menu to launch the program.
 
 <p align="center"><img src="../assets/images/sensoworks-mqttx-configuration-localhost.png" width="75%" height="75%"></p>
 
@@ -101,7 +101,7 @@ Now you are ready to start the sensoworks_fog_gateway.py
 
 ## Edit the config file of fhe Fog gateway
 
-The Getting Started guide includes a pre-configured file for the Fog Gateway, which processes temperature data from the MQTT topic, performs data aggregation and analysis, and finally outputs the results to files and sends them to the Sensoworks platform. This configuration file allows for seamless integration and streamlines the process of extracting valuable insights from temperature data.
+The Getting Started guide includes a pre-configured file for the Fog Gateway that processes temperature data from the MQTT topic, performs data aggregation and analysis, and outputs the results to files and sends them to the Sensoworks platform. This configuration file allows for seamless integration and streamlines the process of extracting valuable insights from data.
 
 ```sh
 # Configure the Fog gateway
@@ -122,9 +122,9 @@ python sensoworks_fog_gateway.py --config ./getting_started_guide/sensoworks_fog
 
 {: .note }
 
-> **NOTE**: This is optional step: Open the MQTT X application to register to "sensoworks/#" to see southbound messaged being processed.
+> **NOTE**: This is optional step: Open the MQTT X application to register to "sensoworks/#" to see Sensoworks messaged being processed.
 
-## Check the files produced by the Fog gateway
+## Check the output files produced by the Fog gateway
 
 By default the configuration for getting started guide produces:
 
@@ -132,21 +132,19 @@ By default the configuration for getting started guide produces:
 # Move into the home directory of the Fog gateway
 cd logs
 
-# Check the raw data
+# Check the raw data. Control^C to stop it
 tail -f TBD
 
-# Check the output files (json and csv)
+# Check the output files (json and csv). Control^C to stop it
 tail -f TBD
 
-# Check the Fog logs
+# Check the Fog logs. Control^C to stop it
 tail -f TBD
 ```
 
 ## Open the Sensoworks Desk Console
 
 [https://demo.sensoworks.com/console](https://demo.sensoworks.com/console)
-
-
 
 ---
 
@@ -175,4 +173,3 @@ JSON configuration file for the signal simulator:
     "value_precision": 1
 }
 ```
-

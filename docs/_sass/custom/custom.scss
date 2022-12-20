@@ -66,3 +66,11 @@ p.note, blockquote.note {
   max-height: 120px;
   border-bottom: 1px solid #eeebee;
 }
+
+.site-nav {
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  overflow-y: auto;
+  flex: 1 1 auto;
+}
