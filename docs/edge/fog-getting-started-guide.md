@@ -77,6 +77,9 @@ The application should be installed into your system. Use the OS application men
 # Move into the getting started directory
 cd getting_started_guide
 
+# Install the requirements (mqtt + numpy)
+pip install -r requirements.txt
+
 # Set the parameters of the MQTT server and of the signal to generate
 vi sensoworks_fog_simulator.json
 

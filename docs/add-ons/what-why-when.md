@@ -251,12 +251,3 @@ Human causes that affect the structure of a tunnel:
 But how do you actually prepare a tunnel to be monitored for deformations.
 
 We can use a FS22 Industrial BraggMETER (picture 1) and wire the entire tunnel with the fibre cable (picture 2) and strain sensors (picture 3).
-
-Source: [NTSG Val di Sambro](https://www.ntsgen.com/en/progetti/tunnel-val-di-sambro/).
-
-> “*3 lines of sensors have been installed along the whole tunnel, while the thermal sensors have been installed at distances previously set. This to compensate the effects, on the readings, of thermal variations and to obtain a pure mechanical deformation. It is possible to control the longitudinal movements of the tunnel, and verify if the tunnel keeps the initial shape as designed.*”
-
-- **Location**: Apennine stretch between Sasso Marconi and Barberino del Mugello
-- **Client**: Spea Engineering – Atlantia Group
-- **Duration of the monitoring service**: 38 months
-- **Project start date**: 2017
