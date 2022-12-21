@@ -211,7 +211,7 @@ We will describe all the steps that a single measure will do from Things to Huma
 
 ### Overview of the trip from Humans to Things: configure, administer, act on actuators
 
-<p align="center"><img src="../assets/images/Sensoworks-trip-humans-to-things.jpg" width="100%" height="100%"></p>
+<p align="center"><img src="../assets/images/sensoworks-trip-humans-to-things.jpg" width="100%" height="100%"></p>
 
 We will describe all the steps a single measure will do from Humans to Things:
 
