@@ -41,7 +41,7 @@ Just to make a rapid estimation using the “tunnel monitoring scenario” prese
 |:---|:---|
 | **Number of sensors** | **780** |
 | **Sampling rate** | **10 Hz** |
-| **Wiring** | **30 km of optical fiber** |
+| **Wiring** | **30 km of Fiber-optic cable ** |
 | **Packet dimension** | **6 bytes (single sensor) - 30 bytes header for all** |
 | **Working time** | **24/24h, 365d/year** |
 
@@ -250,4 +250,4 @@ Human causes that affect the structure of a tunnel:
 
 But how do you actually prepare a tunnel to be monitored for deformations.
 
-We can use a FS22 Industrial BraggMETER (picture 1) and wire the entire tunnel with the fibre cable (picture 2) and strain sensors (picture 3).
+We can use a FS22 Industrial BraggMETER (picture 1) and wire the entire tunnel with the Fiber-optic cable (picture 2) and strain sensors (picture 3).
