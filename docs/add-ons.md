@@ -7,4 +7,4 @@ has_children: true
 ---
 # Add-ons
 
-Additional information about the platform or anything related to IoT can be found here.
+Further details regarding the platform and any other information related to the Internet of Things can be obtained through this section.
