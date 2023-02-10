@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Edge architecture
+title: Edge/Fog architecture
 nav_order: 31
-description: "Edge architecture"
-parent: Edge gateway
+description: "Edge/Fog architecture"
+parent: Edge/Fog gateway
 ---
 
-# Edge architecture
+# Edge/Fog architecture
 
 In the IoT world, two terms have been coined to describe what can happen near or on the "Things" that you want to interact with. These two terms are Edge and Fog computing.
 

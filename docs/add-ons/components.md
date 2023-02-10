@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Components
-nav_order: 9991
+nav_order: 9992
 description: "Components"
 parent: Add-ons
 ---
@@ -32,7 +32,9 @@ This highly secure and robust API gateway provides a critical link between the p
 
 The purpose of this component is to aggregate data stored in various storage systems where sensor readings are kept. The aggregation logic can be set on a schedule, for example, once a day, week, or can be customized as pleased, and aggregates time series data based on user-defined rules. The time of aggregation of the data (minute, hour, etc.) and the type of aggregation performed on the collected data can also be defined by the user. For aggregations of scalar sensor values with physical significance (temperatures, inclinations, fill levels, humidity levels, etc.), typical of structural and/or environmental monitoring, the minimum, maximum, and average values of the readings are calculated by default. Other aggregation logic must be set for different types of data. For instance, in the case of data counting the number of elements detected by sensors, the aggregation would simply be the sum of the elements within the aggregation range, typical in assembly line scenarios.
 
-## AlarmsInspector
+## Inspector
+
+The Inspector is a powerful and versatile service designed to detect and analyze anomalies in real-time sensor data. With its advanced algorithms and pluggable architecture, the Inspector can be customized to detect a wide range of anomalies, including single measures, contextual anomalies, and collective anomalies. This makes it an essential tool for monitoring the health and performance of various systems and detecting potential issues before they become critical. To achieve its goal, the Inspector leverages a combination of statistical methods, time series analysis, and machine learning algorithms. It is designed to be highly scalable and performant, with optimizations for parallel processing, data partitioning, and distributed computing.
 
 ## Executor
 

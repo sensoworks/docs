@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Edge installation
+title: Edge/Fog installation
 nav_order: 32
-description: "Edge installation"
-parent: Edge gateway
+description: "Edge/Fog installation"
+parent: Edge/Fog gateway
 has_children: true
 ---
 
-# Edge installation
+# Edge/Fog installation
 
-The architecture document outlines the various components of Sensoworks Edge, each of which offers distinct features and capabilities. These components can be packaged in various configurations to meet the specific needs and requirements of your system. By thoroughly evaluating the available types and packaging options for Sensoworks Edge/Fog components, you can select the solution that aligns with your specific needs and objectives.
+The architecture document outlines the various components of Sensoworks Edge/Fog, each of which offers distinct features and capabilities. These components can be packaged in various configurations to meet the specific needs and requirements of your system. By thoroughly evaluating the available types and packaging options for Sensoworks Edge/Fog components, you can select the solution that aligns with your specific needs and objectives.
 
 <p align="center"><img src="../assets/images/sensoworks-edge-fog-versions.jpg" width="75%" height="75%"></p>
 
