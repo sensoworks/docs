@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Add-ons
-nav_order: 999
+nav_order: 888
 description: "Add-ons"
 has_children: true
 ---
