@@ -3,7 +3,7 @@ layout: default
 title: Fog getting started guide
 nav_order: 33
 description: "Fog getting started guide"
-parent: Edge gateway
+parent: Edge/Fog gateway
 has_children: false
 ---
 
@@ -29,7 +29,7 @@ The Sensoworks Fog gateway will then perform these steps:
 - Prepare the Sensoworks payload to call the platform
 - Save the aggregated data in CSV and JSON format to file
 - Call the Sensoworks platform via HTTP
-  - **NOTE**: This step is by default set to "disabled" and the output is printed to stdout. To connect the Fog gateway to the platform you need an api key to communicate using the HTTP protocol (see below)
+  - **NOTE**: This step is initially set to "disabled" and the output is printed to stdout. To connect the Fog gateway to the platform you need an api key to communicate using the HTTP protocol (see below additional details)
 
 # Getting started guide - Steps
 
@@ -112,8 +112,41 @@ The Getting Started guide includes a pre-configured file for the Fog Gateway tha
 cd ../..
 
 # Configure the Fog gateway
-vi sensoworks_fog_gateway_getting_started_guide.json
+vi ./config/sensoworks_fog_gateway_getting_started_guide.json
 ```
+
+> **NOTE**: By default the communication to the platform step is set to "disabled" and the output is printed to stdout. To connect the Fog gateway to the platform you need an api key. This steps are not included in this guide. If you already have an account and configured a Network to receive the data from the Edge, locate and modify this section of the configuration file.
+
+```json
+{
+  ...
+    ...
+      ...
+        "senders": [
+            {
+                "header": {
+                    "id": "src.northbound.senders.http_sender",
+                    "class": "HTTPSender",
+                    "description": "Sends data to a HTTP endpoint",
+                    "input": "src.core.aggregators.standard_aggregator",
+                    "mandatory_tbf": true,
+                    "enabled": false
+                },
+                "parameters": {
+                    "endpoint": "https://tenant-a-uat.sensoworks.com/datagate/sensoworks/datagate?network=<CHANGE_THIS_WITH_YOUR_NETWORK_ID>",
+                    "api_key": "<CHANGE_THIS_WITH_THE_API_KEY>"
+                }
+            }
+        ]
+        ...
+      ...
+    ...
+  ...
+}
+
+                    "module_path": "src.northbound.senders.http_sender",
+                    "id": "Sender_OLIVIERI_A",
+                    "class": "HTTPSender",
 
 ## Start the Sensoworks Fog gateway
 
