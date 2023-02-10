@@ -3,7 +3,7 @@ layout: default
 title: Fog on-premise
 nav_order: 324
 description: "Fog installation on-premise"
-parent: Edge installation
+parent: Edge/Fog installation
 grand_parent: Edge gateway
 has_children: true
 ---
