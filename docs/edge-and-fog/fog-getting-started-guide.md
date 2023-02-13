@@ -29,7 +29,7 @@ The Sensoworks Fog gateway will then perform these steps:
 - Prepare the Sensoworks payload to call the platform
 - Save the aggregated data in CSV and JSON format to file
 - Call the Sensoworks platform via HTTP
-  - **NOTE**: This step is initially set to "disabled" and the output is printed to stdout. To connect the Fog gateway to the platform you need an api key to communicate using the HTTP protocol (see below additional details)
+  - **NOTE**: Initially, this step is set to disabled and the results is displayed on the standard output. To establish a connection between the Fog Gateway and the platform, you should be already registered on the platform and have an API key. Later in this doc we will give further information
 
 # Getting started guide - Steps
 
@@ -105,7 +105,7 @@ Now you are ready to start the sensoworks_fog_gateway.py
 
 ## Edit the config file of fhe Fog gateway
 
-The Getting Started guide includes a pre-configured file for the Fog Gateway that processes temperature data from the MQTT topic, performs data aggregation and analysis, and outputs the results to files and sends them to the Sensoworks platform (this step is "disable" at the beginning because it requires a token from the plaftform).
+The Getting Started guide includes a pre-configured file for the Fog Gateway that processes temperature data from the MQTT topic, performs data aggregation and analysis, and outputs the results to files and sends them to the Sensoworks platform.
 
 ```sh
 # Move back to the root directory of the Fog gateway
@@ -143,10 +143,7 @@ vi ./config/sensoworks_fog_gateway_getting_started_guide.json
     ...
   ...
 }
-
-                    "module_path": "src.northbound.senders.http_sender",
-                    "id": "Sender_OLIVIERI_A",
-                    "class": "HTTPSender",
+```
 
 ## Start the Sensoworks Fog gateway
 
@@ -169,22 +166,20 @@ python sensoworks_fog_gateway.py --config ./config/sensoworks_fog_gateway_gettin
 By default the configuration for getting started guide produces:
 
 ```sh
-# Move into the home directory of the Fog gateway
-cd logs
-
 # Check the raw data. Control^C to stop it
-tail -f TBD
+ls output/raw/*
 
 # Check the output files (json and csv). Control^C to stop it
-tail -f TBD
+ls output/aggregated_csv/*
+ls output/aggregated_json/*
 
 # Check the Fog logs. Control^C to stop it
-tail -f TBD
+tail -f logs/sensoworks_fog_gateway.log
 ```
 
 ## Open the Sensoworks Desk Console
 
-> **NOTE**: To see the data on the platform you need to have previously configured the api key to communicate to the platform. It means that you need to be registered to the platform, that a Network was created an a Datagate HTTP configured.
+> **NOTE**: To see the data on the platform you need to have previously configured the Fog gateway to send data over the HTTP channel specifying the API key to communicate to the platform. It means that you need to be registered to the platform, that a Network was created an a Datagate HTTP configured.
 
 [https://demo.sensoworks.com/console](https://demo.sensoworks.com/console)
 
