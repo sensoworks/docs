@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Edge/Fog installation
+title: Edge/Fog installation overview
 nav_order: 32
-description: "Edge/Fog installation"
+description: "Edge/Fog installation overview"
 parent: Edge/Fog gateway
-has_children: true
+has_children: false
 ---
 
-# Edge/Fog installation
+# Edge/Fog installation overview
 
 The architecture document outlines the various components of Sensoworks Edge/Fog, each of which offers distinct features and capabilities. These components can be packaged in various configurations to meet the specific needs and requirements of your system. By thoroughly evaluating the available types and packaging options for Sensoworks Edge/Fog components, you can select the solution that aligns with your specific needs and objectives.
 
