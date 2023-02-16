@@ -2,7 +2,7 @@
 layout: default
 title: Edge getting started guide
 nav_order: 331
-description: "Getting started guide"
+description: "Edge getting started guide"
 parent: Edge
 grand_parent: Edge/Fog gateway
 has_children: false
