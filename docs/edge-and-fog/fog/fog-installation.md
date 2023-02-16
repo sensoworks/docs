@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Fog installation on-premise
+title: Fog installation
 nav_order: 342
-description: "Fog installation on-premise"
+description: "Fog installation"
 parent: Fog
 grand_parent: Edge/Fog gateway
 has_children: false
 ---
 
-# Fog installation on-premise
+# Fog installation
 
 The Sensoworks Fog gateway is an excellent choice for flexibility and versatility. While it does require a computer capable of running Python, this requirement is typically not an issue due to the Sensoworks Fog gateway's intended use compared to the C and C++ versions of fhe Sensoworks Edge gateways. In fact, even small computers like Raspberry Pi can be configured to run the Fog component. Overall, the Sensoworks Fog gateway's flexibility and adaptability make it a suitable option for a wide range of applications.
 
