@@ -12,7 +12,7 @@ has_children: false
 
 This guide is intended to provide a simple example of the functionalities and configuration of the Sensoworks Fog gateway. The scenario presented in this guide is depicted below:
 
-<p align="center"><img src="../assets/images/sensoworks-fog-getting-started-guide.jpg" width="75%" height="75%"></p>
+<p align="center"><img src="../../assets/images/sensoworks-fog-getting-started-guide.jpg" width="75%" height="75%"></p>
 
 The simulator, on the upper left of the picture, will send temperature data to a MQTT topic named:
 
@@ -36,7 +36,7 @@ The Sensoworks Fog gateway will then perform these steps:
 
 {: .warning }
 
-> **WARNING**: If you have not yet installed the Fog gateway, please proceed with the installation process by following the instructions provided here: [**On premise Edge installation**](./edge-fog-installation/fog-installation-on-premise.md).
+> **WARNING**: If you have not yet installed the Fog gateway, please proceed with the installation process by following the instructions provided here: [**Fog installation**](./fog-installation.md).
 > This guide has been mainly prepared and testes for a local installation of the **Pure Python** version of the Fog gateway. This guide also a section to
 > If you installed other versions of the gateway, you will need to adapt the steps accordingly.
 
@@ -71,7 +71,7 @@ mosquitto
 
 The MQTT browser should be installed into your system. Use the OS application menu to launch the program.
 
-<p align="center"><img src="../assets/images/sensoworks-mqttx-configuration-localhost.png" width="75%" height="75%"></p>
+<p align="center"><img src="../../assets/images/sensoworks-mqttx-configuration-localhost.png" width="75%" height="75%"></p>
 
 ## Edit the config file of fhe simulator
 
@@ -159,7 +159,7 @@ python sensoworks_fog_gateway.py --config ./config/sensoworks_fog_gateway_gettin
 
 {: .warning }
 
-> **WARNING**: If you have not yet installed the Dockerized version of the Fog gateway, please proceed with the installation process by following the instructions provided here: [**On premise Edge installation**](./edge-fog-installation/fog-installation-on-premise.md).
+> **WARNING**: If you have not yet installed the Dockerized version of the Fog gateway, please proceed with the installation process by following the instructions provided here: [**Fog installation**](./fog-installation.md).
 
 ```sh
 # Move into the fog-runtime directory
