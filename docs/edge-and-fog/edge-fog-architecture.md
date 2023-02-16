@@ -4,6 +4,7 @@ title: Edge/Fog architecture
 nav_order: 31
 description: "Edge/Fog architecture"
 parent: Edge/Fog gateway
+has_children: false
 ---
 
 # Edge/Fog architecture

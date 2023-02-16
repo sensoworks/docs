@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Fog on-premise
+title: Fog installation on-premise
 nav_order: 342
 description: "Fog installation on-premise"
 parent: Fog
 grand_parent: Edge/Fog gateway
-has_children: true
+has_children: false
 ---
 
 # Fog installation on-premise
@@ -51,7 +51,7 @@ pip install -r requirements.txt
 
 Now you are ready to run the Sensoworks Fog gateway.
 
-The Sensoworks Fog gateway comes pre-packaged with a simple demo service, that monitors a simulated sensor. Follow this [**getting started guide**](../fog-getting-started-guide.md).
+The Sensoworks Fog gateway comes pre-packaged with a simple demo service, that monitors a simulated sensor. Follow this [**getting started guide**](./fog-getting-started-guide.md).
 
 ## Dockerized standalone
 
@@ -87,9 +87,13 @@ vi config/sensoworks_fog_gateway_getting_started_guide.json
 
 ✅ DONE :-)
 
-The Sensoworks Fog gateway comes pre-packaged with a simple demo service, that monitors a simulated sensor. Follow this [**getting started guide**](../fog-getting-started-guide.md).
+The Sensoworks Fog gateway comes pre-packaged with a simple demo service, that monitors a simulated sensor. Follow this [**getting started guide**](./fog-getting-started-guide.md).
 
 ## Dockerized with EdgeX
+
+TBD
+
+## K3S
 
 TBD
 
