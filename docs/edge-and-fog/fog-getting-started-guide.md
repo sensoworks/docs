@@ -35,7 +35,7 @@ The Sensoworks Fog gateway will then perform these steps:
 
 {: .warning }
 
-> **WARNING**: If you have not installed the Fog gateway yet, please install it following the instructions here: [**Edge installation**](./edge-fog-installation.md).
+> **WARNING**: If you have not yet installed the Fog gateway, please proceed with the installation process by following the instructions provided here: [**Edge installation**](./edge-fog-installation.md).
 > This guide has been prepared for a local installation of the **Pure Python** version of the Fog gateway.
 > If you installed other versions of the gateway, the procedure may be slightly different. You will need to adapt the steps accordingly.
 
