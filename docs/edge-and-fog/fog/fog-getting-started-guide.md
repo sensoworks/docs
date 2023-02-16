@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Fog getting started guide
-nav_order: 33
+nav_order: 341
 description: "Fog getting started guide"
 parent: Edge/Fog gateway
-has_children: true
+has_children: false
 ---
 
 # Sensoworks Fog gateway getting started guide - Intro
