@@ -51,7 +51,7 @@ pip install -r requirements.txt
 
 Now you are ready to run the Sensoworks Fog gateway.
 
-The Sensoworks Fog gateway comes pre-packaged with a simple demo service, that monitors a simulated sensor. Follow this [**getting started guide**](./fog-getting-started-guide.md).
+The Sensoworks Fog gateway comes pre-packaged with a simple demo service, that monitors a simulated sensor. Follow this [**Quickstart guide**](./fog-quickstart-guide.md).
 
 ## Dockerized standalone
 
@@ -87,7 +87,7 @@ vi config/sensoworks_fog_gateway_getting_started_guide.json
 
 ✅ DONE :-)
 
-The Sensoworks Fog gateway comes pre-packaged with a simple demo service, that monitors a simulated sensor. Follow this [**getting started guide**](./fog-getting-started-guide.md).
+The Sensoworks Fog gateway comes pre-packaged with a simple demo service, that monitors a simulated sensor. Follow this [**Quickstart guide**](./fog-quickstart-guide.md).
 
 ## Dockerized with EdgeX
 

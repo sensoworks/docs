@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Fog getting started guide
+title: Fog quickstart guide
 nav_order: 341
-description: "Fog getting started guide"
+description: "Fog quickstart guide"
 parent: Fog
 grand_parent: Edge/Fog gateway
 has_children: false
 ---
 
-# Sensoworks Fog gateway getting started guide - Intro
+# Sensoworks Fog gateway quickstart guide - Intro
 
 This guide is intended to provide a simple example of the functionalities and configuration of the Sensoworks Fog gateway. The scenario presented in this guide is depicted below:
 
@@ -26,13 +26,13 @@ The Sensoworks Fog gateway will then perform these steps:
 
 - Read the incoming messages from MQTT
 - Write the raw messages to disk
-- Elaborate and aggregate the incoming messages. The aggregation period is set for this getting started guide to 5 seconds, but it can be changed in the configuration file
+- Elaborate and aggregate the incoming messages. The aggregation period is set for this quickstart guide to 5 seconds, but it can be changed in the configuration file
 - Prepare the Sensoworks payload to call the platform
 - Save the aggregated data in CSV and JSON format to file
 - Call the Sensoworks platform via HTTP
   - **NOTE**: Initially, this step is set to disabled and the results is displayed on the standard output. To establish a connection between the Fog Gateway and the platform, you should be already registered on the platform and have an API key. Later in this doc we will give further information
 
-# Getting started guide - Steps
+# Quickstart guide - Steps
 
 {: .warning }
 
@@ -186,7 +186,7 @@ docker run --rm -it --name sensoworks_fog_gateway \
 
 ## Check out the output files produced by the Fog gateway
 
-By default the configuration for getting started guide produces:
+By default the configuration for quickstart guide produces:
 
 ```sh
 # Check the raw data. Control^C to stop it
