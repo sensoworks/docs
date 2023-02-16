@@ -53,50 +53,46 @@ Now you are ready to run the Sensoworks Fog gateway.
 
 The Sensoworks Fog gateway comes pre-packaged with a simple demo service, that monitors a simulated sensor. Follow this [**getting started guide**](../fog-getting-started-guide.md).
 
-## Dockerized standalone (TBF)
+## Dockerized standalone
 
 Pre-requisites:
 
 - Docker has to be installed on your system. If not, follow the instuctions from the main Docker website [docker.com](https://www.docker.com/)
-- Install Docker compose. If not already installed, follow the instuctions from the main Docker compose website [docker compose](https://docs.docker.com/compose/)
 
-Once **Docker** anche **Docker Compose** are installed, follow these instructions:
-
-Without mqtt embedded:
+Once **Docker** is installed, follow these instructions:
 
 ```sh
-docker run --name sensoworks-fog-gateway sensoworks-fog-gateway:latest
-```
+# If not already done, create a directory for the runtime of the Sensoworks Fog gateway
+mkdir fog-runtime
+cd fog-runtime
 
-With mqtt embedded:
+# Set the local variable to this runtime HOME for the Sensoworks Fog gateway
+export SFG_RUNTIME_HOME=$(pwd)
 
-```sh
-# Move into the directory you want to install the Sensoworks Fog gateway
-# cd <the parent directory where you want to install the Sensoworks Fog gateway>
+# Prepare these directories before to start the Dockerized version of the Fog gateway
+mkdir logs
+mkdir output
+mkdir config
 
-# Download the Sensoworks Fog gateway
-git clone https://github.com/sensoworks/sensoworks-fog-gateway.git
+# If not already done, copy the example configuration file from the Docker image, in order to modify it
+docker run --rm -it --name sensoworks_fog_gateway \
+           -v ${SFG_RUNTIME_HOME}/logs:/sensoworks_fog_gateway/logs \
+           -v ${SFG_RUNTIME_HOME}/output:/sensoworks_fog_gateway/output \
+           sensoworks/sensoworks_fog_gateway:latest \
+           cat config/sensoworks_fog_gateway_getting_started_guide.json > config/sensoworks_fog_gateway_getting_started_guide.json
 
-# Note: Alternatively you can manually download the release from here: https://github.com/sensoworks/sensoworks-fog-gateway/releases and after that, unzip it
-
-# Move into the Sensoworks Fog gateway home
-cd sensoworks-fog-gateway
-
-# Move into the docker compose directory
-cd docker
-
-# Run the Docker container
-docker-compose -d up
+# Modify the configuration file if necessary
+vi config/sensoworks_fog_gateway_getting_started_guide.json
 ```
 
 ✅ DONE :-)
 
-Now you are ready to run the Sensoworks Fog gateway.
+The Sensoworks Fog gateway comes pre-packaged with a simple demo service, that monitors a simulated sensor. Follow this [**getting started guide**](../fog-getting-started-guide.md).
 
 ## Dockerized with EdgeX
 
 TBD
 
-## Dockerized with the Industrial Appliance
+## Dockerized with the Industrial Appliance InGateway902
 
 TBD

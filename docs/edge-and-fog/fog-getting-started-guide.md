@@ -7,7 +7,7 @@ parent: Edge/Fog gateway
 has_children: false
 ---
 
-# Fog: getting started guide - Intro
+# Sensoworks Fog gateway getting started guide - Intro
 
 This guide is intended to provide a simple example of the functionalities and configuration of the Sensoworks Fog gateway. The scenario presented in this guide is depicted below:
 
@@ -35,9 +35,9 @@ The Sensoworks Fog gateway will then perform these steps:
 
 {: .warning }
 
-> **WARNING**: If you have not installed the Fog gateway yet, please install it following the instructions here: [**Edge installation**](./edge-installation.md).
+> **WARNING**: If you have not installed the Fog gateway yet, please install it following the instructions here: [**Edge installation**](./edge-fog-installation.md).
 > This guide has been prepared for a local installation of the **Pure Python** version of the Fog gateway.
-> If you installed other versions of the gateway, the procedure may be slightly different.
+> If you installed other versions of the gateway, the procedure may be slightly different. You will need to adapt the steps accordingly.
 
 ## Pre-requisites
 
@@ -52,7 +52,7 @@ The Sensoworks Fog gateway will then perform these steps:
 
 {: .note }
 
-> **NOTE**: If you already have an MQTT server running somewhere else, you can just skip this step.
+> **NOTE**: If you already have an MQTT server running somewhere else, you can just skip this step. The configuration assumes that the MQTT broker will respond to localhost and that the port is 1883.
 
 ```sh
 # Verify if the MQTT server is running
@@ -138,14 +138,13 @@ vi ./config/sensoworks_fog_gateway_getting_started_guide.json
                 }
             }
         ]
-        ...
       ...
     ...
   ...
 }
 ```
 
-## Start the Sensoworks Fog gateway
+## Start the Sensoworks Fog gateway (Pure Python installation)
 
 ```sh
 ## Move into the home directory of the Fog gateway
@@ -153,6 +152,29 @@ cd ..
 
 # Run the Fog gateway
 python sensoworks_fog_gateway.py --config ./config/sensoworks_fog_gateway_getting_started_guide.json
+```
+
+## Start the Sensoworks Fog gateway (Docker)
+
+{: .warning }
+
+> **WARNING**: If you have not yet installed the Dockerized version of the Fog gateway, please proceed with the installation process by following the instructions provided here: [**Edge installation**](./edge-fog-installation.md).
+
+```sh
+# Move into the fog-runtime directory
+cd fog-runtime
+
+# Set the local variable to this runtime HOME for the Sensoworks Fog gateway
+export SFG_RUNTIME_HOME=$(pwd)
+
+# Run the Sensoworks Fog gateway
+docker run --rm -it --name sensoworks_fog_gateway \
+           -v ${SFG_RUNTIME_HOME}/logs:/sensoworks_fog_gateway/logs \
+           -v ${SFG_RUNTIME_HOME}/config:/sensoworks_fog_gateway/config \
+           -v ${SFG_RUNTIME_HOME}/output:/sensoworks_fog_gateway/output \
+           sensoworks/sensoworks_fog_gateway:latest \
+           python sensoworks_fog_gateway.py \
+           -c config/sensoworks_fog_gateway_getting_started_guide.json
 ```
 
 ## MQTT topic subscription
