@@ -2,7 +2,7 @@
 layout: default
 title: Fog getting started guide
 nav_order: 341
-description: "Fog getting started guide"
+description: "Getting started guide"
 parent: Fog
 grand_parent: Edge/Fog gateway
 has_children: false
