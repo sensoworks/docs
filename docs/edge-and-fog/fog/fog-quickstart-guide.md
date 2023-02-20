@@ -106,7 +106,7 @@ Now you are ready to start the sensoworks_fog_gateway.py
 
 ## Edit the config file of fhe Fog gateway
 
-The Getting Started guide includes a pre-configured file for the Fog Gateway that processes temperature data from the MQTT topic, performs data aggregation and analysis, and outputs the results to files and sends them to the Sensoworks platform.
+The Getting Started guide includes a pre-configured file for the Fog Gateway that processes temperature data from the MQTT topic, performs data aggregation and analysis, and outputs the results to files and sends them to the Sensoworks platform (must be enabled manually, read the NOTE below).
 
 ```sh
 # Move back to the root directory of the Fog gateway

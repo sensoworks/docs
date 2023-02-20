@@ -85,6 +85,38 @@ docker run --rm -it --name sensoworks_fog_gateway \
 vi config/sensoworks_fog_gateway_getting_started_guide.json
 ```
 
+> **NOTE**: Since you will be running the docker containerized version of the Sensorks Fog gateway, use the IP address of the host machine or use the alias host.docker.internal
+
+Locate this portion of the configuration and change it to point to the address where the MQTT server is located.
+
+```json
+        ...
+        "readers": [
+            {
+                "header": {
+                    "id": "src.southbound.readers.mqtt_client_subscriber",
+                    "module_path": "src.southbound.readers.mqtt_client_subscriber",
+                    "class": "MQTTClientSubscriber",
+                    "description": "Read from a MQTT topic",
+                    "input": null,
+                    "mandatory_tbf": true,
+                    "enabled": true
+                },
+                "parameters": {
+                    "broker_host": "localhost",
+                    "_comment_broker_host": "If you are running the docker container on a linux machine, use the IP address of the host machine or host.docker.internal",
+                    "broker_port": 1883,
+                    "topics": [
+                        "sensoworks/fog/southbound/t-001"
+                    ],
+                    "input_type": "json",
+                    "blocking_time_in_dequeue": 10
+                }
+            }
+        ],
+        ...
+```
+
 ✅ DONE :-)
 
 The Sensoworks Fog gateway comes pre-packaged with a simple demo service, that monitors a simulated sensor. Follow this [**Quickstart guide**](./fog-quickstart-guide.md).
