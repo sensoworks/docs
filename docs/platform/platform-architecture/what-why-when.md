@@ -1,9 +1,10 @@
 ---
 layout: default
 title: What, why, when
-nav_order: 8881
+nav_order: 212
 description: "What, why, when"
-parent: Add-ons
+parent: Platform architecture
+grand_parent: Platform
 ---
 
 # Intro
