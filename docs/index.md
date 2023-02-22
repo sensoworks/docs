@@ -8,7 +8,7 @@ has_children: false
 
 # Intro
 
-<video width="640" height="480" controls>
+<video width="100%" controls>
   <source src="./assets/videos/sensoworks-intro.mp4" type="video/mp4">
 </video>
 
