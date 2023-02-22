@@ -11,7 +11,7 @@ grand_parent: Platform
 
 The microservices of the Sensoworks platform are shown here:
 
-<p align="center"><img src="../assets/images/sensoworks-microservices.jpg" width="100%" height="100%"></p>
+<p align="center"><img src="../../assets/images/sensoworks-microservices.jpg" width="100%" height="100%"></p>
 
 Let's now analyze the function of each individual component in detail.
 
