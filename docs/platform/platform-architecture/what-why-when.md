@@ -18,7 +18,7 @@ The two things we want to highlight in this introduction are:
 
 So, let’s start and welcome into the IoT world.
 
-<p align="left"><img src="../assets/images/sensoworks-iot-world-logo.jpg" width="10%" height="10%"></p>
+<p align="left"><img src="../../assets/images/sensoworks-iot-world-logo.jpg" width="10%" height="10%"></p>
 
 Very likely you already heard about the term IoT.
 
@@ -155,7 +155,7 @@ TBD
 
 There are many reasons why it is important to have a well designed IoT platform for your projects. Some of the reasons are listed below in the picture. But besides technical aspects, and not less important, is to choose an IoT platform supported by a company, that will walk with you during the entire lifecycle of your IoT project, from the initial design of the solution to the production and post-production phases.
 
-<p align="center"><img src="../assets/images/sensoworks-data-storm.jpg" width="100%" height="100%"></p>
+<p align="center"><img src="../../assets/images/sensoworks-data-storm.jpg" width="100%" height="100%"></p>
 
 # Overview: trip of a single measurement
 
@@ -190,11 +190,11 @@ We will also describe what choices we do have at each step. For example:
 
 The architecture of the platform will be described in a specific chapter, but for now it is useful to keep it at hand while we explain some aspects of the platform.
 
-<p align="center"><img src="../assets/images/sensoworks-mla.jpg" width="100%" height="100%"></p>
+<p align="center"><img src="../../assets/images/sensoworks-mla.jpg" width="100%" height="100%"></p>
 
 ### Overview of the trip from Things to Humans: sensed data and analytics
 
-<p align="center"><img src="../assets/images/sensoworks-trip-things-to-humans.jpg" width="100%" height="100%"></p>
+<p align="center"><img src="../../assets/images/sensoworks-trip-things-to-humans.jpg" width="100%" height="100%"></p>
 
 We will describe all the steps that a single measure will do from Things to Humans:
 
@@ -212,7 +212,7 @@ We will describe all the steps that a single measure will do from Things to Huma
 
 ### Overview of the trip from Humans to Things: configure, administer, act on actuators
 
-<p align="center"><img src="../assets/images/sensoworks-trip-humans-to-things.jpg" width="100%" height="100%"></p>
+<p align="center"><img src="../../assets/images/sensoworks-trip-humans-to-things.jpg" width="100%" height="100%"></p>
 
 We will describe all the steps a single measure will do from Humans to Things:
 
@@ -231,7 +231,7 @@ We will describe all the steps a single measure will do from Humans to Things:
 
 ### Reference scenario: Monitoring structural deformation of a tunnel
 
-<p align="center"><img src="../assets/images/sensoworks-tunnel.png" width="100%" height="100%"></p>
+<p align="center"><img src="../../assets/images/sensoworks-tunnel.png" width="100%" height="100%"></p>
 
 The scenario consists in monitoring the health of a tunnel, in term of structural deformations that may damage the tunnel itself and put Humans in danger. Natural causes that affect the structure of a tunnel are:
 
@@ -249,6 +249,4 @@ Human causes that affect the structure of a tunnel:
 - Accidents
 - Etc.
 
-But how do you actually prepare a tunnel to be monitored for deformations.
-
-We can use a FS22 Industrial BraggMETER (picture 1) and wire the entire tunnel with the Fiber-optic cable (picture 2) and strain sensors (picture 3).
+But how do you actually prepare a tunnel to be monitored for deformations?
