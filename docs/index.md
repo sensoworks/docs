@@ -8,9 +8,8 @@ has_children: false
 
 # Intro
 
-<video width="320" height="240" controls>
-  <source src="assets/sensoworks_intro.mp4" type="video/mp4">
-  Your browser does not support the video tag.
+<video width="640" height="480" controls>
+  <source src="assets/video/sensoworks-intro.mp4" type="video/mp4">
 </video>
 
 Sensoworks is an extremely scalable IoT platform built mainly in Java (for the cloud platform) and Python (for the Edge components) and can be installed, depending on the customer's needs, on-premise, in the cloud or deployed in a hybrid environment.
