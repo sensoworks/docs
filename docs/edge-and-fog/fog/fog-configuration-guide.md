@@ -17,7 +17,7 @@ has_children: false
         "readers": ["excel", "mqtt", "kafka_", "raw_"],
         "writers": ["raw"],
         "validators": [],
-        "converters": ["standard_json_loader", "json2json", "csv2json_", "binary2json_"]
+        "converters": ["standard_json_loader", "json2json", "csv2json", "binary2json_"]
     },
     "core": {
         "initializers": [],
