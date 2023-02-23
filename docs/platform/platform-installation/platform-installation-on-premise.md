@@ -8,4 +8,6 @@ grand_parent: Platform
 has_children: false
 ---
 
-TBD Platform::Installation::On-Premise
+# Platform installation on-premise
+
+TBD

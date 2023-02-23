@@ -7,4 +7,6 @@ parent: Platform
 has_children: true
 ---
 
-TBD Platform::Installation
+# Platform installation
+
+TBD
