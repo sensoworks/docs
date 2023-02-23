@@ -52,10 +52,15 @@ Font size 5
 {: .fs-5 }
 Font size 6
 
+JSON example:
+
+```json
+{
+    "broker_host": "localhost",
+    "broker_port": 1883,
+}
 ```
-if (a)
-   b=4;
-```
+
 
 #### Thank you to the contributors of Just the Docs!
 
