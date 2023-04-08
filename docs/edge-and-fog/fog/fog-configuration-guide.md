@@ -71,4 +71,7 @@ Documentation for each class:
 | Class file | col2 | col3 |
 | --- | --- | --- |
 | src.southbound.readers.excel_reader |
-| src.core.aggregators.standard_aggregator |  a |  a |
+| src.core.aggregators.standard_aggregator |  a |  a g g hjhjhh h jhj h  hj jjhjhjhhjh jjj j
+- hhh
+- jjj
+- hhh |
