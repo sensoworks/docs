@@ -45,6 +45,8 @@ The Executor is responsible for managing the actions that can be performed on th
 
 ## Reporter
 
+The Reporter
+
 ## Predictor
 
 ## Certificator

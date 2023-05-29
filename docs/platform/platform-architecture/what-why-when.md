@@ -36,7 +36,7 @@ The amount of data that these “things” will generate and hit the internet ha
 
 But how much data are we talking about when we say “data storm”?
 
-Just to make a rapid estimation using the “tunnel monitoring scenario” presented below in the next chapters, we have:
+Just to make a rapid estimation using the bridge monitoring scenario” presented below in the next chapters, we have:
 
 | **Feature** | **Numbers** |
 |:---|:---|
@@ -54,7 +54,7 @@ Just to make a rapid estimation using the “tunnel monitoring scenario” prese
   - 3.78 GB per day
   - 10 messages (~4,6 kb each message) per second to send over the internet
 
-And this is just one simple scenario of just one tunnel. There are many other scenario that require a much greater amount of data to elaborate.
+And this is just one simple scenario of just one bridge. There are many other scenario that require a much greater amount of data to elaborate.
 
 Consider this table, that shows ranges of data related to a group of sensors of a hypothetical IoT project:
 
@@ -84,7 +84,7 @@ One of the most important missions of the Sensoworks IoT platform is to make obj
 
 For this reason we partnership with companies that have solid background in monitoring infrastructures. Collaborating with physicists, geologists, construction engineers is what makes the difference in succeeding in these projects. We strongly believe that the sum of two competences produces more than their pure algebraic result. Only facing a problem from different perspectives and different backgrounds, in a interdisciplinary approach, permits to solve problems better and faster.
 
-## Main characteristics an top 3 killing features
+## Main characteristics and top 3 killing features
 
 The Sensoworks platform has been designed to solve many IoT needs. These are a list of its features:
 
@@ -165,7 +165,7 @@ To simplify the exposition of the Sensoworks IoT platform, in terms of what it i
 
 To make the narration of the trip more intuitive and concrete we will use a single use case described by the reference scenario below.
 
-Since the narration will be done on a specific scenario, we don’t pretend to cover every single aspect of the IoT, or to cover all possibilities we have to solve all obstacles, but we strongly believe that the general understanding of the platform will be a lot better. Anyway on some situation we will refer to the other two scenarios.
+Since the narration will be done on a specific scenario, we don’t pretend to cover every single aspect of the IoT platform, or to cover all possibilities we have to solve all obstacles, but we strongly believe that the general understanding of the platform will be a lot better. Anyway on some situation we will refer to the other two scenarios.
 
 During the trip we will often zoom in and out from details to high level architecture, to better under the the capabilities of the Sensoworks IoT platform.
 
@@ -229,24 +229,33 @@ We will describe all the steps a single measure will do from Humans to Things:
 
 ## The scenarios
 
-### Reference scenario: Monitoring structural deformation of a tunnel
+### Reference scenario: Monitoring a bridge
 
-<p align="center"><img src="../../assets/images/sensoworks-tunnel.png" width="100%" height="100%"></p>
+<p align="center"><img src="../../assets/images/sensoworks-bridge.jpg" width="100%" height="100%"></p>
 
-The scenario consists in monitoring the health of a tunnel, in term of structural deformations that may damage the tunnel itself and put Humans in danger. Natural causes that affect the structure of a tunnel are:
+The scenario consists in monitoring the health of a bridge, in term of structural deformations that may damage the bridge itself and put Humans in danger.
+
+Natural causes that affect the structure of a bridge are:
 
 - Landslides
 - Earthquakes
-- Wind
-- Infiltrations
-- Temperature
+- Wind and rain
+- Aging
 - Etc.
 
-Human causes that affect the structure of a tunnel:
+Human causes that affect the structure of a bridge:
 
 - Traffic
 - Heavy vehicles
 - Accidents
 - Etc.
 
-But how do you actually prepare a tunnel to be monitored for deformations?
+But how do you actually prepare a tunnel to be monitored for health?
+
+Sensors have to be installed on the bridge and this may be done in different ways depending on the type of the bridge, such as Beam, Truss, Arch, Suspension, Cable-Stayed and many others.
+
+Usually these sensors are necessary:
+
+
+
+
