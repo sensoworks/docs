@@ -12,7 +12,7 @@ has_children: false
 | --- | --- | --- |
 | <video width="100%" controls><source src="./assets/videos/sensoworks-intro.mp4" type="video/mp4"></video> |  <video width="100%" controls><source src="./assets/videos/sensoworks-intro.mp4" type="video/mp4"></video> | <video width="100%" controls><source src="./assets/videos/sensoworks-intro.mp4" type="video/mp4"></video> |
 
-Sensoworks is an extremely scalable IoT platform built mainly in Java (for the cloud platform) and Python (for the Edge components) and can be installed, depending on the customer's needs, on-premise, in the cloud or deployed in a hybrid environment.
+Sensoworksssss is an extremely scalable IoT platform built mainly in Java (for the cloud platform) and Python (for the Edge components) and can be installed, depending on the customer's needs, on-premise, in the cloud or deployed in a hybrid environment.
 
 It was designed from the start to be flexible and adaptive in collecting data from heterogeneous sources so that it can be used in different scenarios and in different fields of application.
 
