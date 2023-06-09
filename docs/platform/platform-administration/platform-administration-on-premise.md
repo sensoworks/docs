@@ -1,7 +1,7 @@
 ---
 layout: default
 title: on-premise
-nav_order: 232
+nav_order: 2
 description: "Platform administration on-premise"
 parent: Platform administration
 grand_parent: Platform

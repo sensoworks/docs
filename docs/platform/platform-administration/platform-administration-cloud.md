@@ -1,7 +1,7 @@
 ---
 layout: default
 title: cloud
-nav_order: 231
+nav_order: 1
 description: "Platform administration cloud"
 parent: Platform administration
 grand_parent: Platform
