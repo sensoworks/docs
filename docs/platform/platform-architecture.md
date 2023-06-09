@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Platform architecture
-nav_order: 21
+nav_order: 1
 description: "Platform architecture"
 parent: Platform
 has_children: true

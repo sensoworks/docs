@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Fog installation
-nav_order: 342
+nav_order: 2
 description: "Fog installation"
 parent: Fog
 grand_parent: Edge/Fog gateway

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Edge/Fog architecture
-nav_order: 31
+nav_order: 1
 description: "Edge/Fog architecture"
 parent: Edge/Fog gateway
 has_children: false

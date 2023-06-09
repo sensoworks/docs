@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Platform installation
-nav_order: 22
+nav_order: 2
 description: "Platform installation"
 parent: Platform
 has_children: true

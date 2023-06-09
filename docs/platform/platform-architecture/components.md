@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Components
-nav_order: 211
+nav_order: 1
 description: "Components"
 parent: Platform architecture
 grand_parent: Platform

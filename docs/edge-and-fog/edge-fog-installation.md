@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Edge/Fog installation
-nav_order: 32
+nav_order: 2
 description: "Edge/Fog installation"
 parent: Edge/Fog gateway
 has_children: false

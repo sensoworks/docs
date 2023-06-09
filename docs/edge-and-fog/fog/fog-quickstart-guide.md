@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Fog quickstart guide
-nav_order: 341
+nav_order: 1
 description: "Fog quickstart guide"
 parent: Fog
 grand_parent: Edge/Fog gateway

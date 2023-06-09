@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Edge configuration guide
-nav_order: 333
+nav_order: 3
 description: "Edge configuration guide"
 parent: Edge
 grand_parent: Edge/Fog gateway

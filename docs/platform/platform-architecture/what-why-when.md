@@ -1,7 +1,7 @@
 ---
 layout: default
 title: What, why, when
-nav_order: 212
+nav_order: 2
 description: "What, why, when"
 parent: Platform architecture
 grand_parent: Platform
@@ -255,7 +255,3 @@ But how do you actually prepare a tunnel to be monitored for health?
 Sensors have to be installed on the bridge and this may be done in different ways depending on the type of the bridge, such as Beam, Truss, Arch, Suspension, Cable-Stayed and many others.
 
 Usually these sensors are necessary:
-
-
-
-

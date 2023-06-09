@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Fog configuration guide
-nav_order: 343
+nav_order: 3
 description: "Fog configuration guide"
 parent: Fog
 grand_parent: Edge/Fog gateway
