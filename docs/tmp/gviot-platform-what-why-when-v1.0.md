@@ -1,4 +1,4 @@
-## ![image alt text](image_0.png) 
+## ![image alt text](image_0.png)
 
 Sensoworks platform
 
@@ -36,7 +36,7 @@ One thing we want to emphasize however, it is that this revolution is so vast, t
 
 The IoT revolution will be disruptive. Sensors and actuators of all types, are being added to the Internet at a unimaginable rate and the IoT market will continue to be one of top exponentially growing markets in the next years.
 
-The amount of data that these "things" will generate and hit the internet has never been faced before and will need new technologies and new paradigms to be able to collect, store, elaborate and analyze all these data. 
+The amount of data that these "things" will generate and hit the internet has never been faced before and will need new technologies and new paradigms to be able to collect, store, elaborate and analyze all these data.
 
 But how much data are we talking about when we say "data storm"?
 
@@ -88,7 +88,7 @@ One of the most important missions of the Sensoworks platform is to make objects
 
 For this reason we collaborate with companies that have solid background in monitoring infrastructures, with companies that produce sensors and with expert in the field of what has to be monitored.
 
-Collaborating with physicists, geologists, construction engineers is what makes the difference in succeeding in these projects. We strongly believe that the sum of two competences produces more than their pure algebraic result. Only facing a problem from different perspectives and different backgrounds, in a interdisciplinary approach, permits to solve problems better and faster. 
+Collaborating with physicists, geologists, construction engineers is what makes the difference in succeeding in these projects. We strongly believe that the sum of two competences produces more than their pure algebraic result. Only facing a problem from different perspectives and different backgrounds, in a interdisciplinary approach, permits to solve problems better and faster.
 
 ### 2.1.1 Main characteristics of the Sensoworks platform and its top 3 killing features
 
@@ -226,7 +226,7 @@ To make the narration of the trip more intuitive and concrete we will use a sing
 
 Since the narration will be done on a specific scenario, we don’t pretend to cover every single aspect of the IoT, or to cover all possibilities we have to solve all obstacles, but we strongly believe that the general understanding of the platform will be a lot better. Anyway on some situation we will refer to the other two scenarios.
 
-During the trip we will often zoom in and out from details to high level architecture, to better under the the capabilities of the Sensoworks platform.
+During the trip we will often zoom in and out from details to high level architecture, to better under the capabilities of the Sensoworks platform.
 
 Moreover, along the narration we will focus on these aspects of the Sensoworks platform:
 
@@ -234,7 +234,7 @@ Moreover, along the narration we will focus on these aspects of the Sensoworks p
 
 * Traffic and scalability of the platform
 
-* The 3M = Modularity, maintainability, monitorability 
+* The 3M = Modularity, maintainability, monitorability
 
 We will also describe what choices we do have at each step. For example:
 
@@ -532,11 +532,11 @@ We are about to cross the oceans of the Internet. At a first glance it would see
 
 There are the things that, in general, need to be answered and some precautions to take:
 
-* How stable is the connection? Let’s not forget the the term IoT is the acronym for the Internet of Things, which means that Things need necessarily to be connected to the Internet to become citizens of the IoT world. Things can be cars, walls, ships, tunnels, wheels, motors and an infinite number of other devices; and usually these devices are not easily connectable to the Internet. Other options are ([https://www.link-labs.com/blog/complete-list-iot-network-protocols](https://www.link-labs.com/blog/complete-list-iot-network-protocols)): Bluetooth, BLE, ZigBee, Z-Wave, 6LoWPAN, Thread, WiFi-ah (HaLow), 2G (GSM), 3G & 4G, LTE Cat 0, 1, & 3, LTE-M1, NB-IoT, 5G, NFC, RFID, SigFox, LoRaWAN, Ingenu, Weightless-N, Weightless-P, Weightless-W, ANT & ANT+, DigiMesh, MiWi, EnOcean, Dash7, WirelessHART
+* How stable is the connection? Let’s not forget the term IoT is the acronym for the Internet of Things, which means that Things need necessarily to be connected to the Internet to become citizens of the IoT world. Things can be cars, walls, ships, tunnels, wheels, motors and an infinite number of other devices; and usually these devices are not easily connectable to the Internet. Other options are ([https://www.link-labs.com/blog/complete-list-iot-network-protocols](https://www.link-labs.com/blog/complete-list-iot-network-protocols)): Bluetooth, BLE, ZigBee, Z-Wave, 6LoWPAN, Thread, WiFi-ah (HaLow), 2G (GSM), 3G & 4G, LTE Cat 0, 1, & 3, LTE-M1, NB-IoT, 5G, NFC, RFID, SigFox, LoRaWAN, Ingenu, Weightless-N, Weightless-P, Weightless-W, ANT & ANT+, DigiMesh, MiWi, EnOcean, Dash7, WirelessHART
 
-    * For our scenario we have a fast and stable Internet connection, so we no problems about this 
+    * For our scenario we have a fast and stable Internet connection, so we no problems about this
 
-* Which is the transfer rate that we need, related to the amount of data to transfer? How does it affect the the choice of the protocol?
+* Which is the transfer rate that we need, related to the amount of data to transfer? How does it affect the choice of the protocol?
 
     * For our scenario we have a call every minute and Internet is directly available in the tunnel, so this is not an issue for us. But in general there are an infinite number of differently complex situations that can be faced. Bad connectivity, no power available, isolated devices and many others. This is why there are many network protocols available
 
@@ -622,7 +622,7 @@ The role of the Buffering & decoupling layer, based on Kafka technology, is very
 
 * It permits to the platform to scale massively, based on traffic needs
 
-    * Kafka is very efficient when it comes to having a multitude of producer and consumers attached to the platform. Kafka itself can scale to many nodes easily 
+    * Kafka is very efficient when it comes to having a multitude of producer and consumers attached to the platform. Kafka itself can scale to many nodes easily
 
 ## 4.6 DataPump from the buffer to the data lake
 
@@ -760,7 +760,7 @@ The following table summarizes the roles defined for the IoT Platform users.
 
 ## 8.7 Disable a Network, a Thing or a Device
 
-## 8.8 8.6 
+## 8.8 8.6
 
 # 9 Platform monitoring
 
@@ -941,4 +941,3 @@ In the next picture there are samples of interactions divided by communication t
 ![image alt text](image_25.png)
 
 ![image alt text](image_26.png)
-

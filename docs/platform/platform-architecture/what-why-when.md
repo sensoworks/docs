@@ -167,7 +167,7 @@ To make the narration of the trip more intuitive and concrete we will use a sing
 
 Since the narration will be done on a specific scenario, we don’t pretend to cover every single aspect of the IoT platform, or to cover all possibilities we have to solve all obstacles, but we strongly believe that the general understanding of the platform will be a lot better. Anyway on some situation we will refer to the other two scenarios.
 
-During the trip we will often zoom in and out from details to high level architecture, to better under the the capabilities of the Sensoworks IoT platform.
+During the trip we will often zoom in and out from details to high level architecture, to better under the capabilities of the Sensoworks IoT platform.
 
 Moreover, along the narration we will focus on these aspects of the Sensoworks IoT platform:
 

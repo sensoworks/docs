@@ -23,7 +23,7 @@ To ensure that the installation process is as smooth and efficient as possible, 
 - Preparation of the environment: Kubernetes cluster
   - The first stage is the preparation of the environment. This involves ensuring that the underlying infrastructure is in place and ready to support the Sensoworks platform. Depending on the specific requirements of the user, this may involve setting up virtual machines, configuring network security, and installing any necessary drivers or software packages
 - Installation of three parties software: MongoDB, MySQL, Kafka, etc.
-  - The second stage of the installation process involves the installation of the three-party software that Sensoworks depends on. This includes popular software packages such as MongoDB, MySQL, Kafka, and others. These packages provide the necessary infrastructure to support the Sensoworks platform, including database storage, messaging, and other key features
+  - The second stage of the installation process involves the installation of the third-party software that Sensoworks depends on. This includes popular software packages such as MongoDB, MySQL, Kafka, and others. These packages provide the necessary infrastructure to support the Sensoworks platform, including database storage, messaging, and other key features
 - Installation of the Sensoworks components
   - The third and final stage of the installation process is the installation of the Sensoworks components themselves. This involves deploying the various Sensoworks services, including the Sensoworks API, the Sensoworks dashboard, and other core components. These services are designed to work seamlessly together, providing a powerful and flexible platform that can be tailored to meet the specific needs of the user
 

@@ -17,7 +17,7 @@ The appropriate Sensoworks Edge/Fog gateway solution for your project will depen
 
 | Destination | Notes |
 |:---|:---|
-| Embedded computing | This is the closest to the "Thing" in Io"T" world you can get. C remains the most widely used embedded programming language. Contact Sensoworks to discuss which is the the best solution for your needs |
+| Embedded computing | This is the closest to the "Thing" in Io"T" world you can get. C remains the most widely used embedded programming language. Contact Sensoworks to discuss which is the best solution for your needs |
 | Realtime OS computing | As for embedded computing, forget about Python, Java, etc. "C" is needed in 99% of cases. Dev with Arduino?, Maduino? STMicroelectronics?, Sensoworks has pre-packaged solutions for waste management, water leak detection, multi sensors general purpose pre-packaded applicances. For more information on how to collaborate with Sensoworks, please do not hesitate to contact us. Please reach out to us to begin this exciting journey together. |
 | Tiny computers | Here we generally have a user frienly OS you can interact with. Unix is geneally the best option we propose. Solutions like Raspberry, Asus Tinker Board, Odroid and many others are available. On these systems, Sensoworks can install here all its Edge and Fog solutions: C, C++, Python |
 | Industrial computers | There are thousands of solutions [here](https://www.google.com/search?q=industrial+pc+manufacturers). Usually these system run Unix and Sensoworks can install here all its Edge and Fog solutions: C, C++, Python |
