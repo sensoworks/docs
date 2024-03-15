@@ -53,7 +53,7 @@ DONE
 ERROR
 ABORTED
 ```
-If a running analysis needs to be stopped (aborted), the Worker has to receive on the broadcast a payload the analysis_id key. If the
+If a running analysis needs to be stopped (aborted), the Worker has to receive on the broadcast topic a payload the analysis_id key. If the
 specified ID is the same as the running analysis, the run will be stopped. If the specified ID is not the same or the payload does not contain
 the analysis_id key, the message will be ignored.
 
@@ -67,23 +67,20 @@ MONGODB_DATABASE: the database (schema) of the OMA collections.
 MONGODB_DATABASE_MEASURES: the database (schema) of the measures. This is normally separated from the OMA DB.
 MONGODB_DOMAIN: the MongoDB domain used in the creation of the endpoint.
 MONGODB_PORT: the MongoDB port used in the creation of the endpoint.
-MONGODB_OPTIONS: non mandatory options to use during the MongoDB connection. Example: "authSource=admin".
+MONGODB_OPTIONS: non mandatory options to use during the MongoDB connection. Example: "authSource=admin"
 MONGODB_USERNAME: the MongoDB username for the connection.
 MONGODB_PASSWORD: the MongoDB password for the connection.
 MONGODB_PREFIX: the type of connection to MongoDB. Normally is "mongodb" or "mongodb+srv".
-MONGODB_QUEUE_COLLECTION: the name of the queue collection where does the polling needs to be done.
+MONGODB_QUEUE_COLLECTION: the name of the queue collection where the polling needs to be done.
 MONGODB_STRUCTURE_COLLECTION: the name of the collection where the structures are saved.
-MONGODB_RUN_COLLECTION: the name prefix of the collection where analyses are saved. Example:
-modals_analysis_6426ff08edc3cbd39eac2a93.
+MONGODB_RUN_COLLECTION: the name prefix of the collection where analyses are saved. Example: modals_analysis_6426ff08edc3cbd39eac2a93
 export MONGODB_RES_COLLECTION: the name prefix of the collection where analyses results are saved. Example:
-modals_analysis_results_6426ff08edc3cbd39eac2a93.
-MONGODB_MEASURE_COLLECTION: the name prefix of the collection where the measures are saved. Example: measures_43 Only
-the bold part needs to be put here.
+modals_analysis_results_6426ff08edc3cbd39eac2a93
+MONGODB_MEASURE_COLLECTION: the name prefix of the collection where the measures are saved. Example: measures_43
 KAFKA_BROKER: the Kafka endpoint.
 KAFKA_TOPIC_BROADCAST: the topic for the consumer. On this topic the Worker expects to receive the abort requests.
-KAFKA_CONSUMER_GROUP: the consumer group for the consumer topic. This is mandatory to set, but it is not currently used by the
-Worker.
-KAFKA_TOPIC_OUTPUT: the topi where the change of analyses status will be sent.
+KAFKA_CONSUMER_GROUP: the consumer group for the consumer topic. This is mandatory to set, but it is not currently used by the Worker.
+KAFKA_TOPIC_OUTPUT: the topic where the change of analyses status will be sent.
 ```
 ## Starting the Worker
 
@@ -97,4 +94,3 @@ To launch the unit test, use the following command from the home of the project:
 ```
 1 pytest tests/
 ```
-
