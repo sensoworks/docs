@@ -1,3 +1,13 @@
+---
+layout: default
+title: OMA Worker
+nav_order: 2
+description: "OMA Worker"
+parent: OMA Components
+grand_parent: OMA
+has_children: false
+---
+
 # OMA Worker
 
 This component continuously polls a collection to see if there new run to do. Normally, this collection is the modals_queue one.
