@@ -41,7 +41,7 @@ The message payload has the following format (values are examples):
 
 Possible statuses after the run of an analysis are:
 | **Status** | **Description** |
-|:---|:----|
+|:---|:---|
 | **READY** | The analysis has been created and it is ready to run |
 | **QUEUED** | The run has been scheduled and is waiting to start |
 | **RUNNING** | The analysis run is running |
@@ -75,6 +75,17 @@ KAFKA_BROKER: the Kafka endpoint.
 KAFKA_TOPIC_BROADCAST: the topic for the consumer. On this topic the Worker expects to receive the abort requests.
 KAFKA_CONSUMER_GROUP: the consumer group for the consumer topic. This is mandatory to set, but it is not currently used by the Worker.
 KAFKA_TOPIC_OUTPUT: the topic where the change of analyses status will be sent.
+MYSQL_USERNAME: the MySQL username for the connection.
+MYSQL_PASSWORD: the MySQL password for the connection.
+MYSQL_HOST: the MySQL endpoint for reaching the DB.
+MYSQL_PORT: the MySQL port used when connecting to the DB.
+MYSQL_DATABASE: the MySQL schema containing all the tables.
+AWS_ACCESS_KEY_ID: the AWS access key.
+AWS_SECRET_ACCESS_KEY: the AWS secret access key.
+AWS_REGION: the AWS region where the AWS services are located.
+USE_S3_STRING_PATHS: if different from empty, the Worker searches S3 keys with names instead of IDs.
+FILE_BUCKET: the name of the bucket with the raw files.
+CACHE_BUCKET: the name of the bucket used by the Worker as cache.
 ```
 
 ## Starting the Worker

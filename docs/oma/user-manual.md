@@ -8,77 +8,121 @@ has_children: false
 ---
 
 # OMA User Manual
+<span style="color:red">Work in progress...</span>
 
-Prerequisites
 
 To perform an OMA analysis on a structural model, you must log in to the console with a user account with permissions to use the OMA module.
 
-At least one Network must be defined, to which the structural model to be analyzed will be associated; the user who will be used to execute the OMA must be associated with this Network.
-1. Access the main window of the OMA module
+At least one network must be defined, to which the structural model to be analyzed will be associated; the user who will be used to execute the OMA must be associated with this network.
 
-Once logged in with a user enabled to use the OMA module, click the button highlighted by the arrow on the left of the screen.
-Screen_01.png
+**1. Access the main window of the OMA module**
 
-The console will display the main window of the OMA module, which lists the structural models already defined.
-Screen_04.png
-2. Designation of the structural model to be analyzed
+<p align="center"><img src="../assets/images/oma/sensoworks-oma-network-list.jpg" width="100%" height="100%"></p>
 
-To perform the OMA, it is necessary to select the structural model on which it will be based: it is possible to select one of the already defined models (highlighted in red on the left side of the screen) or create a new one with the New model button (highlighted by the arrow at the top to the right of the screen).
+Once inside a network, to use the OMA module, click the button highlighted on the left of the screen.
 
-If the desired structural model is already present, simply select it by clicking on its name; in this case, you can immediately move on to Section 3, relating to the launch of the OMA.
+<p align="center"><img src="../assets/images/oma/sensoworks-oma-section.jpg" width="100%" height="100%"></p>
 
-Otherwise, you need to continue with the next paragraph.
-image-20231018-125301.png
-List of defined structural models
-2.1. Procedure for creating a structural model
+The console will display the main window of the OMA module, which lists the structural models already defined. A new one can be created from the top-right "+ Structure" button. See section 2 of this guide to know how to create a new structure.
 
-In the main window of the OMA module, click on the New model button. The console will display the following screen.
-image-20231018-125348.png
-Structural model creation popup
+<p align="center"><img src="../assets/images/oma/sensoworks-oma-structures-page.jpg" width="100%" height="100%"></p>
 
-It is necessary to give a name to the OMA model and select the Network associated with the structural model.
+Inside a structure, you can find listed all the analyses. You can choose an analysis from the ones already presents or a new one can be created from the top-right "+ Analysis" button. See section 3 of this guide to know how to create a new analysis.
 
-It is also necessary to load the files relating to the geometry of the model and the links that connect the different nodes of the structure. The format and content of the files are defined in the following paragraphs.
+<p align="center"><img src="../assets/images/oma/sensoworks-oma-analyses-page.jpg" width="100%" height="100%"></p>
 
-Finally, it is possible to set the Private flag: if activated, the model will be visible exclusively to the current user.
-2.1.1. Structural model geometry file
+**2. Creation of a structure**
 
-For the correct functioning of the OMA module it is necessary to compile a file with a .csv extension, in which the geometry information shown below must be inserted.
+Once you click on the top-right "+ Structure" button, the following modal will open (see image).
 
-You can download a sample geometry CSV file:
-image-20231018-122702.png
-Example of content of a geometry CSV file, displayed within a spreadsheet application (e.g. Excel, Numbers…)
+<p align="center"><img src="../assets/images/oma/sensoworks-oma-new-structure.jpg" width="100%" height="100%"></p>
 
-The columns to insert in the file are:
+An unique name is mandatory and the description is optional. A 3D model of the structure in the OBJ format must also be uploaded.
 
-     Node: this column shows the numbering of the nodes on which the sensors are positioned. Furthermore, the numbering of other nodes which will then be necessary for the correct representation of the structure and its modal shape is reported (the movements of the points that are not instrumented are obtained by interpolation by making hypotheses based on the type of structure).
+After having uploaded the 3D model, if the data for the OMA analyses is taken from the DB, the vertexes must be linked to the correct devices (accelerometers). This means the device installed in the vertex 1 position must be mapped to the 3D model vertex. To map the devides with the vertexes, you need to click on the top-right gear icon. After doing this, you can then click on the vertex of the 3D model you want to link and compile the modal with the informations.
 
-     x [m], y [m], z [m]: in these three columns the X, Y and Z coordinates of the nodes that were specified in the first column are entered.
+<p align="center"><img src="../assets/images/oma/sensoworks-oma-structure-config.jpg" width="100%" height="100%"></p>
 
-     Sensor: this column indicates the name of the sensor corresponding to the node in which it is positioned. If the node does not have a sensor, the value of this field should be set to 0.
+The above step is optional is the data for the OMAs comes from CSV files instead of the DB.
 
-     x, y, z: these three columns indicate the measurement directions and the direction of the local triad of the instrument compared to the global one adopted by the user.
-     It is indicated with 1 if the direction of the axis coincides with that of the global reference system, -1 if the direction is the opposite or 0 if the instrument does not measure in that direction.
+**3. Creation of an analysis**
 
-     Reg x, Reg y, Reg z: in these fields the indices of the columns in the acceleration file that correspond to the x, y, z accelerometer readings of the sensor indicated in the Sensor column must be indicated.
-     If, however, the OMA is performed starting from the telemetry data already acquired, the analysis will be performed on the data in the order of insertion.
+Inside a structure, to create an analysis, from the analysis list page, click on the top-right "+ OMA" button. A modal will open to add the title and a description (optional).
 
-2.1.2. Structural model link file
+<p align="center"><img src="../assets/images/oma/sensoworks-oma-analysis.jpg" width="100%" height="100%"></p>
 
-The link file, with .csv extension, indicates how to connect the nodes listed in the previous file, in order to compose the structure to be analysed. The links connect the pair of nodes whose identification numbers are indicated in the line.
+Once created, you can enter it. The first step to make is choosing the source of the accelerometers data for calculating the OMA. Keep in mind you can get the data on the database only if you have done the linking of the model vertexes to the correct devices (accelerometers). Otherwise only CSV input data will be available.
 
-You can download a sample CSV file link:
-image-20231018-122957.png
-Example of content of a link CSV file, displayed within a spreadsheet application (e.g. Excel, Numbers…)
+<p align="center"><img src="../assets/images/oma/sensoworks-start-oma.jpg" width="100%" height="100%"></p>
 
-In the file there will be a table with the one-dimensional elements that connect the nodes.
+*3.1 MongoDb as a data source*
 
-Once the geometry and link files have been selected, the structural model will be saved and made available for analysis.
+If you choose the database as a source, the following modal will open (see image) and you can select a range where data is present for calculating the OMA.
 
-Note the following graphic elements of the model:
+<p align="center"><img src="../assets/images/oma/sensoworks-oma-count-data.jpg" width="100%" height="100%"></p>
 
-     nodes are represented as green-blue circles;
+After selecting a range, you can choose which devices are needed for the OMA analysis.
 
-     links between pairs of nodes are represented as black segments;
+<p align="center"><img src="../assets/images/oma/sensoworks-oma-db-data.jpg" width="100%" height="100%"></p>
 
-     the nodes equipped with sensors are represented
+*3.2 CSV as a data source*
+
+If you choose the CSV as a source, the following modal will open (see image) and you can upload a CSV file with the data for calculating the OMA.
+
+<p align="center"><img src="../assets/images/oma/sensoworks-oma-csv-import.jpg" width="100%" height="100%"></p>
+
+In the next view, you can set how the data is saved inside the CSV file.
+
+<p align="center"><img src="../assets/images/oma/sensoworks-oma-csv-mapping.jpg" width="100%" height="100%"></p>
+
+For every channel (X, Y and/or Z) you can set in which column of the CSV file is the relative data and the verse/direction of the sensor. For example, if the data for the vertex one is in the first column and the sense is in the same axis direction, you will set 1 and 1 on the column and sense respectively.
+
+In case you want to compile the table quickly without doing by hand, you can upload a CSV template for the column values with the top-left button.
+
+<p align="center"><img src="../assets/images/oma/sensoworks-oma-csv-auto.jpg" width="100%" height="100%"></p>
+
+This is an example of how to prepare the CSV template.
+
+| **vertex** | **x** | **y** | **z** | **senseX** | **senseY** | **senseZ** |
+|------------|-------|-------|-------|------------|------------|------------|
+| 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2 | 1 | 2 | 3 | 1 | 1 | 1 |
+| 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 4 | 4 | 5 | 6 | 1 | 1 | 1 |
+| 5 | 7 | 8 | 9 | 1 | 1 | 1 |
+| 6 | 10 | 11 | 12 | 1 | 1 | 1 |
+| 7 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 8 | 13 | 14 | 15 | 1 | 1 | 1 |
+| 9 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 10 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+| **vertex** | **Description** |
+|:---|:---|
+| **READY** | The analysis has been created and it is ready to run |
+| **QUEUED** | The run has been scheduled and is waiting to start |
+| **RUNNING** | The analysis run is running |
+| **DONE** | The run is done and the results are ready |
+| **ERROR** | The run has ended in error |
+| **ABORTED** | The run has been aborted by the user |
+
+[Download example here.](../assets/images/oma/sensoworks-oma-channels-config.csv)
+
+**4. Running an OMA analysis**
+
+There are 3 main section in an analysis. First you need to run the preprocessing section. Only after this step you can run the FDD, the SSI or both. The following image shows the preprocessing section.
+
+<p align="center"><img src="../assets/images/oma/sensoworks-oma-preprocessing.jpg" width="100%" height="100%"></p>
+
+The parameters are on the right. Once the parameters are set, the run can be started. After the run has ended, the result (the chart) will be displayed.
+
+After the preprocessing step, you can then run the FDD part of the analysis. First, choose the appropriate parameters and run the FDD. After the run has ended, the results will be shown (se image below).
+
+<p align="center"><img src="../assets/images/oma/sensoworks-oma-fdd.jpg" width="100%" height="100%"></p>
+
+If you have selected more variants of the FDD, you can move between variants and see the charts or the tables by using the buttons highlighted in red.
+
+After the preprocessing step, you can then run the SSI part of the analysis. First, choose the appropriate parameters and run the SSI. After the run has ended, the results will be shown (se image below).
+
+<p align="center"><img src="../assets/images/oma/sensoworks-oma-ssi.jpg" width="100%" height="100%"></p>
+
+If you have selected more variants of the SSI, you can move between variants and see the charts or the tables by using the buttons highlighted in red.
