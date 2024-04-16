@@ -109,6 +109,8 @@ This is an example of how to prepare the CSV template.
 
 **4. Running an OMA analysis**
 
+For more information about the OMA (like the parameters values), check the library used by the platform: [PyOMA](https://www.softxjournal.com/article/S2352-7110(22)00134-0/fulltext).
+
 There are 3 main section in an analysis. First you need to run the preprocessing section. Only after this step you can run the FDD, the SSI or both. The following image shows the preprocessing section.
 
 <p align="center"><img src="../assets/images/oma/sensoworks-oma-preprocessing.jpg" width="100%" height="100%"></p>
