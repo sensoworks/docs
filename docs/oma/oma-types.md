@@ -1,7 +1,7 @@
 ---
 layout: default
 title: OMA Types
-nav_order: 1
+nav_order: 2
 description: "OMA Types"
 parent: OMA
 has_children: true

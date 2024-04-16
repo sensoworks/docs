@@ -24,14 +24,9 @@ The expected payload output is the following (values are examples):
 
 Possible values for the type are: PREPROCESSING, FDD and SSI.
 
-After the payload is found in the collection, the Worker will take the run request and execute the requested analysis. After the run is done, if
-there are no error, the results will be saved inside the (by default) modals_analysis_results_<structure_id> collection. The payload
-inside the (by default) modals_analysis_<structure_id> collection will be updated with the results IDs. Finally, the payload on the
-modals_queue collection will be deleted. For more information of the exact format of the payloads, check this page: OMA NEW collectio
-ns
+After the payload is found in the collection, the Worker will take the run request and execute the requested analysis. After the run is done, if there are no error, the results will be saved inside the (by default) modals_analysis_results_<structure_id> collection. The payload inside the (by default) modals_analysis_<structure_id> collection will be updated with the results IDs. Finally, the payload on the modals_queue collection will be deleted. For more information of the exact format of the payloads, check this page: OMA NEW collections
 
-After every status change of a run, a message is sent to the “output“ Kafka topic, normally used for websocket updates by the OMA API
-component.
+After every status change of a run, a message is sent to the “output“ Kafka topic, normally used for websocket updates by the OMA API component.
 
 The message payload has the following format (values are examples):
 ```
@@ -45,17 +40,16 @@ The message payload has the following format (values are examples):
 ```
 
 Possible statuses after the run of an analysis are:
+| **Status** | **Description** |
+|:---|:---|
+| **READY** | The analysis has been created and it is ready to run |
+| **QUEUED** | The run has been scheduled and is waiting to start |
+| **RUNNING** | The analysis run is running |
+| **DONE** | The run is done and the results are ready |
+| **ERROR** | The run has ended in error |
+| **ABORTED** | The run has been aborted by the user |
 
-```
-QUEUED
-RUNNING
-DONE
-ERROR
-ABORTED
-```
-If a running analysis needs to be stopped (aborted), the Worker has to receive on the broadcast topic a payload the analysis_id key. If the
-specified ID is the same as the running analysis, the run will be stopped. If the specified ID is not the same or the payload does not contain
-the analysis_id key, the message will be ignored.
+If a running analysis needs to be stopped (aborted), the Worker has to receive on the broadcast topic a payload the analysis_id key. If the specified ID is the same as the running analysis, the run will be stopped. If the specified ID is not the same or the payload does not contains the analysis_id key, the message will be ignored.
 
 ## Environment variables
 
@@ -81,7 +75,19 @@ KAFKA_BROKER: the Kafka endpoint.
 KAFKA_TOPIC_BROADCAST: the topic for the consumer. On this topic the Worker expects to receive the abort requests.
 KAFKA_CONSUMER_GROUP: the consumer group for the consumer topic. This is mandatory to set, but it is not currently used by the Worker.
 KAFKA_TOPIC_OUTPUT: the topic where the change of analyses status will be sent.
+MYSQL_USERNAME: the MySQL username for the connection.
+MYSQL_PASSWORD: the MySQL password for the connection.
+MYSQL_HOST: the MySQL endpoint for reaching the DB.
+MYSQL_PORT: the MySQL port used when connecting to the DB.
+MYSQL_DATABASE: the MySQL schema containing all the tables.
+AWS_ACCESS_KEY_ID: the AWS access key.
+AWS_SECRET_ACCESS_KEY: the AWS secret access key.
+AWS_REGION: the AWS region where the AWS services are located.
+USE_S3_STRING_PATHS: if different from empty, the Worker searches S3 keys with names instead of IDs.
+FILE_BUCKET: the name of the bucket with the raw files.
+CACHE_BUCKET: the name of the bucket used by the Worker as cache.
 ```
+
 ## Starting the Worker
 
 The worker can be started with the following command:
