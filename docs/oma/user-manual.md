@@ -8,7 +8,6 @@ has_children: false
 ---
 
 # OMA User Manual
-<span style="color:red">Work in progress...</span>
 
 
 To perform an OMA analysis on a structural model, you must log in to the console with a user account with permissions to use the OMA module.
