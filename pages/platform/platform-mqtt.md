@@ -7,7 +7,7 @@ description: Datagate MQTT ingestion
 
 ## Introduction
 The Sensoworks IoT platform can receive data via the MQTT protocol. The platform is capable of reading the devices telemetry data from topics in a MQTT Broker. Here is an image of the flow with some example topics:
-<p align="center"><img src="../assets/images/mqtt/mqtt-flow.png" width="100%" height="100%"></p>
+<p align="center"><img src="/sensoworks-docs/images/mqtt/mqtt-flow.png" width="100%" height="100%"></p>
 
 ## Requisites
 To send MQTT data to the platform you need a MQTT Broker accessible from the deploy environment. A dedicated component of the platform (datagate-mqtt) must be installed in the deploy environment, otherwise it is not possible to read the MQTT data from the broker.
