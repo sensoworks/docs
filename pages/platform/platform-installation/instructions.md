@@ -69,7 +69,7 @@ kubectl apply -f <component-directory>/
 
 ### Third parties components
 #### MySQL
-You can get the Kubernetes file template for MySQL by clicking [here](/sensoworks-docs/files/components/mysql.zip).
+You can get the Kubernetes file template for MySQL by clicking [here](/files/components/mysql.zip).
 
 Ensure that the proper Kubernetes cluster is set:
 ```
@@ -86,7 +86,7 @@ In case of success, the last command will print some information to access the n
 ---
 
 #### Apache Kafka
-You can get the Kubernetes file template for Apache Kafka by clicking [here](/sensoworks-docs/files/components/kafka.zip).
+You can get the Kubernetes file template for Apache Kafka by clicking [here](/files/components/kafka.zip).
 
 Edit the `<env>/kafka-values.yaml` and install Kafka using `helm`
 
@@ -132,7 +132,7 @@ kafka-console-consumer.sh \
 ---
 
 #### Mailhog
-You can get the Kubernetes file template for Mailhog by clicking [here](/sensoworks-docs/files/components/mailhog.zip).
+You can get the Kubernetes file template for Mailhog by clicking [here](/files/components/mailhog.zip).
 
 Ensure that the proper Kubernetes cluster is set:
 ```
@@ -149,7 +149,7 @@ In case of success, the last command will print some information to access the n
 ---
 
 #### Grafana
-You can get the Kubernetes file template for Grafana by clicking [here](/sensoworks-docs/files/components/grafana.zip).
+You can get the Kubernetes file template for Grafana by clicking [here](/files/components/grafana.zip).
 
 ```sh
 helm repo add grafana https://grafana.github.io/helm-charts
@@ -161,7 +161,7 @@ helm upgrade --install sensoworks-grafana --namespace ns-sensoworks-grafana -f <
 ---
 
 #### ClickHouse
-You can get the Kubernetes file template for ClickHouse by clicking [here](/sensoworks-docs/files/components/clickhouse.zip).
+You can get the Kubernetes file template for ClickHouse by clicking [here](/files/components/clickhouse.zip).
 
 ##### Prerequisites
 
@@ -273,7 +273,7 @@ kubectl -n ns-sensoworks-clickhouse rollout restart statefulset sensoworks-click
 ---
 
 #### EMQX
-You can get the Kubernetes file template for EMQX by clicking [here](/sensoworks-docs/files/components/emqx.zip).
+You can get the Kubernetes file template for EMQX by clicking [here](/files/components/emqx.zip).
 
 ```sh
 kubectl create namespace ns-sensoworks-emqx
@@ -291,16 +291,16 @@ kubectl apply -f <env>/sensoworks-emqx-nlb.yaml
 
 ### Sensoworks components
 #### Foreman
-You can get the Kubernetes file template for the Foreman by clicking [here](/sensoworks-docs/files/components/foreman.zip). Remember to change and customize all the necessary data inside the files before running ```kubectl apply```.
+You can get the Kubernetes file template for the Foreman by clicking [here](/files/components/foreman.zip). Remember to change and customize all the necessary data inside the files before running ```kubectl apply```.
 
 #### Datagate
 
-You can get the Kubernetes file template for the Datagate-HTTP by clicking [here](/sensoworks-docs/files/components/datagate-http.zip). Remember to change and customize all the necessary data inside the files before running ```kubectl apply```.
+You can get the Kubernetes file template for the Datagate-HTTP by clicking [here](/files/components/datagate-http.zip). Remember to change and customize all the necessary data inside the files before running ```kubectl apply```.
 
-You can get the Kubernetes file template for the Datagate-MQTT by clicking [here](/sensoworks-docs/files/components/datagate-mqtt.zip). Remember to change and customize all the necessary data inside the files before running ```kubectl apply```.
+You can get the Kubernetes file template for the Datagate-MQTT by clicking [here](/files/components/datagate-mqtt.zip). Remember to change and customize all the necessary data inside the files before running ```kubectl apply```.
 
 #### Datapump
-You can get the Kubernetes file template for the Datapump-MongoDB by clicking [here](/sensoworks-docs/files/components/datapump-mongodb.zip). Remember to change and customize all the necessary data inside the files before running ```kubectl apply```.
+You can get the Kubernetes file template for the Datapump-MongoDB by clicking [here](/files/components/datapump-mongodb.zip). Remember to change and customize all the necessary data inside the files before running ```kubectl apply```.
 
 #### Storage
-You can get the Kubernetes file template for the Storage by clicking [here](/sensoworks-docs/files/components/storage.zip). Remember to change and customize all the necessary data inside the files before running ```kubectl apply```.
+You can get the Kubernetes file template for the Storage by clicking [here](/files/components/storage.zip). Remember to change and customize all the necessary data inside the files before running ```kubectl apply```.

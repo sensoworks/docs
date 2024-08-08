@@ -99,7 +99,7 @@ This is an example of how to prepare the CSV template.
 | **ERROR** | The run has ended in error |
 | **ABORTED** | The run has been aborted by the user |
 
-[Download example here.](/sensoworks-docs/files/oma/sensoworks-oma-channels-config.csv)
+[Download example here.](/files/oma/sensoworks-oma-channels-config.csv)
 
 **4. Running an OMA analysis**
 
