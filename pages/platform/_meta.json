@@ -1,6 +1,7 @@
 {
-  "platform-architecture": "Achitecture",
+  "platform-architecture": "Architecture",
   "platform-installation": "Installation",
   "platform-administration": "Administration",
+  "platform-ingestion": "Ingestion",
   "user-manual": "User Manual"
 }

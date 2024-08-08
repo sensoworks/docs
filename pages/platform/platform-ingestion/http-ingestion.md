@@ -1,11 +1,9 @@
 ---
-title: Platform telemetry
-description: Platform telemetry
+title: Datagate HTTP ingestion
+description: Datagate HTTP ingestion
 ---
 
-# Platform telemetry
-
-## Telemetry APIs
+# HTTP ingestion
 ### Datagate HTTP ingestion
 This API is used to send data to the platform.
 
@@ -15,13 +13,13 @@ For MQTT ingestion, see this page instead: [Datagate MQTT ingestion](platform-mq
 POST https://datagate.sensoworks.com/datagate/sensoworks/datagate
 ```
 
-#### Query string (mandatory in <span style="color:red">red</span>):
+#### Query string
 - <span style="color:red">network</span>: the ID of the network where we are sending the telemetry data.
 
-#### Authentication:
+#### Authentication
 The bearer token can be copied from the dashboard.
 
-#### Body example:
+#### Body example
 ```json
 {
    "things": {
@@ -61,7 +59,7 @@ The bearer token can be copied from the dashboard.
 }
 ```
 
-#### Response:
+#### Responses
 - 201 (Created): given when telemetry data of an already present device is received
 - 202 (Accepted): given when the autoprovisioning is enabled and a new device is received
 
@@ -74,15 +72,15 @@ This API returns the networks of an user.
 GET https://demo.sensoworks.com/foreman/sensoworks/api/network
 ```
 
-#### Query string (mandatory in <span style="color:red">red</span>):
+#### Query string
 - <span style="color:red">page</span>: the results page to show. Starts from 0.
 - <span style="color:red">limit</span>: the number of results per page. For example, 10.
 - <span style="color:red">sort</span>: the results sorting (asc or desc).
 
-#### Authentication:
+#### Authentication
 The bearer token given at the login.
 
-#### Response body (200 - OK):
+#### Response body
 ```json
 [
    {
@@ -123,17 +121,17 @@ This API returns the things of a network.
 GET https://demo.sensoworks.com/foreman/sensoworks/api/network/<network_id>/thing
 ```
 
-#### Path variables:
+#### Path variables
 - network_id: the ID of the network from which list the things.
 
-#### Query string (mandatory in <span style="color:red">red</span>):
+#### Query string
 - <span style="color:red">page</span>: the results page to show. Starts from 0.
 - <span style="color:red">limit</span>: the number of results per page. For example, 10.
 
-#### Authentication:
+#### Authentication
 The bearer token given at the login.
 
-#### Response body (200 - OK):
+#### Response body
 ```json
 [
    {
@@ -172,18 +170,18 @@ GET https://demo.sensoworks.com/foreman/sensoworks/api/network/<network_id>/thin
 ```
 
 
-#### Path variables:
+#### Path variables
 - network_id: the ID of the network from which list the devices.
 - thing_name: the name of the thing from which list the devices.
 
-#### Query string (mandatory in <span style="color:red">red</span>):
+#### Query string
 - <span style="color:red">page</span>: the results page to show. Starts from 0.
 - <span style="color:red">limit</span>: the number of results per page. For example, 10.
 
-#### Authentication:
+#### Authentication
 The bearer token given at the login.
 
-#### Response body (200 - OK):
+#### Response body
 ```json
 [
    {
@@ -232,18 +230,18 @@ GET https://demo.sensoworks.com/foreman/sensoworks/api/network/<network_id>/read
 ```
 
 
-#### Path variables:
+#### Path variables
 - network_id: the ID of the network from which list the devices.
 
-#### Query string (mandatory in <span style="color:red">red</span>):
+#### Query string
 - <span style="color:red">page</span>: the results page to show. Starts from 0.
 - <span style="color:red">limit</span>: the number of results per page. For example, 10.
 - <span style="color:red">sort</span>: the results sorting (asc or desc).
 
-#### Authentication:
+#### Authentication
 The bearer token given at the login.
 
-#### Response body (200 - OK):
+#### Response body
 ```json
 [
    {
@@ -301,22 +299,22 @@ GET https://demo.sensoworks.com/foreman/sensoworks/api/network/<network_id>/thin
 
 
 
-#### Path variables:
+#### Path variables
 - network_id: the ID of the network from which to get the telemetry data.
 - thing_name: the name of the thing from which to get the telemetry data.
 - device_name: the name of the device from which to get the telemetry data.
 
-#### Query string (mandatory in <span style="color:red">red</span>):
+#### Query string
 - <span style="color:red">from</span>: the start timestamp of the telemetry chunk we want. Example value: 1681164000000
 - <span style="color:red">to</span>: the end timestamp of the telemetry chunk we want. Example value: 1681250400000
 - <span style="color:red">agg_value</span>: the key name of the telemetry data we want to visualize. Example value: acceleration_z.avg
 - <span style="color:red">agg_clauses</span>: the data aggregation we want to use. Example value: YEAR,MONTH,DAY
 - <span style="color:red">agg_label</span>: under what key name we want the aggregation keys (avg, max, min, etc.) positioned. Example value: data.
 
-#### Authentication:
+#### Authentication
 The bearer token given at the login.
 
-#### Response body (200 - OK) using the example values used in the query string section:
+#### Response body
 ```json
 [
    {
