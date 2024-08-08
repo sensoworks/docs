@@ -1,10 +1,12 @@
 import nextra from "nextra";
 
+const nextConfig = {
+  output: "export",
+}
+
 const withNextra = nextra({
   theme: "nextra-theme-docs",
   themeConfig: "./theme.config.jsx",
 });
 
-export default withNextra({
-  output: "export",
-});
+export default withNextra(nextConfig);
