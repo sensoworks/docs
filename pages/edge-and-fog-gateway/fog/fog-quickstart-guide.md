@@ -2,7 +2,7 @@
 
 This guide is intended to provide a simple example of the functionalities and configuration of the Sensoworks Fog gateway. The scenario presented in this guide is depicted below:
 
-<p align="center"><img src="/images/sensoworks-fog-getting-started-guide.jpg" width="75%" height="75%"></p>
+<p align="center"><img src="/sensoworks-docs/images/sensoworks-fog-getting-started-guide.jpg" width="75%" height="75%"></p>
 
 The simulator, on the upper left of the picture, will send temperature data to a MQTT topic named:
 
@@ -61,7 +61,7 @@ mosquitto
 
 The MQTT browser should be installed into your system. Use the OS application menu to launch the program.
 
-<p align="center"><img src="/images/sensoworks-mqttx-configuration-localhost.png" width="75%" height="75%"></p>
+<p align="center"><img src="/sensoworks-docs/images/sensoworks-mqttx-configuration-localhost.png" width="75%" height="75%"></p>
 
 ## Edit the config file of fhe simulator
 

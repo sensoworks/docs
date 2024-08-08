@@ -1,15 +1,15 @@
 export default {
   logo: (
     <img
-      src="/sensoworks_logo.png"
+      src="/sensoworks-docs/sensoworks_logo.png"
       alt="Sensoworks Logo"
       style={{ height: 50 }}
     />
   ),
-  head: <link rel="icon" href="/sensoworks_logo_192x192.png"></link>,
-  // project: {
-  //   link: 'https://github.com/shuding/nextra'
-  // },
+  head: <link rel="icon" href="/sensoworks-docs/sensoworks_logo_192x192.png"></link>,
+  project: {
+    link: "https://github.com/sensoworks",
+  },
   sidebar: {
     toggleButton: true,
   },

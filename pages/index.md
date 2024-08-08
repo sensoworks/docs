@@ -58,4 +58,4 @@ There are numerous IoT platforms available, but Sensoworks stands out for severa
 
 In summary, Sensoworks distinguishes itself by offering a flexible, scalable, and highly interoperable IoT platform that combines the strengths of edge/fog computing with powerful centralized analytics. This comprehensive approach ensures that businesses can efficiently manage their IoT ecosystems, drive innovation, and achieve a competitive edge in their respective markets.
 
-<p align="center"><img src="/images/sensoworks-hla.jpg" width="100%" height="100%"></p>
+<p align="center"><img src="/sensoworks-docs/images/sensoworks-hla.jpg" width="100%" height="100%"></p>

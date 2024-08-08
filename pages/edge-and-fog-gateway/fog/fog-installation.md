@@ -4,7 +4,7 @@ The Sensoworks Fog gateway is an excellent choice for flexibility and versatilit
 
 Depending on your needs, the Sensoworks Fog gateway (a.k.a. "micro" or "squirrel") can be installed in different ways:
 
-<p align="center"><img src="/images/sensoworks-fog-micro-installation.jpg" width="50%" height="50%"></p>
+<p align="center"><img src="/sensoworks-docs/images/sensoworks-fog-micro-installation.jpg" width="50%" height="50%"></p>
 
 ## Pure python
 
