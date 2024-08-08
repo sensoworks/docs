@@ -1,0 +1,44 @@
+# Edge/Fog gateway
+
+In this section, we will delve into the structure and design of Edge components - specifically, Edge and Fog gateways. You will gain an understanding of the purpose and function of each component, as well as when and how to install one or the other in your system.
+
+In the context of the Internet of Things (IoT), the "Edge" refers to the devices and systems that are located at the periphery of a network, closer to the devices or sensors that are collecting data. The "Fog" refers to a layer of computing resources that are located between the Edge and the cloud, and are used to process and analyze data before it is transmitted to the cloud.
+
+The architecture of Edge and Fog gateways can vary depending on the specific needs of an IoT application. These components may be installed separately or together, depending on the requirements of the application and the available resources. In general, Edge components are used to process data locally and reduce the amount of data that needs to be transmitted to the cloud, while Fog components are used to provide additional processing and analysis capabilities closer to the Edge. The decision of when and how to install Edge and Fog components will depend on the specific requirements of the application and the available resources.
+
+# Differences between Edge and Fog
+
+In the IoT world, two terms have been coined to describe what can happen near or on the “Things” that you want to interact with. These two terms are Edge and Fog computing.
+
+Shortly:
+
+- Edge is closer to the object the platform needs to interact with
+- Edge computing can happen without an internet connection or have a limited connection just to send the result of the computing (reading, computations, etc.)
+- Example of Edge computing can be:
+  - A smart wearable device that monitor health parameters, that can communicate to the cloud using the bluethoot connection to a mobile phone
+  - An Arduino based solution developed in C software, with a power back an internet connectivity, monitoring temperature, air quality, noise
+  - A Python program running in an industrial PC, receiving information from sensors nearby, single or multiple sensors, connected via Bluethoot or else
+- Fog is still a component running on the Edge, but usually interacts or need additional communication with the cloud to work properly. This interaction can be limited to configuring the Sensoworks Fog gateway
+
+![](/images/sensoworks-edge-fog-architecture.jpg)
+
+Lets start with some definitions of Edge and Fog computing:
+
+> **Wikipedia**: **[Edge computing](https://en.wikipedia.org/wiki/Edge_computing)** is a Distributed computing paradigm that brings Computation and Data storage closer to the sources of data. This is expected to improve response times and save bandwidth (computing). Edge computing is an architecture rather than a specific technology, and a Logical topology - and location-sensitive form of distributed computing. The origins of edge computing lie in content delivery network that were created in the late 1990s to serve web and video content from edge server (computing) that were deployed close to users. In the early 2000s, these networks evolved to host applications and application components on edge servers, resulting in the first commercial edge computing services that hosted applications such as dealer locators, shopping carts, real-time data aggregators, and ad insertion engines.
+
+> **Wikipedia**: The term “**[Fog computing](https://en.wikipedia.org/wiki/Fog_computing)**” was first developed by Cisco in 2012. Cisco Systems, ARM Holdings, Dell, Intel, Microsoft, and Princeton University, founded the OpenFog Consortium to promote interests and development in fog computing. Cisco Sr. Managing-Director Helder Antunes became the consortium’s first chairman and Intel’s Chief IoT Strategist Jeff Fedders became its first president. Both cloud computing and fog computing provide storage, applications, and data to end-users. However, fog computing is closer to end-users and has wider geographical distribution. ‘Cloud computing’ is the practice of using a network of remote servers hosted on the Internet to store, manage, and process data, rather than a local server or a personal computer. Also known as edge computing or fogging, fog computing facilitates the operation of compute, storage, and networking services between end devices and cloud computing data centers National Institute of Standards and Technology in March 2018 released a definition of fog computing adopting much of Cisco’s commercial terminology as NIST Special Publication 500-325, Fog Computing Conceptual Model, that defines fog computing as a horizontal, physical or virtual resource paradigm that resides between smart end-devices and traditional cloud computing or data center. This paradigm supports vertically-isolated, latency-sensitive applications by providing ubiquitous, scalable, layered, federated, distributed computing, storage, and network connectivity. Thus, fog computing is most distinguished by distance from the edge. In the theoretical model of fog computing, fog computing nodes are physically and functionally operative between edge nodes and centralized cloud. Much of the terminology is undefined, including key architectural terms like “smart”, and the distinction between fog computing from edge computing is not generally agreed.
+
+The better understand the differences between **Edge** and **Fog computing**, consider also the descriptions from Cisco and Siemens:
+
+> [**Cisco**](https://www.cisco.com/): Fog Computing is a paradigm that extends Cloud computing and services to the edge of the network. Similar to Cloud, Fog provides data, compute, storage, and application services to end-users. The distinguishing Fog characteristics are its proximity to end-users, its dense geographical distribution, and its support for mobility. Services are hosted at the network edge or even end devices such as set-top-boxes or access points. By doing so, Fog reduces service latency, and improves QoS, resulting in superior user-experience. Fog Computing supports emerging Internet of Everything (IoE) applications that demand real-time/predictable latency (industrial automation, transportation, networks of sensors and actuators). Thanks to its wide geographical distribution the Fog paradigm is well positioned for real time big data and real time analytics. Fog supports densely distributed data collection points, hence adding a fourth axis to the often mentioned Big Data dimensions (volume, variety, and velocity).
+
+> [**Siemens**](https://www.siemens.com/): Fog computing blends both edge and cloud computing. By doing so, it stretches the cloud to the edge of the network so that it’s easier to connect IoT devices in real-time. By incorporating the benefits of both edge and cloud technology, it achieves a high-level network environment. It can connect two disparate ecosystems without losing local storage benefits. Fog computing reduces latency between devices while simultaneously reducing bandwidth requirements. It opens up exciting possibilities for several industries. Autonomous self-driving cars, smart cities, and real-time analytics are all at their best with fog computing. Its capacity to transfer data right at the edge of remote areas makes it suitable for roaming use cases as well. Fog computing is, effectively, edge computing with wheels.
+
+There are many different ways in which businesses can use a Sensoworks Edge/Fog component. Some common examples include:
+
+- Collecting and transmitting data from sensors and devices: Sensoworks Edge/Fog components can be used to collect telemetry data from sensors and devices and transmit it to the cloud for analysis. This can include data from a wide range of sources, such as temperature sensors, pressure sensors, and more
+- Processing data at the edge: In some cases, it may be necessary to process data at the edge in order to reduce latency or reduce the amount of data transmitted to the cloud. Edge components can be used to perform this processing, allowing businesses to gain insights from data in real-time
+- Local storage and backup: Sensoworks Edge/Fog components can also be used to store data locally, providing a backup in case of network issues or outages. This can be especially useful in situations where data loss could have serious consequences, such as in critical infrastructure monitoring
+- Running algorithms and machine learning models: Sensoworks Edge/Fog components can also be used to run algorithms and machine learning models, allowing businesses to gain insights and make predictions at the source based on data collected from sensors and devices
+
+Overall, Sensoworks Edge/Fog components are a powerful tool for collecting, processing, and analyzing data at the edge, enabling businesses to make better use of their IoT data and drive better outcomes.
