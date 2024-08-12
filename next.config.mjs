@@ -1,8 +1,8 @@
 import nextra from "nextra";
 
 const nextConfig = {
-  basePath: "/sensoworks-docs",
-  assetPrefix: "/sensoworks-docs/",
+  basePath: "/docs",
+  assetPrefix: "/docs/",
   output: "export",
   images: {
     unoptimized: true,

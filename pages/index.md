@@ -1,6 +1,6 @@
 ## The IoT Industry and Its Challenges
 
-<p align="center"><img src="/sensoworks-docs/images/sensoworks-hla.jpg" width="100%" height="100%"></p>
+<p align="center"><img src="/docs/images/sensoworks-hla.jpg" width="100%" height="100%"></p>
 
 **The Internet of Things (IoT)** refers to the interconnected network of physical devices that communicate and exchange data over the Internet. These devices, equipped with sensors, software, and other technologies, collect and share data, enabling smarter decision-making and automation. The IoT encompasses a vast range of applications, from consumer electronics to industrial systems, transforming various sectors and everyday life.
 
