@@ -1,12 +1,12 @@
 export default {
   logo: (
     <img
-      src="/sensoworks-docs/sensoworks_logo.png"
+      src="/docs/sensoworks_logo.png"
       alt="Sensoworks Logo"
       style={{ height: 50 }}
     />
   ),
-  head: <link rel="icon" href="/sensoworks-docs/sensoworks_logo_192x192.png"></link>,
+  head: <link rel="icon" href="/docs/sensoworks_logo_192x192.png"></link>,
   project: {
     link: "https://github.com/sensoworks",
   },

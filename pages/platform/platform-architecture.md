@@ -26,17 +26,17 @@ Sensoworks integrates third-party open source software to enhance its capabiliti
 
 
 
-<p align="center"><img src="/sensoworks-docs/images/sensoworks-mla.jpg" width="100%" height="100%"></p>
+<p align="center"><img src="/docs/images/sensoworks-mla.jpg" width="100%" height="100%"></p>
 
 
-<p align="center"><img src="/sensoworks-docs/images/sensoworks-overview-modules.jpg" width="100%" height="100%"></p>
+<p align="center"><img src="/docs/images/sensoworks-overview-modules.jpg" width="100%" height="100%"></p>
 
 
 
-<p align="center"><img src="/sensoworks-docs/images/sensoworks-mongodb-data-isolation.jpg" width="30%" height="30%"></p>
+<p align="center"><img src="/docs/images/sensoworks-mongodb-data-isolation.jpg" width="30%" height="30%"></p>
 
-<p align="center"><img src="/sensoworks-docs/images/sensoworks-kubernetes-availability-zones.png" width="75%" height="75%"></p>
+<p align="center"><img src="/docs/images/sensoworks-kubernetes-availability-zones.png" width="75%" height="75%"></p>
 
 
-<p align="center"><img src="/sensoworks-docs/images/sensoworks-ha-lb-api-gateway.jpg" width="75%" height="75%"></p>
+<p align="center"><img src="/docs/images/sensoworks-ha-lb-api-gateway.jpg" width="75%" height="75%"></p>
 
