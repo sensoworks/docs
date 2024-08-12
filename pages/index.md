@@ -1,4 +1,4 @@
-# The IoT Industry and Its Challenges
+## The IoT Industry and Its Challenges
 
 <p align="center"><img src="/sensoworks-docs/images/sensoworks-hla.jpg" width="100%" height="100%"></p>
 
