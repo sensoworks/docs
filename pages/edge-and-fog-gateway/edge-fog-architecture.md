@@ -4,8 +4,7 @@
 
 The Sensoworks Fog architecture is designed to manage configurations, control flows, and monitor the status of various processes in a distributed environment. This document provides an overview of the architecture, including the main components and their interactions.
 
-
-![[Edge - Fog component - Node.jpg]]
+<p align="center"><img src="/docs/images/fog/sensoworks_fog_architecture.jpg" width="100%" height="100%"></p>
 
 ## Components
 
@@ -31,8 +30,7 @@ The Flows component provides a user interface for managing configurations that t
 Furthermore, the Flows component provides detailed information about the node on which it resides. This information is critical for maintaining an accurate and comprehensive view of the network's operational status, enhancing the platform's ability to manage and optimize its resources. By integrating with the Edge-Broker and providing a robust interface for workflow management, the Flows component plays a crucial role in the seamless operation of the IoT system, ensuring that configurations are effectively managed and executed across the network.
 
 
-![[Edge - Fog component - Fog.jpg]]
----
+<p align="center"><img src="/docs/images/fog/sensoworks_fog_node.jpg" width="100%" height="100%"></p>
 
 ## Interactions
 
@@ -70,4 +68,4 @@ Furthermore, the Flows component provides detailed information about the node on
 3. **Starting a Flow**: A client sends a PATCH request to `/flows/commands` with a start command and flow IDs. The `ConfigurationServer` forwards the command to the `FlowManager`, which initializes and starts the `SensoworksFog` instances.
 4. **Monitoring Status**: A client sends a GET request to `/flows/status` to retrieve the status of all flows. The `ConfigurationServer` fetches the status from the `FlowManager` and returns it to the client.
 
-![[Edge - Fog component - Engine.jpg]]
+<p align="center"><img src="/docs/images/fog/sensoworks_fog_workflowEngine.jpg" width="100%" height="100%"></p>
