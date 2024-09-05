@@ -44,24 +44,27 @@ Currently, the engine supports HTTP, MQTT, S3, and ClickHouse for outgoing data 
 
 ## Architecture
 
-The architecture of the Sensoworks Workflow Engine consists of two main components:
+The architecture of the Sensoworks Workflow Engine consists of two main core and tasks:
 
-### 1. Activators
+### Core
 
-Activators are responsible for receiving or reading data from various sources. They can be configured to handle different data ingestion methods, such as HTTP, MQTT, S3, or FTP.
+The main componenet responsible for reading the configuration, managing tasks, and executing pause, resume, and stop commands.
 
-### 2. Tasks
+### Tasks
 
-Tasks are responsible for the core processing logic within the workflow. They can be divided into several types:
+Represented as nodes in the Sensoworks-Flows component, they are highly configurable by the user and are responsible for performing operations on the data. They can be divided into several types:
 
+- **Ingestion**: Receiving or read data from various sources. They can be configured to handle different data ingestion methods, such as HTTP, MQTT, Kafka, S3, or FTP.
 - **Preprocessing Tasks**: Clean and prepare raw data for further analysis.
 - **Analysis Tasks**: Perform computations, data analysis, and aggregation.
 - **Machine Learning Tasks**: Apply machine learning models and neural networks for specialized analyses.
 - **Senders**: handle the transmission of processed data to the desired destinations. They can send data via HTTP, publish to MQTT topics, upload to S3, or store in ClickHouse. They can send data either to the Sensoworks platform or to other storage/environments. The destination is configurable.
 
+Each task has a variable number of instances and is executed asynchronously with respect to other nodes through the use of queues (to which a limit can be set)
+
 ## Workflow Customization
 
-Users can create, update, and customize workflows directly through the Sensoworks-Flows component. This component provides a user-friendly interface for managing workflows, allowing users to define the sequence of activators, tasks, and senders according to their specific requirements.
+Users can create, update, and customize workflows directly through the Sensoworks-Flows component. This component provides a user-friendly interface for managing workflows, allowing users to define the sequence of tasks according to their specific requirements.
 
 ## Example Workflow
 
@@ -69,8 +72,8 @@ Here is an example of a typical workflow managed by the Sensoworks Workflow Engi
 
 1. **Data Ingestion**:
 
-   - An activator receives data from an MQTT topic.
-   - Another activator downloads a CSV file from an S3 bucket.
+   - A task (mqtt_client_subscriber) receives data from an MQTT topic.
+   - Another task (ftp_downloader) downloads a CSV file from an FTP server.
 
 2. **Preprocessing**:
 

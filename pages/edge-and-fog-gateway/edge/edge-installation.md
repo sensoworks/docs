@@ -1,3 +1,0 @@
-# Edge installation
-
-TBD
