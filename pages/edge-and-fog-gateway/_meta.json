@@ -1,4 +1,7 @@
 {
     "edge-fog-architecture": "Architecture",
-    "edge-fog-installation": "Installation"
+    "edge-fog-installation": "Installation",
+    "rest-api": "Rest Api",
+    "Workflow-engine": "Workflow Engine",
+    "tasks-manual": "Task Manual"
 }
