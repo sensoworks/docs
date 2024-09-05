@@ -1,3 +1,0 @@
-# Edge configuration guide
-
-TBD
