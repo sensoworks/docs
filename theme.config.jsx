@@ -6,7 +6,14 @@ export default {
       style={{ height: 50 }}
     />
   ),
-  head: <link rel="icon" href="/docs/sensoworks_logo_192x192.png"></link>,
+  head: (
+    <>
+      <title>Sensoworks</title>
+      <meta property="og:title" content="Sensoworks" />
+      <meta property="og:description" content="The Sensoworks documentation" />
+      <link rel="icon" href="/docs/sensoworks_logo_192x192.png"></link>
+    </>
+  ),
   project: {
     link: "https://github.com/sensoworks",
   },
