@@ -1,3 +1,4 @@
+# Workflow Engine
 ## Overview
 
 The Sensoworks Workflow Engine is a multi-modal engine designed to handle various data ingestion methods, perform preprocessing and analysis, and facilitate the storage and transmission of processed data. It is capable of integrating with multiple data sources and destinations, making it a versatile component in the Sensoworks ecosystem.
@@ -44,11 +45,11 @@ Currently, the engine supports HTTP, MQTT, S3, and ClickHouse for outgoing data 
 
 ## Architecture
 
-The architecture of the Sensoworks Workflow Engine consists of two main core and tasks:
+The architecture of the Sensoworks Workflow Engine consists of two components: core and tasks.
 
 ### Core
 
-The main componenet responsible for reading the configuration, managing tasks, and executing pause, resume, and stop commands.
+The main component responsible for reading the configuration, managing tasks, and executing pause, resume, and stop commands. It is also responsible for importing the necessary task modules and instantiating the queues from which the tasks will read and write data.
 
 ### Tasks
 
