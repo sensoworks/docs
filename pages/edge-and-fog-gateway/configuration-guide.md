@@ -1,4 +1,3 @@
-# Workflow Engine Configuration Guide
 ## Sensoworks Fog Gateway
 
 ---
