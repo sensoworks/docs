@@ -1,3 +1,4 @@
+# Configuration Guide
 ## Sensoworks Fog Gateway
 
 ---
