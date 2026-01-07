@@ -3,5 +3,6 @@
   "platform-installation": "Installation",
   "platform-administration": "Administration",
   "platform-ingestion": "Ingestion",
-  "user-manual": "User Manual"
+  "user-manual": "User Manual",
+  "access-token": "Access Token"
 }

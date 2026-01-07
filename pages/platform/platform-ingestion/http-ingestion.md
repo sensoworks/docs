@@ -17,7 +17,7 @@ POST https://datagate.sensoworks.com/datagate/sensoworks/datagate
 - <span style="color:red">network</span>: the ID of the network where we are sending the telemetry data.
 
 #### Authentication
-The bearer token can be copied from the dashboard.
+The bearer token can be copied from the dashboard. See the [User Manual](../user-manual.md#7-edges) for more information.
 
 #### Body example
 ```json
@@ -78,7 +78,7 @@ GET https://demo.sensoworks.com/foreman/sensoworks/api/network
 - <span style="color:red">sort</span>: the results sorting (asc or desc).
 
 #### Authentication
-The bearer token given at the login.
+The bearer token given at the [login](../access-token.md).
 
 #### Response body
 ```json
@@ -129,7 +129,7 @@ GET https://demo.sensoworks.com/foreman/sensoworks/api/network/<network_id>/thin
 - <span style="color:red">limit</span>: the number of results per page. For example, 10.
 
 #### Authentication
-The bearer token given at the login.
+The bearer token given at the [login](../access-token.md).
 
 #### Response body
 ```json
@@ -179,7 +179,7 @@ GET https://demo.sensoworks.com/foreman/sensoworks/api/network/<network_id>/thin
 - <span style="color:red">limit</span>: the number of results per page. For example, 10.
 
 #### Authentication
-The bearer token given at the login.
+The bearer token given at the [login](../access-token.md).
 
 #### Response body
 ```json
@@ -239,7 +239,7 @@ GET https://demo.sensoworks.com/foreman/sensoworks/api/network/<network_id>/read
 - <span style="color:red">sort</span>: the results sorting (asc or desc).
 
 #### Authentication
-The bearer token given at the login.
+The bearer token given at the [login](../access-token.md).
 
 #### Response body
 ```json
@@ -312,7 +312,7 @@ GET https://demo.sensoworks.com/foreman/sensoworks/api/network/<network_id>/thin
 - <span style="color:red">agg_label</span>: under what key name we want the aggregation keys (avg, max, min, etc.) positioned. Example value: data.
 
 #### Authentication
-The bearer token given at the login.
+The bearer token given at the [login](../access-token.md).
 
 #### Response body
 ```json
