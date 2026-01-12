@@ -1,7 +1,8 @@
 {
   "platform-architecture": "Architecture",
-  "platform-installation": "Installation",
-  "platform-administration": "Administration",
+  "platform-installation": {
+    "display": "hidden"
+  },
   "platform-ingestion": "Ingestion",
   "user-manual": "User Manual",
   "access-token": "Access Token"
