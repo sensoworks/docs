@@ -10,7 +10,7 @@ This page is intended to give an overview of the Sensoworks platform and explain
 4. Notifications
 5. Settings
 6. Configurations
-
+7. Edges
 
 ## 1. Context and Nomenclature
 
@@ -259,3 +259,17 @@ You can apply presets also to Thing and to Devices. For example you want to appl
 As a result of applying the preset Accelerometer to the device “acc_1” you can see a label under the column “Type” for the device in the “span” Thing.
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXffCpqOaPhUv522f9ShWZyyKzNVC98KdfY6gnE4ZvH7Y_QG55kqs1dF5ReAAeqYqq_iRcBCMFSqg8rM_ua-VhSS0AdTa6D1pHPtmvzKwVZV8aG8sggg8si37IswD9zwHg2xt4hOjbcf-YqBGlygiraX0b_Y?key=AWA2b8_E7XrQazNlJ-X87w)
+
+## 7. Edges
+
+### Overview
+
+For the data ingestion, edges must be created on the platform. Once an edge is created, it is possibile to send data to the platform with the associated token.
+
+<p align="center"><img src="/docs/images/user-manual/edges-page.png" width="100%" height="100%"></p>
+
+### Edge creation
+
+To create an edge, click on the top-right button "+ Edge" and insert a name. An edge will be created and you can activate or deactivate it by clicking on the 3 dots menu in the corresponding row.
+
+You can copy a token to use in the ingestion API calls by clicking in the "Token" column of every edge row.
