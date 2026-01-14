@@ -1,8 +1,6 @@
 # Configuration Guide
 ## Sensoworks Fog Gateway
 
----
-
 ## Table of Contents
 
 1. [Introduction](#introduction)
@@ -59,7 +57,7 @@ The workflow engine (`WorkflowEngine`) manages the execution of interconnected t
         ▼                  ▼                  ▼
    ┌────────┐        ┌────────┐        ┌────────┐
    │ Task 1 │───────▶│ Task 2 │───────▶│ Task 3 │
-   │(Input) │ Queue  │(Process)│ Queue  │(Output)│
+   │(Input) │ Queue  │(Process)│ Queue │(Output)│
    └────────┘        └────────┘        └────────┘
 ```
 
