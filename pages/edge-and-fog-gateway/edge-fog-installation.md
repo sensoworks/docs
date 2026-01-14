@@ -67,11 +67,11 @@ sensoworks-fog-gateway/
 
 | Directory | Purpose | Writable | Notes |
 |-----------|---------|----------|-------|
-| **`config/`** | Workflow configurations | ✅ Yes | Place all `.json` workflow files here |
-| **`status/`** | System state tracking | ❌ Auto | Do not manually edit |
-| **`data/`** | Temporary data | ✅ Yes | Cache and staging for file operations |
-| **`logs/`** | Application logs | ❌ Auto | Check here for debugging |
-| **`checkpoints/`** | Recovery files | ❌ Auto | Enables workflow resume after interruption |
+| **`config/`** | Workflow configurations | Yes | Place all `.json` workflow files here |
+| **`status/`** | System state tracking | Auto | Do not manually edit |
+| **`data/`** | Temporary data | Yes | Cache and staging for file operations |
+| **`logs/`** | Application logs | Auto | Check here for debugging |
+| **`checkpoints/`** | Recovery files | Auto | Enables workflow resume after interruption |
 
 #### Installation Steps
 
@@ -237,9 +237,6 @@ For detailed workflow configuration options, see the [Workflow Configuration Gui
 ##### Check Gateway Status
 
 ```bash
-# Health check
-curl http://localhost:5000/health
-
 # Overall status
 curl http://localhost:5000/status
 
@@ -281,7 +278,6 @@ curl -X POST http://localhost:5000/flows/{workflow_id}/stop
 | **Port 5000 already in use** | Change `APP_URL` to use different port (e.g., 5001) |
 | **Workflows not loading** | Verify JSON files are in `config/` and valid |
 | **Data not being processed** | Check workflow configuration and logs for errors |
-| **High memory usage** | Reduce `QUEUE_SIZE` in environment variables |
 | **Python version error** | Ensure Python 3.12+ is installed |
 
 #### Useful Commands
