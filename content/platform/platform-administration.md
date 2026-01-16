@@ -1,3 +1,0 @@
-# Platform administration
-
-TBD
