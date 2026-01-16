@@ -1,9 +1,9 @@
-{
+export default {
   "platform-architecture": "Architecture",
   "platform-installation": {
-    "display": "hidden"
+    display: "hidden",
   },
   "platform-ingestion": "Ingestion",
   "user-manual": "User Manual",
-  "access-token": "Access Token"
-}
+  "access-token": "Access Token",
+};

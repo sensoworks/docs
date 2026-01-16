@@ -1,0 +1,7 @@
+export default {
+  "edge-fog-architecture": "Architecture",
+  "workflow-engine": "Workflow Engine",
+  "edge-fog-installation": "Installation",
+  "rest-api": "Rest Api",
+  "configuration-guide": "Configuration Guide",
+};

@@ -10,8 +10,7 @@ const nextConfig = {
 };
 
 const withNextra = nextra({
-  theme: "nextra-theme-docs",
-  themeConfig: "./theme.config.jsx",
+  // contentDirBasePath: "/docs",
   defaultShowCopyCode: true,
 });
 
