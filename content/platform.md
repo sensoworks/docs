@@ -24,8 +24,3 @@ The Sensoworks platform is a robust and versatile IoT solution built using a mic
 ### Architecture and Components
 
 In the following pages, you will find detailed descriptions of the Sensoworks platform's architecture, components, and functionalities. These sections will provide in-depth insights into how each microservice contributes to the overall performance and capabilities of the platform.
-
-### User Guide
-
-- **Platform Usage Guide:** This guide provides step-by-step instructions on how to use the Sensoworks platform effectively. It covers all features and functionalities, ensuring that users can maximize the benefits of the platform.
-- **Installation Guide:** Detailed instructions are available for installing the Sensoworks platform both on-premise and in the cloud. This guide ensures a smooth setup process, tailored to your specific deployment environment.
