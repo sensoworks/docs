@@ -1,7 +1,4 @@
 # Configuration Guide
-## Sensoworks Fog Gateway
-
----
 
 ## Table of Contents
 
@@ -22,8 +19,6 @@
 ## Introduction
 
 The **Sensoworks Fog Gateway** is a modular edge-computing data processing system that allows you to create data acquisition, processing, and transmission pipelines through declarative JSON configurations.
-
-The workflow engine (`WorkflowEngine`) manages the execution of interconnected tasks through thread-safe queues, enabling the construction of complex data flows without writing code.
 
 ### Key Features
 
@@ -59,7 +54,7 @@ The workflow engine (`WorkflowEngine`) manages the execution of interconnected t
         ▼                  ▼                  ▼
    ┌────────┐        ┌────────┐        ┌────────┐
    │ Task 1 │───────▶│ Task 2 │───────▶│ Task 3 │
-   │(Input) │ Queue  │(Process)│ Queue  │(Output)│
+   │ Input  │ Queue  │ Process│ Queue  │ Output │
    └────────┘        └────────┘        └────────┘
 ```
 
@@ -68,7 +63,7 @@ The workflow engine (`WorkflowEngine`) manages the execution of interconnected t
 1. **Configuration**: loading JSON files from the `config/` folder
 2. **Initialization**: queue creation and task instantiation
 3. **Execution**: each task operates in a separate thread
-4. **Communication**: data passing through thread-safe queues
+4. **Communication**: data passing through queues
 5. **Checkpointing**: periodic state saving
 
 ---
